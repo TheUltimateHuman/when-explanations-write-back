@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this research package, cite the accompanying manuscript."
+title: "When Explanations Write Back: Mechanistic Provenance for Language Models"
+type: software
+authors:
+  - family-names: Lawson
+    given-names: Aidan Edward
+version: "public-release-2026-09-11"
+date-released: 2026-09-11
