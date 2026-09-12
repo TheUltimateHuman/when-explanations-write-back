@@ -1,0 +1,34 @@
+{
+  "dataset": "SST-2",
+  "calibration_n": 24,
+  "validation_n": 96,
+  "sampling_seed": 2026091002,
+  "bootstrap_resamples": 100000,
+  "bootstrap_seed": 520260910,
+  "model_revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+  "sst2_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "family_manifest_sha256": "00d67047f19eec6c5c22fcc77c63c2452e9856949314b123e26946e11d9531a1",
+  "job_ids": {"Qwen":"6aa2e1b821047bf1b0373065","Mistral":"6aa2e1e121047bf1b037306d","Phi":"6aa2e2075527934177ec1c9f"},
+  "calibration": {
+    "Qwen": {"accuracy":0.8333,"sensitivity":19.29,"eligible":false},
+    "Mistral": {"accuracy":0.875,"sensitivity":15.58,"eligible":false},
+    "Phi": {"accuracy":1.0,"sensitivity":52.26,"eligible":true}
+  },
+  "phi_validation": {
+    "accuracy":0.9479167,
+    "sensitivity":50.5138,
+    "delta_sem_mean":0.0331662,
+    "ci":[0.0249349,0.0420227],
+    "positive":87,
+    "total":96,
+    "sign_p":3.640258907444359e-17,
+    "mapping1":{"mean":0.0381362,"ci":[0.0231925,0.0550032],"positive":70,"p":8.049550377189253e-06},
+    "mapping2":{"mean":0.0281962,"ci":[0.0110881,0.0449765],"positive":66,"p":0.00030559732759326285},
+    "content_free":{"mean":0.0198071,"ci":[0.0098656,0.0304549],"positive":63,"p":0.002878610081200932},
+    "same_sign_between_mappings_fraction":0.4375,
+    "natural_report_left_fraction":0.2708,
+    "natural_alignment":{"mean":0.07019,"ci":[0.02364,0.11661],"positive":60,"p":0.018433352931462543},
+    "noise_delta":0.0
+  },
+  "cross_architecture_gate_met": false
+}
