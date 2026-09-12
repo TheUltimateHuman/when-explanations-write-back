@@ -1,9 +1,21 @@
 cff-version: 1.2.0
-message: "If you use this research package, cite the accompanying manuscript."
+message: "If you use this research package, cite the archived manuscript and reproducibility record."
 title: "When Explanations Write Back: Mechanistic Provenance for Language Models"
-type: software
+type: dataset
 authors:
   - family-names: Lawson
     given-names: Aidan Edward
-version: "public-release-2026-09-11"
-date-released: 2026-09-11
+version: "1.0"
+date-released: 2026-09-12
+doi: "10.5281/zenodo.22728293"
+url: "https://zenodo.org/records/22728293"
+repository-code: "https://github.com/TheUltimateHuman/when-explanations-write-back"
+preferred-citation:
+  type: article
+  title: "When Explanations Write Back: Mechanistic Provenance for Language Models"
+  authors:
+    - family-names: Lawson
+      given-names: Aidan Edward
+  year: 2026
+  doi: "10.5281/zenodo.22728293"
+  url: "https://zenodo.org/records/22728293"
