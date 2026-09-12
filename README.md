@@ -2,7 +2,14 @@
 
 This public repository accompanies Aidan Edward Lawson's manuscript **When Explanations Write Back: Mechanistic Provenance for Language Models**.
 
-Its immediate purpose is to make the PR-002 confirmatory record independently inspectable without access to the author's retained Hugging Face Jobs account.
+## Permanent archive
+
+The frozen manuscript and complete reproducibility package are permanently archived on Zenodo:
+
+- **Zenodo record:** https://zenodo.org/records/22728293
+- **DOI:** https://doi.org/10.5281/zenodo.22728293
+
+The Zenodo record is the archival snapshot. This GitHub repository is the inspectable code/data companion and may receive documentation or verification improvements without changing the archived v1.0 payload.
 
 ## Confirmatory boundary
 
@@ -57,6 +64,6 @@ The direct natural-report fidelity-transition analysis is exploratory because it
 
 Earlier developmental PCA experiments do not all have equivalent family-level execution artifacts. No missing observations were synthesized or back-filled.
 
-## Public-release manuscript
+## Archival relationship
 
-The full public-release manuscript and larger reproducibility package are maintained separately from this core GitHub record and can be deposited as an archival release/DOI package. This repository already removes the principal PR-002 reproducibility dependency on private Hugging Face account access.
+For a stable citation or frozen release, use the Zenodo DOI above. For direct inspection of the exact PR-002 script, family-level table, and analysis utilities, use this repository.
