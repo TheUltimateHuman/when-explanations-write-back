@@ -1,0 +1,29 @@
+{
+  "status":"post_hoc_robustness_from_recovered_96_family_phi_record",
+  "source_job_id":"6aa2e2075527934177ec1c9f",
+  "confirmatory_primary":{"mean":0.033166203893723496,"ci95":[0.024934901344308032,0.04202268735099558],"positive":87,"negative":9,"n":96,"exact_sign_p":3.640258907444359e-17,"trimmed_mean_10pct":0.025496934498149156},
+  "normalizer_attack":{
+    "all_four_semantic_branches_both_intervention_effects_positive":{"n":81,"mean":0.03873653996920247,"ci95":[0.02942155890149503,0.04872577925974563],"positive":74,"negative":7,"exact_sign_p":3.167382755726581e-15},
+    "all_four_semantic_branches_abs_dominance_below_0_95":{"n":78,"mean":0.03968208690429748,"ci95":[0.03005677646748668,0.050012410532710196],"positive":71,"negative":7,"exact_sign_p":1.933200757632093e-14},
+    "raw_unnormalized_margin_contrast":{"definition":"J = I_left - I_right; same two-mapping estimator applied to J","n":96,"mean":1.4656575520833333,"ci95":[1.1639811197916667,1.7880859375],"positive":86,"negative":10,"exact_sign_p":3.2114796492801454e-16,"trimmed_mean_10pct":1.2648237179487178},
+    "positive_clipped_normalizer":{"definition":"negative I_left/I_right set to zero before normalized dominance","n":96,"mean":0.03316620644881054,"ci95":[0.0249398474994419,0.04204921128188482],"positive":87,"negative":9,"exact_sign_p":3.640258907444359e-17}
+  },
+  "negative_intervention_counts":{
+    "base":{"I_left_negative":3,"I_right_negative":7,"either_negative":10,"abs_dominance_ge_0_95":10},
+    "m1_left":{"I_left_negative":6,"I_right_negative":7,"either_negative":13,"abs_dominance_ge_0_95":17},
+    "m1_right":{"I_left_negative":6,"I_right_negative":7,"either_negative":13,"abs_dominance_ge_0_95":16},
+    "m2_left":{"I_left_negative":6,"I_right_negative":6,"either_negative":12,"abs_dominance_ge_0_95":14},
+    "m2_right":{"I_left_negative":7,"I_right_negative":6,"either_negative":13,"abs_dominance_ge_0_95":13}
+  },
+  "exploratory_natural_report_fidelity_transition":{
+    "warning":"post hoc; binary fidelity criterion was not preregistered",
+    "criterion":"faithful iff natural report side matches sign of audited normalized causal dominance",
+    "transition_counts":{"00":33,"01":11,"10":3,"11":49},
+    "q_baseline":0.5416666666666666,"s_post":0.625,"C_conversion":0.11458333333333333,"L_fidelity_loss":0.03125,"identity_error":0.0,
+    "threshold_sensitivity":{
+      "0.02":{"transition_counts":{"00":35,"01":10,"10":4,"11":47},"q":0.53125,"s":0.59375,"C":0.10416666666666667,"L":0.041666666666666664},
+      "0.05":{"transition_counts":{"00":37,"01":9,"10":4,"11":46},"q":0.5208333333333334,"s":0.5729166666666666,"C":0.09375,"L":0.041666666666666664},
+      "0.10":{"transition_counts":{"00":39,"01":9,"10":7,"11":41},"q":0.5,"s":0.5208333333333334,"C":0.09375,"L":0.07291666666666667}
+    }
+  }
+}
