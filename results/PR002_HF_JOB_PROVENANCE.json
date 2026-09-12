@@ -1,0 +1,12 @@
+{
+  "recovered_at": "2026-09-11",
+  "shared_script_sha256": "a931bcf62608aa4178f84f02d7b1519c5193d11579cf4c2b065e71f03d2bf670",
+  "recovered_phi_family_csv_sha256": "6aa41468ef83c9d6c93205a3479866fac684fac13a3c04cdc57bc5874291f5fe",
+  "dataset_sha": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "family_manifest_sha256": "00d67047f19eec6c5c22fcc77c63c2452e9856949314b123e26946e11d9531a1",
+  "jobs": {
+    "qwen": {"job_id":"6aa2e1b821047bf1b0373065","model":"Qwen/Qwen2.5-7B-Instruct","model_sha":"a09a35458c702b33eeacc393d103063234e8bc28","calibration_accuracy":0.8333333333333334,"calibration_mean_sensitivity":19.293619791666668,"gate":"failed","log_sha256":"6c7df6726db0eba51c42af4e26ff805a98b37e0e8fba477479e8d9a1a0a0853c"},
+    "mistral": {"job_id":"6aa2e1e121047bf1b037306d","model":"mistralai/Mistral-7B-Instruct-v0.3","model_sha":"c170c708c41dac9275d15a8fff4eca08d52bab71","calibration_accuracy":0.875,"calibration_mean_sensitivity":15.5830078125,"gate":"failed","log_sha256":"3af18f45caaa1db0eb53d2acbbd2dfca88bebd7cde405c238b7d3734b337af0a"},
+    "phi": {"job_id":"6aa2e2075527934177ec1c9f","model":"microsoft/Phi-3.5-mini-instruct","model_sha":"2fe192450127e6a83f7441aef6e3ca586c338b77","calibration_accuracy":1.0,"calibration_mean_sensitivity":52.26171875,"gate":"passed","validation_record_count":96,"log_sha256":"d3f9ab17d3a928344772257fd11d88fded0472839453f1772fbba9d2134f84f3"}
+  }
+}
