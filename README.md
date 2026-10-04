@@ -4,12 +4,15 @@ This public repository accompanies Aidan Edward Lawson's manuscript **When Expla
 
 ## Permanent archive
 
-The frozen manuscript and complete reproducibility package are permanently archived on Zenodo:
+The current frozen manuscript and complete reproducibility package are archived on Zenodo as **version 1.1**:
 
-- **Zenodo record:** https://zenodo.org/records/22728293
-- **DOI:** https://doi.org/10.5281/zenodo.22728293
+- **Zenodo record:** https://zenodo.org/records/23145243
+- **DOI:** https://doi.org/10.5281/zenodo.23145243
+- **Published:** 2026-10-04
 
-The Zenodo record is the archival snapshot. This GitHub repository is the inspectable code/data companion and may receive documentation or verification improvements without changing the archived v1.0 payload.
+Version 1.1 supersedes the original v1.0 snapshot at DOI 10.5281/zenodo.22728293. The v1.1 archive incorporates the readability revision and the recovered PCA-006 through PCA-012 developmental execution archive while preserving the original confirmatory boundary.
+
+This GitHub repository is the inspectable code/data companion to the Zenodo archive.
 
 ## Confirmatory boundary
 
@@ -60,7 +63,7 @@ Original Phi execution-log SHA-256:
 
 On 2026-10-04, the retained Hugging Face Jobs record was re-audited and the surviving developmental execution artifacts for PCA-006 through PCA-012 were recovered. The repository now contains 13 execution directories under `developmental_archive/`, each with the exact submitted script, retained raw job log, parsed family-level records, model revision/job provenance, and SHA-256 anchors.
 
-This recovery **does not enlarge the confirmatory claim**. The PR-002 preregistered boundary remains unchanged, including the unmet cross-architecture gate. The Zenodo v1.0 snapshot predates this supplement.
+These recovered developmental artifacts are included in Zenodo v1.1. Their archival recovery **does not enlarge the confirmatory claim**. The PR-002 preregistered boundary remains unchanged, including the unmet cross-architecture gate.
 
 ## Interpretation discipline
 
@@ -72,4 +75,4 @@ The recovered PCA-006 through PCA-012 developmental executions are now preserved
 
 ## Archival relationship
 
-For a stable citation or frozen release, use the Zenodo DOI above. For direct inspection of the exact PR-002 script, family-level table, and analysis utilities, use this repository.
+For stable citation of the current release, use **Zenodo v1.1: DOI 10.5281/zenodo.23145243**. For direct inspection of the exact PR-002 script, family-level table, developmental archive, and analysis utilities, use this repository.
