@@ -1,11 +1,14 @@
 # Public Release Notes
 
-The frozen v1.0 manuscript and complete reproducibility package are archived on Zenodo:
+The current frozen manuscript and complete reproducibility package are archived on Zenodo as **version 1.1**:
 
-- Record: https://zenodo.org/records/22728293
-- DOI: https://doi.org/10.5281/zenodo.22728293
+- Record: https://zenodo.org/records/23145243
+- DOI: https://doi.org/10.5281/zenodo.23145243
+- Publication date: 2026-10-04
 
-The Zenodo record is the permanent archival snapshot. This GitHub repository remains the inspectable code/data companion.
+The original v1.0 snapshot remains available at DOI 10.5281/zenodo.22728293.
+
+Zenodo v1.1 is the permanent archival snapshot for the current release. This GitHub repository remains the inspectable code/data companion.
 
 This archive is self-contained for the PR-002 confirmatory record described in the manuscript. Reviewers do not need access to the author's Hugging Face account to inspect the exact executed script or the 96-family Phi output table.
 
@@ -33,7 +36,7 @@ The original Phi execution-log hash remains `d3f9ab17d3a928344772257fd11d88fded0
 
 Phi-3.5-mini-instruct met its individual preregistered PR-002 primary endpoint. The stronger preregistered cross-architecture gate was not met because Qwen and Mistral failed the preregistered calibration gate. Public release of the recovered family table does not promote any post hoc analysis into the confirmatory endpoint.
 
-The retained developmental PCA-006 through PCA-012 execution artifacts were subsequently recovered on 2026-10-04 and are preserved under `developmental_archive/` in the GitHub repository. This repository supplement does not alter the preregistered PR-002 endpoint and is not part of the frozen Zenodo v1.0 payload.
+The retained developmental PCA-006 through PCA-012 execution artifacts were recovered on 2026-10-04, are preserved under `developmental_archive/`, and are included in the Zenodo v1.1 release. This recovery does not alter the preregistered PR-002 endpoint.
 
 ## Repository v1.1 developmental recovery
 
@@ -43,4 +46,4 @@ See `developmental_archive/README.md` and `developmental_archive/MANIFEST.json`.
 
 ## Citation
 
-Lawson, Aidan Edward. *When Explanations Write Back: Mechanistic Provenance for Language Models*. Version 1.0, 2026. DOI: 10.5281/zenodo.22728293.
+Lawson, Aidan Edward. *When Explanations Write Back: Mechanistic Provenance for Language Models*. Version 1.1, 2026. DOI: 10.5281/zenodo.23145243.
