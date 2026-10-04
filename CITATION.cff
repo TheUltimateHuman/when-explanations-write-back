@@ -5,10 +5,10 @@ type: dataset
 authors:
   - family-names: Lawson
     given-names: Aidan Edward
-version: "1.0"
-date-released: 2026-09-12
-doi: "10.5281/zenodo.22728293"
-url: "https://zenodo.org/records/22728293"
+version: "1.1"
+date-released: 2026-10-04
+doi: "10.5281/zenodo.23145243"
+url: "https://zenodo.org/records/23145243"
 repository-code: "https://github.com/TheUltimateHuman/when-explanations-write-back"
 preferred-citation:
   type: article
@@ -17,5 +17,5 @@ preferred-citation:
     - family-names: Lawson
       given-names: Aidan Edward
   year: 2026
-  doi: "10.5281/zenodo.22728293"
-  url: "https://zenodo.org/records/22728293"
+  doi: "10.5281/zenodo.23145243"
+  url: "https://zenodo.org/records/23145243"
