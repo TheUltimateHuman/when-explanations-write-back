@@ -56,13 +56,19 @@ Original Phi execution-log SHA-256:
 - `CITATION.cff` — citation metadata
 - `LICENSE_STATUS.md` — explicit license-status notice
 
+## Developmental archive recovery — repository v1.1 supplement
+
+On 2026-10-04, the retained Hugging Face Jobs record was re-audited and the surviving developmental execution artifacts for PCA-006 through PCA-012 were recovered. The repository now contains 13 execution directories under `developmental_archive/`, each with the exact submitted script, retained raw job log, parsed family-level records, model revision/job provenance, and SHA-256 anchors.
+
+This recovery **does not enlarge the confirmatory claim**. The PR-002 preregistered boundary remains unchanged, including the unmet cross-architecture gate. The Zenodo v1.0 snapshot predates this supplement.
+
 ## Interpretation discipline
 
 The post hoc robustness analyses test whether the Phi result is explained by pathologies in the normalized dominance statistic, negative intervention effects, or saturation. They do **not** replace or enlarge the preregistered endpoint.
 
 The direct natural-report fidelity-transition analysis is exploratory because its binary fidelity criterion was defined after recovery of the family-level record.
 
-Earlier developmental PCA experiments do not all have equivalent family-level execution artifacts. No missing observations were synthesized or back-filled.
+The recovered PCA-006 through PCA-012 developmental executions are now preserved under `developmental_archive/`. They remain developmental rather than confirmatory; no missing observations were synthesized or back-filled.
 
 ## Archival relationship
 

@@ -1,0 +1,207 @@
+Downloading nvidia-cuda-cupti (10.2MiB)
+Downloading sympy (6.0MiB)
+Downloading nvidia-cuda-runtime (2.1MiB)
+Downloading pygments (1.2MiB)
+Downloading nvidia-cudnn-cu13 (527.5MiB)
+Downloading torch (528.9MiB)
+Downloading nvidia-curand (56.8MiB)
+Downloading transformers (11.7MiB)
+Downloading nvidia-cusolver (191.6MiB)
+Downloading cuda-bindings (6.8MiB)
+Downloading triton (236.5MiB)
+Downloading nvidia-cusparselt-cu13 (162.3MiB)
+Downloading nvidia-cublas (403.5MiB)
+Downloading nvidia-cusparse (139.2MiB)
+Downloading nvidia-cufft (204.2MiB)
+Downloading hf-xet (4.3MiB)
+Downloading nvidia-cuda-nvrtc (86.0MiB)
+Downloading networkx (2.0MiB)
+Downloading nvidia-nvshmem-cu13 (57.6MiB)
+Downloading nvidia-cufile (1.2MiB)
+Downloading tokenizers (3.2MiB)
+Downloading nvidia-nvjitlink (40.5MiB)
+Downloading numpy (15.9MiB)
+Downloading nvidia-nccl-cu13 (206.0MiB)
+ Downloaded nvidia-cufile
+ Downloaded nvidia-cuda-runtime
+ Downloaded pygments
+ Downloaded tokenizers
+ Downloaded hf-xet
+ Downloaded networkx
+ Downloaded cuda-bindings
+ Downloaded nvidia-cuda-cupti
+ Downloaded sympy
+ Downloaded numpy
+ Downloaded nvidia-nvjitlink
+ Downloaded nvidia-curand
+ Downloaded nvidia-nvshmem-cu13
+ Downloaded transformers
+ Downloaded nvidia-cuda-nvrtc
+ Downloaded nvidia-cusparse
+ Downloaded nvidia-cusparselt-cu13
+ Downloaded nvidia-cusolver
+ Downloaded nvidia-cufft
+ Downloaded nvidia-nccl-cu13
+ Downloaded triton
+ Downloaded nvidia-cublas
+ Downloaded nvidia-cudnn-cu13
+ Downloaded torch
+Installed 55 packages in 649ms
+
+config.json:   0%|          | 0.00/601 [00:00<?, ?B/s][Aconfig.json: 100%|██████████| 601/601 [00:00<00:00, 3.72MB/s]
+
+tokenizer_config.json:   0%|          | 0.00/141k [00:00<?, ?B/s][Atokenizer_config.json: 100%|██████████| 141k/141k [00:00<00:00, 24.5MB/s]
+
+tokenizer.json:   0%|          | 0.00/1.96M [00:00<?, ?B/s][Atokenizer.json: 100%|██████████| 1.96M/1.96M [00:00<00:00, 37.3MB/s]
+
+tokenizer.model: reconstructing file:   0%|          |  0.00B /  587kB            [Atokenizer.model: downloading bytes:           |  0.00B            tokenizer.model: downloading bytes: ██████████|  448kB, 44.6kB/s  tokenizer.model: downloading bytes: ██████████|  448kB, 44.6kB/s  
+tokenizer.model: reconstructing file: 100%|██████████|  587kB /  587kB, 58.4kB/s  
+
+special_tokens_map.json:   0%|          | 0.00/414 [00:00<?, ?B/s][Aspecial_tokens_map.json: 100%|██████████| 414/414 [00:00<00:00, 2.77MB/s]
+PCA007M2_META {"model": "mistralai/Mistral-7B-Instruct-v0.3", "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71", "families": 48, "tokenA": 1098, "tokenB": 1133}
+
+model.safetensors.index.json:   0%|          | 0.00/23.9k [00:00<?, ?B/s][Amodel.safetensors.index.json: 100%|██████████| 23.9k/23.9k [00:00<00:00, 82.3MB/s]
+
+Downloading bytes:           |  0.00B            [A
+Reconstructing (incomplete total...): |          |  0.00B /  0.00B            [A
+Fetching 3 files:   0%|          | 0/3 [00:00<?, ?it/s][A
+Reconstructing (incomplete total...):   0%|          |  0.00B / 9.95GB            [A
+Reconstructing (incomplete total...):   0%|          |  0.00B / 9.95GB            [A
+Reconstructing (incomplete total...):   0%|          |  0.00B / 14.5GB            [A
+Downloading bytes: ▏         |  266MB,   ???B/s  [A
+Reconstructing (incomplete total...):   2%|▏         |  256MB / 14.5GB            [A
+Downloading bytes: ▌         |  772MB,  250MB/s  [A
+Reconstructing (incomplete total...):   5%|▌         |  786MB / 14.5GB,  240MB/s  [A
+Downloading bytes: ▉         | 1.30GB,  396MB/s  [A
+Reconstructing (incomplete total...):   9%|▉         | 1.29GB / 14.5GB,  383MB/s  [A
+Downloading bytes: █▎        | 1.83GB,  444MB/s  [A
+Reconstructing (incomplete total...):  12%|█▏        | 1.70GB / 14.5GB,  409MB/s  [A
+Downloading bytes: █▌        | 2.35GB,  475MB/s  [A
+Reconstructing (incomplete total...):  16%|█▌        | 2.32GB / 14.5GB,  398MB/s  [A
+Downloading bytes: █▉        | 2.89GB,  473MB/s  [A
+Downloading bytes: █▉        | 2.89GB,  474MB/s  [A
+Downloading bytes: █▉        | 2.89GB,  474MB/s  [A
+Downloading bytes: ██▎       | 3.39GB,  474MB/s  [A
+Downloading bytes: ██▎       | 3.40GB,  488MB/s  [A
+Downloading bytes: ██▎       | 3.40GB,  488MB/s  [A
+Reconstructing (incomplete total...):  19%|█▉        | 2.78GB / 14.5GB,  414MB/s  [A
+Downloading bytes: ██▋       | 3.90GB,  488MB/s  [A
+Downloading bytes: ███       | 4.41GB,  488MB/s  [A
+Downloading bytes: ███▍      | 4.93GB,  494MB/s  [A
+Downloading bytes: ███▍      | 4.94GB,  505MB/s  [A
+Downloading bytes: ███▊      | 5.45GB,  505MB/s  [A
+Reconstructing (incomplete total...):  23%|██▎       | 3.38GB / 14.5GB,  306MB/s  [A
+Downloading bytes: ████      | 5.96GB,  506MB/s  [A
+Reconstructing (incomplete total...):  27%|██▋       | 3.98GB / 14.5GB,  225MB/s  [A
+Reconstructing (incomplete total...):  27%|██▋       | 3.98GB / 14.5GB,  166MB/s  [A
+Downloading bytes: ████▍     | 6.40GB,  400MB/s  [A
+Reconstructing (incomplete total...):  33%|███▎      | 4.85GB / 14.5GB,  166MB/s  [A
+Downloading bytes: ████▍     | 6.40GB,  400MB/s  [A
+Downloading bytes: ████▋     | 6.87GB, 76.9MB/s  [A
+Downloading bytes: █████     | 7.36GB,  101MB/s  [A
+Downloading bytes: █████▍    | 7.86GB,  134MB/s  [A
+Reconstructing (incomplete total...):  41%|████▏     | 5.98GB / 14.5GB, 97.9MB/s  [A
+Reconstructing (incomplete total...):  44%|████▎     | 6.32GB / 14.5GB,  142MB/s  [A
+Downloading bytes: █████▋    | 8.32GB,  172MB/s  [A
+Downloading bytes: ██████▏   | 8.88GB,  154MB/s  [A
+Reconstructing (incomplete total...):  55%|█████▍    | 7.92GB / 14.5GB,  136MB/s  [A
+Downloading bytes: ██████▍   | 9.31GB,  203MB/s  [A
+Reconstructing (incomplete total...):  59%|█████▉    | 8.60GB / 14.5GB,  156MB/s  [A
+Downloading bytes: ██████▊   | 9.79GB,  120MB/s  [A
+Downloading bytes: ███████   | 10.3GB,  119MB/s  [A
+Reconstructing (incomplete total...):  65%|██████▍   | 9.40GB / 14.5GB,  156MB/s  [A
+Downloading bytes: ███████▎  | 10.6GB,  158MB/s  [A
+Downloading bytes: ███████▋  | 11.2GB,  157MB/s  [A
+Reconstructing (incomplete total...):  71%|███████   | 10.3GB / 14.5GB,  182MB/s  [A
+Downloading bytes: ███████▉  | 11.6GB,  209MB/s  [A
+Reconstructing (incomplete total...):  76%|███████▌  | 11.0GB / 14.5GB,  138MB/s  [A
+Downloading bytes: ████████▏ | 11.8GB,  106MB/s  [A
+Downloading bytes: ████████▌ | 12.4GB,  116MB/s  [A
+Reconstructing (incomplete total...):  78%|███████▊  | 11.3GB / 14.5GB,  169MB/s  [A
+Reconstructing (incomplete total...):  85%|████████▍ | 12.3GB / 14.5GB,  141MB/s  [A
+Reconstructing (incomplete total...):  87%|████████▋ | 12.7GB / 14.5GB,  197MB/s  [A
+Fetching 3 files:  33%|███▎      | 1/3 [01:15<02:30, 75.44s/it][A
+Reconstructing (incomplete total...):  92%|█████████▏| 13.4GB / 14.5GB,  163MB/s  [A
+Downloading bytes: ████████▌ | 12.4GB,  165MB/s  [A
+Reconstructing (incomplete total...):  96%|█████████▋| 14.0GB / 14.5GB,  208MB/s  [A
+Fetching 3 files:  67%|██████▋   | 2/3 [01:18<00:32, 32.98s/it][A
+Reconstructing (incomplete total...): 100%|██████████| 14.5GB / 14.5GB,  232MB/s  [A
+Fetching 3 files: 100%|██████████| 3/3 [01:20<00:00, 18.76s/it][AFetching 3 files: 100%|██████████| 3/3 [01:20<00:00, 26.84s/it]
+
+Downloading bytes: ██████████| 12.4GB,  165MB/s  [A
+Download complete: : ██████████| 12.4GB,  165MB/s  [A
+Reconstruction complete: 100%|██████████| 14.5GB / 14.5GB,  244MB/s               [ADownload complete: : ██████████| 12.4GB,  165MB/s  
+Reconstruction complete: 100%|██████████| 14.5GB / 14.5GB,  244MB/s  
+
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s][A
+Loading weights:   0%|          | 1/291 [00:01<06:38,  1.37s/it][A
+Loading weights:   4%|▍         | 13/291 [00:02<00:46,  6.01it/s][A
+Loading weights:   8%|▊         | 22/291 [00:03<00:42,  6.39it/s][A
+Loading weights:  11%|█         | 31/291 [00:05<00:40,  6.46it/s][A
+Loading weights:  14%|█▍        | 41/291 [00:06<00:33,  7.51it/s][A
+Loading weights:  32%|███▏      | 94/291 [00:07<00:09, 20.31it/s][A
+Loading weights:  40%|███▉      | 115/291 [00:10<00:13, 13.09it/s][A
+Loading weights:  45%|████▌     | 132/291 [00:13<00:16,  9.88it/s][A
+Loading weights:  50%|█████     | 146/291 [00:14<00:13, 10.55it/s][A
+Loading weights:  55%|█████▍    | 160/291 [00:17<00:15,  8.25it/s][A
+Loading weights:  59%|█████▉    | 171/291 [00:18<00:14,  8.25it/s][A
+Loading weights:  62%|██████▏   | 181/291 [00:19<00:13,  8.06it/s][A
+Loading weights:  69%|██████▉   | 202/291 [00:21<00:09,  9.35it/s][A
+Loading weights:  73%|███████▎  | 213/291 [00:22<00:08,  8.86it/s][A
+Loading weights:  77%|███████▋  | 223/291 [00:24<00:08,  8.20it/s][A
+Loading weights:  81%|████████  | 235/291 [00:25<00:06,  8.78it/s][A
+Loading weights:  84%|████████▍ | 245/291 [00:26<00:05,  8.56it/s][A
+Loading weights:  87%|████████▋ | 254/291 [00:28<00:05,  7.19it/s][A
+Loading weights:  91%|█████████ | 265/291 [00:30<00:03,  6.74it/s][A
+Loading weights:  94%|█████████▍| 274/291 [00:31<00:02,  6.95it/s][ALoading weights: 100%|██████████| 291/291 [00:32<00:00,  8.96it/s]
+
+generation_config.json:   0%|          | 0.00/116 [00:00<?, ?B/s][Ageneration_config.json: 100%|██████████| 116/116 [00:00<00:00, 735kB/s]
+PCA007M2_RECORD {"baseline": {"I_left": 10.4716796875, "I_right": 8.5634765625, "dominance": 0.1002462496074205, "ordinary_acc": 1.0, "total_sensitivity": 19.03515625}, "code_left": "PLUM", "code_right": "CEDAR", "first_option": "CEDAR", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 0, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 9.1875, "I_right": 9.875, "dominance": -0.036065571878527374, "ordinary_acc": 1.0, "total_sensitivity": 19.0625}, "code_left": "KAPPA", "code_right": "SIGMA", "first_option": "KAPPA", "report": null, "report_alias": null, "report_raw": "Based on the provided examples,", "seed": 1, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 9.5625, "I_right": 8.0703125, "dominance": 0.08462560441644777, "ordinary_acc": 1.0, "total_sensitivity": 17.6328125}, "code_left": "ALPHA", "code_right": "BETA", "first_option": "BETA", "report": null, "report_alias": null, "report_raw": "Based on the given examples,", "seed": 2, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.775390625, "I_right": 9.078125, "dominance": 0.08548942018980982, "ordinary_acc": 1.0, "total_sensitivity": 19.853515625}, "code_left": "RUNE", "code_right": "MICA", "first_option": "RUNE", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 3, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.94140625, "I_right": 8.939453125, "dominance": 0.1006975094255698, "ordinary_acc": 1.0, "total_sensitivity": 19.880859375}, "code_left": "MICA", "code_right": "RUNE", "first_option": "RUNE", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 4, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.94140625, "I_right": 8.939453125, "dominance": 0.1006975094255698, "ordinary_acc": 1.0, "total_sensitivity": 19.880859375}, "code_left": "SAGE", "code_right": "NOVA", "current_model": {"I_left": 8.806640625, "I_right": 7.810546875, "dominance": 0.059943578903254295, "ordinary_acc": 1.0, "total_sensitivity": 16.6171875}, "delta_natural": -0.2209807909241725, "delta_std": -0.005376595463015235, "first_option": "NOVA", "forced_left": {"I_left": 8.708984375, "I_right": 4.974609375, "dominance": 0.27290891525415867, "ordinary_acc": 1.0, "total_sensitivity": 13.68359375}, "forced_left_minus_right": 0.16683481036557363, "forced_right": {"I_left": 8.482421875, "I_right": 6.85546875, "dominance": 0.10607410488858504, "ordinary_acc": 1.0, "total_sensitivity": 15.337890625}, "imperative": {"I_left": 7.306640625, "I_right": 6.916015625, "dominance": 0.027464980216689115, "ordinary_acc": 1.0, "total_sensitivity": 14.22265625}, "natural_vs_std": -0.21560419546115728, "other": {"I_left": 8.595703125, "I_right": 6.65625, "dominance": 0.12716095977635916, "ordinary_acc": 1.0, "total_sensitivity": 15.251953125}, "procedure": {"I_left": 7.9140625, "I_right": 6.96484375, "dominance": 0.06379626769969952, "ordinary_acc": 1.0, "total_sensitivity": 14.87890625}, "question_control": {"I_left": 10.111328125, "I_right": 4.025390625, "dominance": 0.430505634095208, "ordinary_acc": 1.0, "total_sensitivity": 14.13671875}, "report": "RIGHT", "report_alias": "NOVA", "report_alignment_post_raw": -0.3216783003497423, "report_alignment_post_std": -0.10607410488858504, "report_alignment_pre": -0.1006975094255698, "report_followed_first_option": 1, "report_raw": "NOVA (RIGHT) is", "rival_self": {"I_left": 8.708984375, "I_right": 4.974609375, "dominance": 0.27290891525415867, "ordinary_acc": 1.0, "total_sensitivity": 13.68359375}, "seed": 5, "self_raw": {"I_left": 9.966796875, "I_right": 5.115234375, "dominance": 0.3216783003497423, "ordinary_acc": 1.0, "total_sensitivity": 15.08203125}, "self_std": {"I_left": 8.482421875, "I_right": 6.85546875, "dominance": 0.10607410488858504, "ordinary_acc": 1.0, "total_sensitivity": 15.337890625}, "self_vs_imperative": -0.07860912467189593, "self_vs_model": -0.046130525985330746, "self_vs_other": 0.02108685488777412, "self_vs_procedure": -0.04227783718888552, "self_vs_question": 0.10882733374546566, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 8.5302734375, "I_right": 9.9892578125, "dominance": -0.07878084366844632, "ordinary_acc": 1.0, "total_sensitivity": 18.51953125}, "code_left": "DELTA", "code_right": "GAMMA", "first_option": "DELTA", "report": null, "report_alias": null, "report_raw": "Based on the provided examples,", "seed": 6, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 8.87109375, "I_right": 9.5625, "dominance": -0.0375079445640954, "ordinary_acc": 1.0, "total_sensitivity": 18.43359375}, "code_left": "EMBER", "code_right": "QUARTZ", "first_option": "EMBER", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 7, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 8.5126953125, "I_right": 9.4931640625, "dominance": -0.05445275757893352, "ordinary_acc": 1.0, "total_sensitivity": 18.005859375}, "code_left": "MICA", "code_right": "RUNE", "first_option": "MICA", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 8, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 9.658203125, "I_right": 10.15625, "dominance": -0.02513553347763498, "ordinary_acc": 1.0, "total_sensitivity": 19.814453125}, "code_left": "VELVET", "code_right": "ORBIT", "first_option": "VELVET", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 9, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.541015625, "I_right": 11.15625, "dominance": -0.028355386216764988, "ordinary_acc": 1.0, "total_sensitivity": 21.697265625}, "code_left": "BETA", "code_right": "ALPHA", "first_option": "BETA", "report": null, "report_alias": null, "report_raw": "Based on the given examples,", "seed": 10, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 7.818359375, "I_right": 10.140625, "dominance": -0.12930940008630637, "ordinary_acc": 1.0, "total_sensitivity": 17.958984375}, "code_left": "VELVET", "code_right": "ORBIT", "first_option": "VELVET", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 11, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 7.818359375, "I_right": 10.140625, "dominance": -0.12930940008630637, "ordinary_acc": 1.0, "total_sensitivity": 17.958984375}, "code_left": "VELVET", "code_right": "ORBIT", "first_option": "VELVET", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 12, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 8.923828125, "I_right": 9.994140625, "dominance": -0.05657649917745534, "ordinary_acc": 1.0, "total_sensitivity": 18.91796875}, "code_left": "SAGE", "code_right": "NOVA", "current_model": {"I_left": 8.453125, "I_right": 10.654296875, "dominance": -0.11519983042192444, "ordinary_acc": 1.0, "total_sensitivity": 19.107421875}, "delta_natural": 0.07834777008812224, "delta_std": 0.038151313885056416, "first_option": "NOVA", "forced_left": {"I_left": 7.7578125, "I_right": 8.578125, "dominance": -0.05021520496052308, "ordinary_acc": 1.0, "total_sensitivity": 16.3359375}, "forced_left_minus_right": 0.04451260810198868, "forced_right": {"I_left": 8.25, "I_right": 9.9765625, "dominance": -0.09472781306251175, "ordinary_acc": 1.0, "total_sensitivity": 18.2265625}, "imperative": {"I_left": 7.47265625, "I_right": 9.19921875, "dominance": -0.10356138085480002, "ordinary_acc": 1.0, "total_sensitivity": 16.671875}, "natural_vs_std": 0.04019645620306582, "other": {"I_left": 7.107421875, "I_right": 9.41796875, "dominance": -0.13981797995664746, "ordinary_acc": 1.0, "total_sensitivity": 16.525390625}, "procedure": {"I_left": 7.71484375, "I_right": 9.14453125, "dominance": -0.08480073639736133, "ordinary_acc": 1.0, "total_sensitivity": 16.859375}, "question_control": {"I_left": 7.396484375, "I_right": 8.599609375, "dominance": -0.07521367051167287, "ordinary_acc": 1.0, "total_sensitivity": 15.99609375}, "report": "RIGHT", "report_alias": "NOVA", "report_alignment_post_raw": 0.13492426926557757, "report_alignment_post_std": 0.09472781306251175, "report_alignment_pre": 0.05657649917745534, "report_followed_first_option": 1, "report_raw": "NOVA (RIGHT) is", "rival_self": {"I_left": 7.7578125, "I_right": 8.578125, "dominance": -0.05021520496052308, "ordinary_acc": 1.0, "total_sensitivity": 16.3359375}, "seed": 13, "self_raw": {"I_left": 7.36328125, "I_right": 9.66015625, "dominance": -0.13492426926557757, "ordinary_acc": 1.0, "total_sensitivity": 17.0234375}, "self_std": {"I_left": 8.25, "I_right": 9.9765625, "dominance": -0.09472781306251175, "ordinary_acc": 1.0, "total_sensitivity": 18.2265625}, "self_vs_imperative": -0.008833567792288263, "self_vs_model": -0.02047201735941269, "self_vs_other": -0.04509016689413571, "self_vs_procedure": 0.009927076665150428, "self_vs_question": 0.059710598753904706, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 11.6396484375, "I_right": 9.4990234375, "dominance": 0.10126581799426232, "ordinary_acc": 1.0, "total_sensitivity": 21.138671875}, "code_left": "GAMMA", "code_right": "DELTA", "first_option": "GAMMA", "report": null, "report_alias": null, "report_raw": "Based on the given examples,", "seed": 14, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 9.8701171875, "I_right": 10.9482421875, "dominance": -0.05178721957828535, "ordinary_acc": 1.0, "total_sensitivity": 20.818359375}, "code_left": "RUNE", "code_right": "MICA", "first_option": "MICA", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 15, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.990234375, "I_right": 10.568359375, "dominance": 0.019568761549265633, "ordinary_acc": 1.0, "total_sensitivity": 21.55859375}, "code_left": "QUARTZ", "code_right": "EMBER", "first_option": "QUARTZ", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 16, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.17578125, "I_right": 8.533203125, "dominance": 0.08779621620715494, "ordinary_acc": 1.0, "total_sensitivity": 18.708984375}, "code_left": "PLUM", "code_right": "CEDAR", "first_option": "PLUM", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 17, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 12.4599609375, "I_right": 11.4091796875, "dominance": 0.04402258223225905, "ordinary_acc": 1.0, "total_sensitivity": 23.869140625}, "code_left": "KAPPA", "code_right": "SIGMA", "first_option": "KAPPA", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 18, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 11.734375, "I_right": 10.53515625, "dominance": 0.05385019930088563, "ordinary_acc": 1.0, "total_sensitivity": 22.26953125}, "code_left": "ALPHA", "code_right": "BETA", "first_option": "BETA", "report": null, "report_alias": null, "report_raw": "Based on the given examples,", "seed": 19, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 11.048828125, "I_right": 9.501953125, "dominance": 0.07527085739035554, "ordinary_acc": 1.0, "total_sensitivity": 20.55078125}, "code_left": "SIGMA", "code_right": "KAPPA", "first_option": "KAPPA", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 20, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 12.7392578125, "I_right": 11.2900390625, "dominance": 0.06031049086572614, "ordinary_acc": 1.0, "total_sensitivity": 24.029296875}, "code_left": "SIGMA", "code_right": "KAPPA", "first_option": "SIGMA", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 21, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 11.6396484375, "I_right": 9.4990234375, "dominance": 0.10126581799426232, "ordinary_acc": 1.0, "total_sensitivity": 21.138671875}, "code_left": "KAPPA", "code_right": "SIGMA", "first_option": "SIGMA", "report": null, "report_alias": null, "report_raw": "Based on the given examples,", "seed": 22, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 9.4296875, "I_right": 7.8515625, "dominance": 0.09132006704838672, "ordinary_acc": 1.0, "total_sensitivity": 17.28125}, "code_left": "NOVA", "code_right": "SAGE", "first_option": "SAGE", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 23, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.8251953125, "I_right": 10.1103515625, "dominance": 0.0341449745795105, "ordinary_acc": 1.0, "total_sensitivity": 20.935546875}, "code_left": "CEDAR", "code_right": "PLUM", "first_option": "PLUM", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 24, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 11.734375, "I_right": 10.53515625, "dominance": 0.05385019930088563, "ordinary_acc": 1.0, "total_sensitivity": 22.26953125}, "code_left": "CEDAR", "code_right": "PLUM", "first_option": "PLUM", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 25, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 9.658203125, "I_right": 10.15625, "dominance": -0.02513553347763498, "ordinary_acc": 1.0, "total_sensitivity": 19.814453125}, "code_left": "RUNE", "code_right": "MICA", "first_option": "RUNE", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 26, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.2353515625, "I_right": 10.3525390625, "dominance": -0.005692059300414157, "ordinary_acc": 1.0, "total_sensitivity": 20.587890625}, "code_left": "VELVET", "code_right": "ORBIT", "first_option": "VELVET", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 27, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.0751953125, "I_right": 10.7080078125, "dominance": -0.030448264675358376, "ordinary_acc": 1.0, "total_sensitivity": 20.783203125}, "code_left": "GAMMA", "code_right": "DELTA", "first_option": "DELTA", "report": null, "report_alias": null, "report_raw": "Based on the provided examples,", "seed": 28, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.8564453125, "I_right": 10.3056640625, "dominance": 0.026026763883183836, "ordinary_acc": 1.0, "total_sensitivity": 21.162109375}, "code_left": "DELTA", "code_right": "GAMMA", "first_option": "DELTA", "report": null, "report_alias": null, "report_raw": "Based on the provided examples,", "seed": 29, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.814453125, "I_right": 10.302734375, "dominance": 0.02423233329569417, "ordinary_acc": 1.0, "total_sensitivity": 21.1171875}, "code_left": "NOVA", "code_right": "SAGE", "first_option": "SAGE", "report": null, "report_alias": null, "report_raw": "Based on the given examples,", "seed": 30, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 11.6396484375, "I_right": 9.4990234375, "dominance": 0.10126581799426232, "ordinary_acc": 1.0, "total_sensitivity": 21.138671875}, "code_left": "BETA", "code_right": "ALPHA", "first_option": "ALPHA", "report": null, "report_alias": null, "report_raw": "Based on the given examples,", "seed": 31, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 12.2236328125, "I_right": 11.4306640625, "dominance": 0.03352324191529189, "ordinary_acc": 1.0, "total_sensitivity": 23.654296875}, "code_left": "GAMMA", "code_right": "DELTA", "first_option": "DELTA", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 32, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 11.1513671875, "I_right": 10.1318359375, "dominance": 0.04790309034354572, "ordinary_acc": 1.0, "total_sensitivity": 21.283203125}, "code_left": "KAPPA", "code_right": "SIGMA", "first_option": "KAPPA", "report": null, "report_alias": null, "report_raw": "Based on the given examples,", "seed": 33, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 9.7119140625, "I_right": 9.8974609375, "dominance": -0.009462150911890312, "ordinary_acc": 1.0, "total_sensitivity": 19.609375}, "code_left": "EMBER", "code_right": "QUARTZ", "first_option": "QUARTZ", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 34, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 9.3779296875, "I_right": 10.4873046875, "dominance": -0.055845046839773475, "ordinary_acc": 1.0, "total_sensitivity": 19.865234375}, "code_left": "EMBER", "code_right": "QUARTZ", "first_option": "EMBER", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 35, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 11.095703125, "I_right": 11.310546875, "dominance": -0.009588563030914899, "ordinary_acc": 1.0, "total_sensitivity": 22.40625}, "code_left": "EMBER", "code_right": "QUARTZ", "first_option": "QUARTZ", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 36, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 11.5263671875, "I_right": 11.0732421875, "dominance": 0.020050124426094225, "ordinary_acc": 1.0, "total_sensitivity": 22.599609375}, "code_left": "GAMMA", "code_right": "DELTA", "first_option": "GAMMA", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 37, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 9.5537109375, "I_right": 9.4501953125, "dominance": 0.005447070628067815, "ordinary_acc": 1.0, "total_sensitivity": 19.00390625}, "code_left": "PLUM", "code_right": "CEDAR", "first_option": "CEDAR", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 38, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 9.5537109375, "I_right": 9.4501953125, "dominance": 0.005447070628067815, "ordinary_acc": 1.0, "total_sensitivity": 19.00390625}, "code_left": "MICA", "code_right": "RUNE", "first_option": "MICA", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 39, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 13.083984375, "I_right": 10.642578125, "dominance": 0.10289759197534021, "ordinary_acc": 1.0, "total_sensitivity": 23.7265625}, "code_left": "ORBIT", "code_right": "VELVET", "first_option": "VELVET", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 40, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 6.591796875, "I_right": 9.21875, "dominance": -0.16615193513652987, "ordinary_acc": 1.0, "total_sensitivity": 15.810546875}, "code_left": "PLUM", "code_right": "CEDAR", "first_option": "CEDAR", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 41, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 9.5537109375, "I_right": 9.4501953125, "dominance": 0.005447070628067815, "ordinary_acc": 1.0, "total_sensitivity": 19.00390625}, "code_left": "GAMMA", "code_right": "DELTA", "first_option": "GAMMA", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 42, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 12.1640625, "I_right": 9.744140625, "dominance": 0.11045733649334435, "ordinary_acc": 1.0, "total_sensitivity": 21.908203125}, "code_left": "BETA", "code_right": "ALPHA", "first_option": "ALPHA", "report": null, "report_alias": null, "report_raw": "Based on the given examples,", "seed": 43, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 11.57421875, "I_right": 10.189453125, "dominance": 0.06362738646888433, "ordinary_acc": 1.0, "total_sensitivity": 21.763671875}, "code_left": "CEDAR", "code_right": "PLUM", "first_option": "PLUM", "report": null, "report_alias": null, "report_raw": "Based on the given examples,", "seed": 44, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.056640625, "I_right": 9.341796875, "dominance": 0.03685058207133528, "ordinary_acc": 1.0, "total_sensitivity": 19.3984375}, "code_left": "SAGE", "code_right": "NOVA", "first_option": "SAGE", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 45, "side_order": "RL"}
+PCA007M2_RECORD {"baseline": {"I_left": 8.400390625, "I_right": 9.73046875, "dominance": -0.07335990115692455, "ordinary_acc": 1.0, "total_sensitivity": 18.130859375}, "code_left": "DELTA", "code_right": "GAMMA", "first_option": "GAMMA", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 46, "side_order": "LR"}
+PCA007M2_RECORD {"baseline": {"I_left": 10.09375, "I_right": 8.478515625, "dominance": 0.08697023403840994, "ordinary_acc": 1.0, "total_sensitivity": 18.572265625}, "code_left": "EMBER", "code_right": "QUARTZ", "first_option": "EMBER", "report": null, "report_alias": null, "report_raw": "Based on the examples provided,", "seed": 47, "side_order": "RL"}
+PCA007M2_SUMMARY {"baseline_ordinary_accuracy": 1.0, "current_model_ordinary_accuracy": 1.0, "families": 48, "follow_first_option_rate": 1.0, "forced_left_ordinary_accuracy": 1.0, "forced_right_ordinary_accuracy": 1.0, "imperative_ordinary_accuracy": 1.0, "mean_abs_baseline_dominance": 0.05974025006582414, "mean_delta_natural": -0.07131651041802513, "mean_delta_std": 0.01638735921102059, "mean_forced_left_minus_right": 0.10567370923378115, "mean_natural_vs_std": -0.08770386962904572, "mean_report_alignment_post_raw": -0.09337701554208237, "mean_report_alignment_post_std": -0.005673145913036644, "mean_report_alignment_pre": -0.022060505124057234, "mean_self_vs_imperative": -0.0437213462320921, "mean_self_vs_model": -0.03330127167237172, "mean_self_vs_other": -0.012001656003180795, "mean_self_vs_procedure": -0.016175380261867545, "mean_self_vs_question": 0.08426896624968519, "mean_total_sensitivity": 20.240926106770832, "model": "mistralai/Mistral-7B-Instruct-v0.3", "other_ordinary_accuracy": 1.0, "procedure_ordinary_accuracy": 1.0, "question_control_ordinary_accuracy": 1.0, "report_left_rate": 0.0, "report_parse_rate": 0.041666666666666664, "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71", "rival_self_ordinary_accuracy": 1.0, "self_raw_ordinary_accuracy": 1.0, "self_std_ordinary_accuracy": 1.0}

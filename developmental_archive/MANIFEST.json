@@ -1,0 +1,351 @@
+{
+  "schema": "mpe.mechanistic_provenance.developmental_archive_manifest.v1.1",
+  "recovery_date": "2026-10-04",
+  "status": "repository_v1.1_supplement",
+  "source": "retained Hugging Face Jobs records",
+  "scope": "PCA-006 through PCA-012 developmental executions",
+  "confirmatory_boundary": "No developmental execution is promoted into the PR-002 preregistered confirmatory endpoint.",
+  "zenodo_v1_0_contains_this_supplement": false,
+  "run_count": 13,
+  "total_parsed_family_records": 672,
+  "runs": [
+    {
+      "job_id": "6aa20b095527934177ebed06",
+      "pca": "PCA-006",
+      "record_marker": "PCA006_RECORD",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "record_count": 48,
+      "path": "developmental_archive/pca-006/6aa20b095527934177ebed06",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-006/6aa20b095527934177ebed06/exact_executed_script.py",
+          "sha256": "63f983ccf34493cd4addb9e9ed10eae97ff71dba2fbaab362a26155aba042afd",
+          "git_blob_sha": "94495267a89b14706b3a0505a5a0039fc88abcf1"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-006/6aa20b095527934177ebed06/raw_job_log.txt",
+          "sha256": "b1a3be03d67ccbfdd0ac615d5684aec2669ea3728684b0767d661284c7610c18",
+          "git_blob_sha": "7408e1be4f08d161a40d1fac2616ee317c0d65ab"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-006/6aa20b095527934177ebed06/family_records.json",
+          "sha256": "a1f8cdbf43f60ae165e7ca7dea741f8aa74c308961cc4b2c6d8709b8650280d5",
+          "git_blob_sha": "5f2d64ed8aadebfdeed52de07ba86313a2c9273b"
+        }
+      }
+    },
+    {
+      "job_id": "6aa217bd21047bf1b0371546",
+      "pca": "PCA-007",
+      "record_marker": "PCA007_RECORD",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "record_count": 48,
+      "path": "developmental_archive/pca-007/6aa217bd21047bf1b0371546",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-007/6aa217bd21047bf1b0371546/exact_executed_script.py",
+          "sha256": "ae4c244b8014825dd1b8bde28c45f1d8f17fb1a844e58f12805ff3b586e6e53e",
+          "git_blob_sha": "ebd8a589298fc1c7c8796ffb8e91565910dbb123"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-007/6aa217bd21047bf1b0371546/raw_job_log.txt",
+          "sha256": "c69ec2daa0aa83a6d5e299ee1727c1ec908665c3b97bd12ca1189c44d979ac85",
+          "git_blob_sha": "713338009ad768c7547c93b10a73a851ef595ea9"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-007/6aa217bd21047bf1b0371546/family_records.json",
+          "sha256": "026bd5c63540ad11edd102bdb12322095ff05a2e73f634a8d5945202768a4f2e",
+          "git_blob_sha": "0760ac71101818eaa0d0331e6932bc3a2f5eb78d"
+        }
+      }
+    },
+    {
+      "job_id": "6aa220e95527934177ebf132",
+      "pca": "PCA-007",
+      "record_marker": "PCA007M2_RECORD",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "record_count": 48,
+      "path": "developmental_archive/pca-007/6aa220e95527934177ebf132",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-007/6aa220e95527934177ebf132/exact_executed_script.py",
+          "sha256": "3fffbce542d8bef8057d835ed6fecd6db5b556e9b12cb8d89d9967a9e2b885a6",
+          "git_blob_sha": "83d0e4fa393d5a03d492d967265ab26137f8daee"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-007/6aa220e95527934177ebf132/raw_job_log.txt",
+          "sha256": "d05dbcf164a6427785e815882cfb24438bfd4f5d142c60b4a2b8cf9247a2fe67",
+          "git_blob_sha": "c34457ec7d79cc17119d7a6f809e9bb555059cfd"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-007/6aa220e95527934177ebf132/family_records.json",
+          "sha256": "8b40a01b804cdda21c54a1e297f496c7dc4f2a446364907ea876d3f84900d0d4",
+          "git_blob_sha": "88a42d093146e8254f46c1b3a70269a0a0ae9bbb"
+        }
+      }
+    },
+    {
+      "job_id": "6aa22d1c5527934177ebf388",
+      "pca": "PCA-008",
+      "record_marker": "PCA008_RECORD",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "record_count": 48,
+      "path": "developmental_archive/pca-008/6aa22d1c5527934177ebf388",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-008/6aa22d1c5527934177ebf388/exact_executed_script.py",
+          "sha256": "a7fa6e29239b2c674afd978e277eea49a0d1ab2ba5268e1af4094a2a8e74ad10",
+          "git_blob_sha": "97d0d51a40953cb590f98becac489dff946587c7"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-008/6aa22d1c5527934177ebf388/raw_job_log.txt",
+          "sha256": "4fb020449ca90961ca61c513613c4ce07f0a7053061628553f59dcff4b0b6f9f",
+          "git_blob_sha": "ccfdeb4b31be2b6a8f8fc132831839a5deba012a"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-008/6aa22d1c5527934177ebf388/family_records.json",
+          "sha256": "6a782fdc3a810d6205c95c0adf1a5cd92488d507cb98519b39e8ac8f42f4b186",
+          "git_blob_sha": "18f3dd48cd5902dd5464166bdaaf86112a2d02e8"
+        }
+      }
+    },
+    {
+      "job_id": "6aa22d4521047bf1b0371750",
+      "pca": "PCA-008",
+      "record_marker": "PCA008_RECORD",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "record_count": 48,
+      "path": "developmental_archive/pca-008/6aa22d4521047bf1b0371750",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-008/6aa22d4521047bf1b0371750/exact_executed_script.py",
+          "sha256": "6e649b4b9b08a2915a54dcf55858269a192a994c465cbc93abac818df4738a38",
+          "git_blob_sha": "5445c20bdf8d7b748fed6168467dfcedae1e8059"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-008/6aa22d4521047bf1b0371750/raw_job_log.txt",
+          "sha256": "6dff936c950f14c763d85c375e767e52467f488dc452d32fdd45cdf08f8ce79d",
+          "git_blob_sha": "ce8a6ff8be29f8ac3f9b663f4ce42f6f8bd98ce5"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-008/6aa22d4521047bf1b0371750/family_records.json",
+          "sha256": "4b25c8ad67eaafa8d707a32f1e948915016bd6f785b66d707efbcb92ec15ab8c",
+          "git_blob_sha": "15e69d094512766fa71ccf958318030aeea7bb3c"
+        }
+      }
+    },
+    {
+      "job_id": "6aa233565527934177ebf4b1",
+      "pca": "PCA-009",
+      "record_marker": "PCA009_RECORD",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "record_count": 48,
+      "path": "developmental_archive/pca-009/6aa233565527934177ebf4b1",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-009/6aa233565527934177ebf4b1/exact_executed_script.py",
+          "sha256": "eb072eef93a7a7908ed984c86c22c17e034ba9a13134de6ca7530d7e1b79e234",
+          "git_blob_sha": "7c29f4e16e5dcb6a55f0e687d4f488d608cad081"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-009/6aa233565527934177ebf4b1/raw_job_log.txt",
+          "sha256": "6c68ea30babb7ce11a0dfafb9f1b1a4e6cfdb643ffe4847dd9ae422bd93b4b1e",
+          "git_blob_sha": "7bed533edb0e94b47e24693a6997f5205ae3f997"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-009/6aa233565527934177ebf4b1/family_records.json",
+          "sha256": "7b55e98d90b0f43f2d602ccd88201e2a32d81c1f0bbb5a9563392e27df14f158",
+          "git_blob_sha": "8cc4ac2359c0370d72033e5130291534f02fbcea"
+        }
+      }
+    },
+    {
+      "job_id": "6aa2337b5527934177ebf4cb",
+      "pca": "PCA-009",
+      "record_marker": "PCA009_RECORD",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "record_count": 48,
+      "path": "developmental_archive/pca-009/6aa2337b5527934177ebf4cb",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-009/6aa2337b5527934177ebf4cb/exact_executed_script.py",
+          "sha256": "4273f82bd36391f515fc0630711bf46c1597889415b464bea7d209579db81a91",
+          "git_blob_sha": "43c059039bad8d1a0cc68c0d419cfbe24814c23e"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-009/6aa2337b5527934177ebf4cb/raw_job_log.txt",
+          "sha256": "33a999f6e85592ce95a886310176fbb687d35802278ce34b9660271255f8b1fa",
+          "git_blob_sha": "4d3cd8b11158e27705a0dbcd2b5f9b85ad73b2a1"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-009/6aa2337b5527934177ebf4cb/family_records.json",
+          "sha256": "310fb0ad8d952fc691646b7f936dfb37787e1cfa41e9e8c25d1ea7af229605bf",
+          "git_blob_sha": "371dddb3f9db51d97783b39e0d5792e31865cf68"
+        }
+      }
+    },
+    {
+      "job_id": "6aa2396c5527934177ebf624",
+      "pca": "PCA-010",
+      "record_marker": "PCA010_RECORD",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "record_count": 48,
+      "path": "developmental_archive/pca-010/6aa2396c5527934177ebf624",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-010/6aa2396c5527934177ebf624/exact_executed_script.py",
+          "sha256": "a66d83fb2d44d02e9f76e4b2a0d44c62a6f4f858d98bb31908c3ec5648ba3536",
+          "git_blob_sha": "b2851333b96c74693aec39eee8fee9112a32cb14"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-010/6aa2396c5527934177ebf624/raw_job_log.txt",
+          "sha256": "f49bfd92a699a438e5e82d7f81d856e455a6b286962d3c1e142960603f4188ca",
+          "git_blob_sha": "33b3a0d547ccaee7a187c4bb4b14874b61a9d9c8"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-010/6aa2396c5527934177ebf624/family_records.json",
+          "sha256": "c4b7add9d07a04ab342cf727f754b185359f882aaaf9bfdb9f0101ee22d78807",
+          "git_blob_sha": "9517caa6b6fc5a4d33ba55be783e3917335eb8f0"
+        }
+      }
+    },
+    {
+      "job_id": "6aa239a321047bf1b03718b2",
+      "pca": "PCA-010",
+      "record_marker": "PCA010_RECORD",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "record_count": 48,
+      "path": "developmental_archive/pca-010/6aa239a321047bf1b03718b2",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-010/6aa239a321047bf1b03718b2/exact_executed_script.py",
+          "sha256": "dc88925b503d779c88f752e7f792edcf286897ab784ff78ec882d639f8068e96",
+          "git_blob_sha": "cb9895a7a3826fdff16af2625bbdef466c6f17f6"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-010/6aa239a321047bf1b03718b2/raw_job_log.txt",
+          "sha256": "b41a22923b2139bd0dfe9bff551fdb9f55c27084e5689038cd1cbca0e1015493",
+          "git_blob_sha": "68f918b431ba80d3d020d024f482207ad963b0a1"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-010/6aa239a321047bf1b03718b2/family_records.json",
+          "sha256": "fc5f82221dcb53d57c0e72f99d8f10c22c087bb4fb5a8b4542f94c1e655433ca",
+          "git_blob_sha": "6868b46bd27dd236d297dd48139e2f9656e235d6"
+        }
+      }
+    },
+    {
+      "job_id": "6aa23f7c5527934177ebf71f",
+      "pca": "PCA-011",
+      "record_marker": "PCA011_RECORD",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "record_count": 48,
+      "path": "developmental_archive/pca-011/6aa23f7c5527934177ebf71f",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-011/6aa23f7c5527934177ebf71f/exact_executed_script.py",
+          "sha256": "8cf2153f85b0612ff4405a578187fb804ede9ae767e800826c7d54bce2c7d2d5",
+          "git_blob_sha": "3faea7f1cdc04c8b851e2374d6736f22e4e1b5b9"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-011/6aa23f7c5527934177ebf71f/raw_job_log.txt",
+          "sha256": "f040756d93beb694971b2f29db2931c4ede59c82a7c327a19a0143cd709c2735",
+          "git_blob_sha": "4a8aac96ec3c7ed78daed080fcd1aabf71bcef5b"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-011/6aa23f7c5527934177ebf71f/family_records.json",
+          "sha256": "0402c392cb8d7ac4920d1a2a033e1ae85f59b2e6c9a72e9fa6627c6481b9f6b7",
+          "git_blob_sha": "b4c8466592fb4c56b4c4c26f48cb4c2230805279"
+        }
+      }
+    },
+    {
+      "job_id": "6aa23faf21047bf1b0371942",
+      "pca": "PCA-011",
+      "record_marker": "PCA011_RECORD",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "record_count": 48,
+      "path": "developmental_archive/pca-011/6aa23faf21047bf1b0371942",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-011/6aa23faf21047bf1b0371942/exact_executed_script.py",
+          "sha256": "1b56cda4f7477893176ce374544373cb688ff406c8174957ee02ab40a986fe07",
+          "git_blob_sha": "76f50f9a5dc968c83d997d37e09af5afbe023809"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-011/6aa23faf21047bf1b0371942/raw_job_log.txt",
+          "sha256": "32c84407ba948c85be767970a9c9acd5f5a986871214dae03956c454a0c292de",
+          "git_blob_sha": "7fafdc079aff747bd27a296e8d3ae036411b7d52"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-011/6aa23faf21047bf1b0371942/family_records.json",
+          "sha256": "8171d6104f374f9ebff116f6486e5550e3ec8e178558ada92ae1fa4d80dfc8e8",
+          "git_blob_sha": "d5e34b3808959cedb4c5e91a39e71007f7831ffd"
+        }
+      }
+    },
+    {
+      "job_id": "6aa244f55527934177ebf890",
+      "pca": "PCA-012",
+      "record_marker": "PCA012_RECORD",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "record_count": 96,
+      "path": "developmental_archive/pca-012/6aa244f55527934177ebf890",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-012/6aa244f55527934177ebf890/exact_executed_script.py",
+          "sha256": "233dadbda3957738e2939d67f1da71ebabd884d2440cd5883cfd7c838c7ffbe7",
+          "git_blob_sha": "eab7dc3fa0f2ca668867520901621fe12e0963fd"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-012/6aa244f55527934177ebf890/raw_job_log.txt",
+          "sha256": "5956c1ad5f91ebaa90c9c86dbb3ee0f240f80271a4c6ac2b4832f2a2c9ea6276",
+          "git_blob_sha": "cc144bbcef6c51947374718b01a4d09880b9772d"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-012/6aa244f55527934177ebf890/family_records.json",
+          "sha256": "34e0128e14591a2dfbaa1bb072aa7fdf8b96902b5b667b1e65b7396599651a95",
+          "git_blob_sha": "3fa67ce82d13c760548473982aa633fbee14df80"
+        }
+      }
+    },
+    {
+      "job_id": "6aa2451421047bf1b0371a13",
+      "pca": "PCA-012",
+      "record_marker": "PCA012_RECORD",
+      "model": "mistralai/Mistral-7B-Instruct-v0.3",
+      "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "record_count": 48,
+      "path": "developmental_archive/pca-012/6aa2451421047bf1b0371a13",
+      "files": {
+        "exact_executed_script": {
+          "path": "developmental_archive/pca-012/6aa2451421047bf1b0371a13/exact_executed_script.py",
+          "sha256": "4ad1f14dd28a14823c9cefe0586e55f4d098b171b99144e2702f5ab8c0ce1ab4",
+          "git_blob_sha": "59925705e1bf5756a564e1ab4f69992ea905c771"
+        },
+        "raw_job_log": {
+          "path": "developmental_archive/pca-012/6aa2451421047bf1b0371a13/raw_job_log.txt",
+          "sha256": "31d6c0f8ee94b5ce08db932e71f14ae846d67f72e5fe80ddd145bfd212b83808",
+          "git_blob_sha": "cdc461e78c2ab6eeb6dce6ff30dab075e4af4089"
+        },
+        "family_records": {
+          "path": "developmental_archive/pca-012/6aa2451421047bf1b0371a13/family_records.json",
+          "sha256": "1139e3a0a590484e76d0ecfc1d6ca27a4174f31b48c35f95f64a4490465e0e65",
+          "git_blob_sha": "c4eec632a23eb8edbc81fc7d6ba221ef8726b393"
+        }
+      }
+    }
+  ]
+}

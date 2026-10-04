@@ -33,7 +33,13 @@ The original Phi execution-log hash remains `d3f9ab17d3a928344772257fd11d88fded0
 
 Phi-3.5-mini-instruct met its individual preregistered PR-002 primary endpoint. The stronger preregistered cross-architecture gate was not met because Qwen and Mistral failed the preregistered calibration gate. Public release of the recovered family table does not promote any post hoc analysis into the confirmatory endpoint.
 
-Earlier developmental PCA experiments do not all have equivalent family-level execution artifacts; that historical limitation remains disclosed.
+The retained developmental PCA-006 through PCA-012 execution artifacts were subsequently recovered on 2026-10-04 and are preserved under `developmental_archive/` in the GitHub repository. This repository supplement does not alter the preregistered PR-002 endpoint and is not part of the frozen Zenodo v1.0 payload.
+
+## Repository v1.1 developmental recovery
+
+The later repository supplement preserves 13 retained Hugging Face Jobs executions spanning PCA-006 through PCA-012. Each archived execution includes the exact submitted script, retained raw log, parsed family-level records, model revision/job provenance, and SHA-256 anchors. These materials are historical developmental evidence only and do not retroactively become confirmatory results.
+
+See `developmental_archive/README.md` and `developmental_archive/MANIFEST.json`.
 
 ## Citation
 

@@ -1,0 +1,3136 @@
+{
+  "schema": "mpe.mechanistic_provenance.developmental_recovery.v1",
+  "recovery_date": "2026-10-04",
+  "classification": "developmental_nonconfirmatory",
+  "job_id": "6aa2451421047bf1b0371a13",
+  "pca": "PCA-012",
+  "record_marker": "PCA012_RECORD",
+  "record_count": 48,
+  "model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "job_created_at": "2026-09-10T05:50:12.800Z",
+  "job_finished_at": "2026-09-10T05:56:39.588Z",
+  "job_status": "COMPLETED",
+  "hardware_flavor": "a10g-small",
+  "source": "retained Hugging Face Jobs execution record",
+  "summary_records": [
+    {
+      "marker": "PCA012_SUMMARY",
+      "log_line": 205,
+      "summary": {
+        "DIRECT": {
+          "baseline_accuracy": 1,
+          "mean_delta_answer": 0.0044717115722542515,
+          "mean_delta_question": -0.04220789925650742,
+          "mean_delta_total": -0.037736187684253165,
+          "mean_forced_contrast": 0.01010127805514212,
+          "mean_post_alignment": -0.03982192483396816,
+          "mean_pre_alignment": -0.002085737149714989,
+          "n": 48,
+          "post_accuracy": 1,
+          "report_left_rate": 0.5416666666666666
+        },
+        "calibration": {
+          "DIRECT": {
+            "eligible": true,
+            "mean_acc": 1,
+            "mean_sensitivity": 24.508138020833332,
+            "min_acc": 1
+          },
+          "MOD3": {
+            "eligible": false,
+            "mean_acc": 0.7268518518518517,
+            "mean_sensitivity": 7.036313657407406,
+            "min_acc": 0.4444444444444444
+          },
+          "XOR": {
+            "eligible": false,
+            "mean_acc": 0.9583333333333334,
+            "mean_sensitivity": 13.783203125,
+            "min_acc": 0.75
+          }
+        },
+        "eligible_tasks": [
+          "DIRECT"
+        ],
+        "model": "mistralai/Mistral-7B-Instruct-v0.3",
+        "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+        "rows": 48
+      }
+    }
+  ],
+  "family_records": [
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 157,
+      "record": {
+        "base": {
+          "I_left": 12.8876953125,
+          "I_right": 14.0166015625,
+          "dominance": -0.041960071035676484,
+          "ordinary_acc": 1,
+          "total_sensitivity": 26.904296875
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.024493846961410215,
+        "delta_question": -0.2183890136713499,
+        "delta_total": -0.1938951667099397,
+        "forced_contrast": -0.0029546609075535024,
+        "forced_left": {
+          "I_left": 13.4814453125,
+          "I_right": 9.9853515625,
+          "dominance": 0.14898043476670972,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.466796875
+        },
+        "forced_right": {
+          "I_left": 13.3125,
+          "I_right": 9.80078125,
+          "dominance": 0.15193509567426322,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.11328125
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": -0.15193509567426322,
+        "post_report": {
+          "I_left": 13.3125,
+          "I_right": 9.80078125,
+          "dominance": 0.15193509567426322,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.11328125
+        },
+        "pre_alignment": 0.041960071035676484,
+        "question_control": {
+          "I_left": 12.984375,
+          "I_right": 9.08984375,
+          "dominance": 0.17642894263567344,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.07421875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 3.0390625,
+          "logit_AminusB": 3.0390625,
+          "pref_left_logit": -3.0390625,
+          "side": "RIGHT"
+        },
+        "seed": 10000,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 158,
+      "record": {
+        "base": {
+          "I_left": 11.630859375,
+          "I_right": 14.212890625,
+          "dominance": -0.09990930689589139,
+          "ordinary_acc": 1,
+          "total_sensitivity": 25.84375
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.022328755599251987,
+        "delta_question": 0.30798246611377394,
+        "delta_total": 0.28565371051452193,
+        "forced_contrast": 0.08514405082838074,
+        "forced_left": {
+          "I_left": 13.7275390625,
+          "I_right": 9.4267578125,
+          "dominance": 0.18574440361863057,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.154296875
+        },
+        "forced_right": {
+          "I_left": 13.248046875,
+          "I_right": 10.826171875,
+          "dominance": 0.10060035279024983,
+          "ordinary_acc": 1,
+          "total_sensitivity": 24.07421875
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": 0.18574440361863057,
+        "post_report": {
+          "I_left": 13.7275390625,
+          "I_right": 9.4267578125,
+          "dominance": 0.18574440361863057,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.154296875
+        },
+        "pre_alignment": -0.09990930689589139,
+        "question_control": {
+          "I_left": 13.4150390625,
+          "I_right": 8.7939453125,
+          "dominance": 0.20807315921788255,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.208984375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 2.75,
+          "logit_AminusB": 2.75,
+          "pref_left_logit": 2.75,
+          "side": "LEFT"
+        },
+        "seed": 10001,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 159,
+      "record": {
+        "base": {
+          "I_left": 11.408203125,
+          "I_right": 11.314453125,
+          "dominance": 0.0041258378792823625,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.72265625
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": 0.042446496995351274,
+        "delta_question": 0.24526013154395432,
+        "delta_total": 0.2877066285393056,
+        "forced_contrast": 0.06245333933343078,
+        "forced_left": {
+          "I_left": 13.314453125,
+          "I_right": 7.298828125,
+          "dominance": 0.29183246641858795,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.61328125
+        },
+        "forced_right": {
+          "I_left": 13.419921875,
+          "I_right": 8.412109375,
+          "dominance": 0.22937912708515718,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.83203125
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": 0.29183246641858795,
+        "post_report": {
+          "I_left": 13.314453125,
+          "I_right": 7.298828125,
+          "dominance": 0.29183246641858795,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.61328125
+        },
+        "pre_alignment": 0.0041258378792823625,
+        "question_control": {
+          "I_left": 12.916015625,
+          "I_right": 7.759765625,
+          "dominance": 0.24938596942323668,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.67578125
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.8515625,
+          "logit_AminusB": 0.8515625,
+          "pref_left_logit": 0.8515625,
+          "side": "LEFT"
+        },
+        "seed": 10002,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 160,
+      "record": {
+        "base": {
+          "I_left": 12.865234375,
+          "I_right": 10.826171875,
+          "dominance": 0.08606759735642128,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.69140625
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.03933696801979374,
+        "delta_question": -0.1068699737818655,
+        "delta_total": -0.14620694180165922,
+        "forced_contrast": 0.014891620126001301,
+        "forced_left": {
+          "I_left": 10.01171875,
+          "I_right": 11.29296875,
+          "dominance": -0.060139344445237955,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.3046875
+        },
+        "forced_right": {
+          "I_left": 10.208984375,
+          "I_right": 11.865234375,
+          "dominance": -0.07503096457123926,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.07421875
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.060139344445237955,
+        "post_report": {
+          "I_left": 10.01171875,
+          "I_right": 11.29296875,
+          "dominance": -0.060139344445237955,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.3046875
+        },
+        "pre_alignment": 0.08606759735642128,
+        "question_control": {
+          "I_left": 10.296875,
+          "I_right": 10.734375,
+          "dominance": -0.020802376425444212,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.03125
+        },
+        "report": {
+          "code": "A",
+          "confidence": 1.171875,
+          "logit_AminusB": 1.171875,
+          "pref_left_logit": 1.171875,
+          "side": "LEFT"
+        },
+        "seed": 10003,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 161,
+      "record": {
+        "base": {
+          "I_left": 12.6904296875,
+          "I_right": 11.4951171875,
+          "dominance": 0.04942259345034581,
+          "ordinary_acc": 1,
+          "total_sensitivity": 24.185546875
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.04237847611860894,
+        "delta_question": -0.014875203793452633,
+        "delta_total": 0.02750327232515631,
+        "forced_contrast": -0.08242476006830103,
+        "forced_left": {
+          "I_left": 9.947265625,
+          "I_right": 11.228515625,
+          "dominance": -0.060505438943111535,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.17578125
+        },
+        "forced_right": {
+          "I_left": 10.8359375,
+          "I_right": 10.37109375,
+          "dominance": 0.0219193211251895,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.20703125
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": -0.0219193211251895,
+        "post_report": {
+          "I_left": 10.8359375,
+          "I_right": 10.37109375,
+          "dominance": 0.0219193211251895,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.20703125
+        },
+        "pre_alignment": -0.04942259345034581,
+        "question_control": {
+          "I_left": 11.056640625,
+          "I_right": 9.720703125,
+          "dominance": 0.06429779724379844,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.77734375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 3.140625,
+          "logit_AminusB": 3.140625,
+          "pref_left_logit": -3.140625,
+          "side": "RIGHT"
+        },
+        "seed": 10004,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 162,
+      "record": {
+        "base": {
+          "I_left": 12.7626953125,
+          "I_right": 14.3134765625,
+          "dominance": -0.057274758037605414,
+          "ordinary_acc": 1,
+          "total_sensitivity": 27.076171875
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": 0.004931709441504839,
+        "delta_question": 0.19628655088660635,
+        "delta_total": 0.2012182603281112,
+        "forced_contrast": 0.06378593108563092,
+        "forced_left": {
+          "I_left": 12.33984375,
+          "I_right": 9.234375,
+          "dominance": 0.14394350229050576,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.57421875
+        },
+        "forced_right": {
+          "I_left": 12.3173828125,
+          "I_right": 10.4892578125,
+          "dominance": 0.08015757120487484,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.806640625
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": 0.14394350229050576,
+        "post_report": {
+          "I_left": 12.33984375,
+          "I_right": 9.234375,
+          "dominance": 0.14394350229050576,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.57421875
+        },
+        "pre_alignment": -0.057274758037605414,
+        "question_control": {
+          "I_left": 12.06640625,
+          "I_right": 9.12109375,
+          "dominance": 0.13901179284900092,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.1875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 1.0078125,
+          "logit_AminusB": 1.0078125,
+          "pref_left_logit": 1.0078125,
+          "side": "LEFT"
+        },
+        "seed": 10005,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 163,
+      "record": {
+        "base": {
+          "I_left": 12.9609375,
+          "I_right": 13.8515625,
+          "dominance": -0.03321678197792888,
+          "ordinary_acc": 1,
+          "total_sensitivity": 26.8125
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.037792126554939104,
+        "delta_question": -0.22819240066676308,
+        "delta_total": -0.19040027411182397,
+        "forced_contrast": -0.0008328418380417757,
+        "forced_left": {
+          "I_left": 12.9716796875,
+          "I_right": 9.4638671875,
+          "dominance": 0.15635065029585332,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.435546875
+        },
+        "forced_right": {
+          "I_left": 12.7109375,
+          "I_right": 9.2578125,
+          "dominance": 0.1571834921338951,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.96875
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": -0.1571834921338951,
+        "post_report": {
+          "I_left": 12.7109375,
+          "I_right": 9.2578125,
+          "dominance": 0.1571834921338951,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.96875
+        },
+        "pre_alignment": 0.03321678197792888,
+        "question_control": {
+          "I_left": 12.44921875,
+          "I_right": 8.38671875,
+          "dominance": 0.1949756186888342,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.8359375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 2.953125,
+          "logit_AminusB": 2.953125,
+          "pref_left_logit": -2.953125,
+          "side": "RIGHT"
+        },
+        "seed": 10006,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 164,
+      "record": {
+        "base": {
+          "I_left": 12.1484375,
+          "I_right": 10.578125,
+          "dominance": 0.06909590620684909,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.7265625
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.05294523650885319,
+        "delta_question": -0.33877355551779925,
+        "delta_total": -0.28582831900894606,
+        "forced_contrast": -0.0006140577801971303,
+        "forced_left": {
+          "I_left": 14.20703125,
+          "I_right": 6.7734375,
+          "dominance": 0.354310167435598,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.98046875
+        },
+        "forced_right": {
+          "I_left": 13.97265625,
+          "I_right": 6.65234375,
+          "dominance": 0.35492422521579514,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.625
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.35492422521579514,
+        "post_report": {
+          "I_left": 13.97265625,
+          "I_right": 6.65234375,
+          "dominance": 0.35492422521579514,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.625
+        },
+        "pre_alignment": -0.06909590620684909,
+        "question_control": {
+          "I_left": 14.326171875,
+          "I_right": 6.025390625,
+          "dominance": 0.40786946172464833,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.3515625
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.9921875,
+          "logit_AminusB": 0.9921875,
+          "pref_left_logit": -0.9921875,
+          "side": "RIGHT"
+        },
+        "seed": 10007,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 165,
+      "record": {
+        "base": {
+          "I_left": 11.53515625,
+          "I_right": 11.34375,
+          "dominance": 0.008366057343057762,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.87890625
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.012962351804551034,
+        "delta_question": 0.07736470857049295,
+        "delta_total": 0.09032706037504398,
+        "forced_contrast": -0.07283110322864636,
+        "forced_left": {
+          "I_left": 8.45703125,
+          "I_right": 11.5546875,
+          "dominance": -0.15479210626063258,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.01171875
+        },
+        "forced_right": {
+          "I_left": 9.47265625,
+          "I_right": 11.1640625,
+          "dominance": -0.08196100303198622,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.63671875
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": 0.08196100303198622,
+        "post_report": {
+          "I_left": 9.47265625,
+          "I_right": 11.1640625,
+          "dominance": -0.08196100303198622,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.63671875
+        },
+        "pre_alignment": -0.008366057343057762,
+        "question_control": {
+          "I_left": 9.4609375,
+          "I_right": 10.86328125,
+          "dominance": -0.06899865122743519,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.32421875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 3.8046875,
+          "logit_AminusB": 3.8046875,
+          "pref_left_logit": -3.8046875,
+          "side": "RIGHT"
+        },
+        "seed": 10008,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 166,
+      "record": {
+        "base": {
+          "I_left": 11.650390625,
+          "I_right": 11.923828125,
+          "dominance": -0.011599005307482127,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.57421875
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.05175333034798729,
+        "delta_question": -0.29538471899220137,
+        "delta_total": -0.34713804934018866,
+        "forced_contrast": -0.07456472389444013,
+        "forced_left": {
+          "I_left": 6.90234375,
+          "I_right": 14.625,
+          "dominance": -0.3587370546476708,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.52734375
+        },
+        "forced_right": {
+          "I_left": 7.9013671875,
+          "I_right": 14.1748046875,
+          "dominance": -0.2841723307532307,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.076171875
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": -0.3587370546476708,
+        "post_report": {
+          "I_left": 6.90234375,
+          "I_right": 14.625,
+          "dominance": -0.3587370546476708,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.52734375
+        },
+        "pre_alignment": -0.011599005307482127,
+        "question_control": {
+          "I_left": 7.2001953125,
+          "I_right": 13.5791015625,
+          "dominance": -0.3069837242996835,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.779296875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 3.8046875,
+          "logit_AminusB": 3.8046875,
+          "pref_left_logit": 3.8046875,
+          "side": "LEFT"
+        },
+        "seed": 10009,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 167,
+      "record": {
+        "base": {
+          "I_left": 8.990234375,
+          "I_right": 13.724609375,
+          "dominance": -0.2084264740572352,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.71484375
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.05938660329376372,
+        "delta_question": -0.5038853597369679,
+        "delta_total": -0.4444987564432042,
+        "forced_contrast": 0.003591079971546396,
+        "forced_left": {
+          "I_left": 13.234375,
+          "I_right": 8.1171875,
+          "dominance": 0.2396633623575154,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.3515625
+        },
+        "forced_right": {
+          "I_left": 12.95703125,
+          "I_right": 8.0078125,
+          "dominance": 0.236072282385969,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.96484375
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.236072282385969,
+        "post_report": {
+          "I_left": 12.95703125,
+          "I_right": 8.0078125,
+          "dominance": 0.236072282385969,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.96484375
+        },
+        "pre_alignment": 0.2084264740572352,
+        "question_control": {
+          "I_left": 13.205078125,
+          "I_right": 7.181640625,
+          "dominance": 0.2954588856797327,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.38671875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 1.5234375,
+          "logit_AminusB": 1.5234375,
+          "pref_left_logit": -1.5234375,
+          "side": "RIGHT"
+        },
+        "seed": 10010,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 168,
+      "record": {
+        "base": {
+          "I_left": 9.7451171875,
+          "I_right": 14.0888671875,
+          "dominance": -0.18225025868129702,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.833984375
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": -0.06560027623678748,
+        "delta_question": -0.1925677184746959,
+        "delta_total": -0.25816799471148333,
+        "forced_contrast": -0.012176486988718538,
+        "forced_left": {
+          "I_left": 10.984375,
+          "I_right": 9.66796875,
+          "dominance": 0.0637412490414678,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.65234375
+        },
+        "forced_right": {
+          "I_left": 10.93359375,
+          "I_right": 9.390625,
+          "dominance": 0.07591773603018634,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.32421875
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.07591773603018634,
+        "post_report": {
+          "I_left": 10.93359375,
+          "I_right": 9.390625,
+          "dominance": 0.07591773603018634,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.32421875
+        },
+        "pre_alignment": 0.18225025868129702,
+        "question_control": {
+          "I_left": 9.9453125,
+          "I_right": 9.7421875,
+          "dominance": 0.010317459793398867,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.6875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 1.2890625,
+          "logit_AminusB": 1.2890625,
+          "pref_left_logit": -1.2890625,
+          "side": "RIGHT"
+        },
+        "seed": 10011,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 169,
+      "record": {
+        "base": {
+          "I_left": 11.611328125,
+          "I_right": 13.841796875,
+          "dominance": -0.08763044468486895,
+          "ordinary_acc": 1,
+          "total_sensitivity": 25.453125
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.026383155376765333,
+        "delta_question": -0.2330277108105684,
+        "delta_total": -0.2594108661873337,
+        "forced_contrast": -0.01673517559617438,
+        "forced_left": {
+          "I_left": 6.2177734375,
+          "I_right": 12.8271484375,
+          "dominance": -0.3470413108722027,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.044921875
+        },
+        "forced_right": {
+          "I_left": 6.9853515625,
+          "I_right": 13.8759765625,
+          "dominance": -0.3303061352760283,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.861328125
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.3470413108722027,
+        "post_report": {
+          "I_left": 6.2177734375,
+          "I_right": 12.8271484375,
+          "dominance": -0.3470413108722027,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.044921875
+        },
+        "pre_alignment": -0.08763044468486895,
+        "question_control": {
+          "I_left": 6.6123046875,
+          "I_right": 12.8544921875,
+          "dominance": -0.32065815549543736,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.466796875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.5,
+          "logit_AminusB": 0.5,
+          "pref_left_logit": 0.5,
+          "side": "LEFT"
+        },
+        "seed": 10012,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 170,
+      "record": {
+        "base": {
+          "I_left": 11.1591796875,
+          "I_right": 11.4052734375,
+          "dominance": -0.010906257631437382,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.564453125
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.026311499544606806,
+        "delta_question": -0.03339367910077481,
+        "delta_total": -0.059705178645381614,
+        "forced_contrast": 0.015598818829515054,
+        "forced_left": {
+          "I_left": 9.203125,
+          "I_right": 10.6015625,
+          "dominance": -0.070611436276819,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.8046875
+        },
+        "forced_right": {
+          "I_left": 9.150390625,
+          "I_right": 10.876953125,
+          "dominance": -0.08621025510633405,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.02734375
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": -0.070611436276819,
+        "post_report": {
+          "I_left": 9.203125,
+          "I_right": 10.6015625,
+          "dominance": -0.070611436276819,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.8046875
+        },
+        "pre_alignment": -0.010906257631437382,
+        "question_control": {
+          "I_left": 9.185546875,
+          "I_right": 10.037109375,
+          "dominance": -0.04429993673221219,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.22265625
+        },
+        "report": {
+          "code": "A",
+          "confidence": 3.7421875,
+          "logit_AminusB": 3.7421875,
+          "pref_left_logit": 3.7421875,
+          "side": "LEFT"
+        },
+        "seed": 10013,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 171,
+      "record": {
+        "base": {
+          "I_left": 10.2099609375,
+          "I_right": 13.5302734375,
+          "dominance": -0.1398601339688697,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.740234375
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": 0.03985982484030907,
+        "delta_question": 0.049149539133997194,
+        "delta_total": 0.08900936397430625,
+        "forced_contrast": 0.048335293720819426,
+        "forced_left": {
+          "I_left": 9.478515625,
+          "I_right": 10.494140625,
+          "dominance": -0.05085076999456344,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.97265625
+        },
+        "forced_right": {
+          "I_left": 9.294921875,
+          "I_right": 11.341796875,
+          "dominance": -0.09918606371538287,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.63671875
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.05085076999456344,
+        "post_report": {
+          "I_left": 9.478515625,
+          "I_right": 10.494140625,
+          "dominance": -0.05085076999456344,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.97265625
+        },
+        "pre_alignment": -0.1398601339688697,
+        "question_control": {
+          "I_left": 8.947265625,
+          "I_right": 10.732421875,
+          "dominance": -0.09071059483487251,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.6796875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 1.3046875,
+          "logit_AminusB": 1.3046875,
+          "pref_left_logit": 1.3046875,
+          "side": "LEFT"
+        },
+        "seed": 10014,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 172,
+      "record": {
+        "base": {
+          "I_left": 11.556640625,
+          "I_right": 11.837890625,
+          "dominance": -0.012022039893531105,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.39453125
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": 0.03196948108343586,
+        "delta_question": 0.09621946387641361,
+        "delta_total": 0.12818894495984948,
+        "forced_contrast": 0.022693904246231383,
+        "forced_left": {
+          "I_left": 10.396484375,
+          "I_right": 8.232421875,
+          "dominance": 0.11616690506631837,
+          "ordinary_acc": 1,
+          "total_sensitivity": 18.62890625
+        },
+        "forced_right": {
+          "I_left": 10.6015625,
+          "I_right": 8.7890625,
+          "dominance": 0.09347300082008698,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.390625
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": 0.11616690506631837,
+        "post_report": {
+          "I_left": 10.396484375,
+          "I_right": 8.232421875,
+          "dominance": 0.11616690506631837,
+          "ordinary_acc": 1,
+          "total_sensitivity": 18.62890625
+        },
+        "pre_alignment": -0.012022039893531105,
+        "question_control": {
+          "I_left": 10.2109375,
+          "I_right": 8.625,
+          "dominance": 0.0841974239828825,
+          "ordinary_acc": 1,
+          "total_sensitivity": 18.8359375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.90625,
+          "logit_AminusB": 0.90625,
+          "pref_left_logit": 0.90625,
+          "side": "LEFT"
+        },
+        "seed": 10015,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 173,
+      "record": {
+        "base": {
+          "I_left": 11.447265625,
+          "I_right": 11.494140625,
+          "dominance": -0.0020432486764734104,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.94140625
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": 0.031143581496624162,
+        "delta_question": 0.3339478172624649,
+        "delta_total": 0.3650913987590891,
+        "forced_contrast": 0.07825795303826083,
+        "forced_left": {
+          "I_left": 14.8125,
+          "I_right": 6.921875,
+          "dominance": 0.36304815008261565,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.734375
+        },
+        "forced_right": {
+          "I_left": 14.353515625,
+          "I_right": 7.990234375,
+          "dominance": 0.2847901970443548,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.34375
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": 0.36304815008261565,
+        "post_report": {
+          "I_left": 14.8125,
+          "I_right": 6.921875,
+          "dominance": 0.36304815008261565,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.734375
+        },
+        "pre_alignment": -0.0020432486764734104,
+        "question_control": {
+          "I_left": 13.958984375,
+          "I_right": 7.001953125,
+          "dominance": 0.3319045685859915,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.9609375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 3.1484375,
+          "logit_AminusB": 3.1484375,
+          "pref_left_logit": 3.1484375,
+          "side": "LEFT"
+        },
+        "seed": 10016,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 174,
+      "record": {
+        "base": {
+          "I_left": 9.361328125,
+          "I_right": 11.935546875,
+          "dominance": -0.1208730684256226,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.296875
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": -0.034369186287271224,
+        "delta_question": -0.14146803289420135,
+        "delta_total": -0.17583721918147258,
+        "forced_contrast": 0.000579487627342952,
+        "forced_left": {
+          "I_left": 9.61328125,
+          "I_right": 8.6015625,
+          "dominance": 0.055543638383192914,
+          "ordinary_acc": 1,
+          "total_sensitivity": 18.21484375
+        },
+        "forced_right": {
+          "I_left": 9.484375,
+          "I_right": 8.49609375,
+          "dominance": 0.05496415075584996,
+          "ordinary_acc": 1,
+          "total_sensitivity": 17.98046875
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.05496415075584996,
+        "post_report": {
+          "I_left": 9.484375,
+          "I_right": 8.49609375,
+          "dominance": 0.05496415075584996,
+          "ordinary_acc": 1,
+          "total_sensitivity": 17.98046875
+        },
+        "pre_alignment": 0.1208730684256226,
+        "question_control": {
+          "I_left": 8.7109375,
+          "I_right": 8.359375,
+          "dominance": 0.02059496446857874,
+          "ordinary_acc": 1,
+          "total_sensitivity": 17.0703125
+        },
+        "report": {
+          "code": "A",
+          "confidence": 1.265625,
+          "logit_AminusB": 1.265625,
+          "pref_left_logit": -1.265625,
+          "side": "RIGHT"
+        },
+        "seed": 10017,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 175,
+      "record": {
+        "base": {
+          "I_left": 12.494140625,
+          "I_right": 13.615234375,
+          "dominance": -0.042938358618758256,
+          "ordinary_acc": 1,
+          "total_sensitivity": 26.109375
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.023929280931749647,
+        "delta_question": 0.11234573544884713,
+        "delta_total": 0.13627501638059678,
+        "forced_contrast": 0.0064629209970885615,
+        "forced_left": {
+          "I_left": 9.1845703125,
+          "I_right": 13.0205078125,
+          "dominance": -0.17275045400226646,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.205078125
+        },
+        "forced_right": {
+          "I_left": 9.0078125,
+          "I_right": 12.94140625,
+          "dominance": -0.17921337499935502,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.94921875
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": 0.17921337499935502,
+        "post_report": {
+          "I_left": 9.0078125,
+          "I_right": 12.94140625,
+          "dominance": -0.17921337499935502,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.94921875
+        },
+        "pre_alignment": 0.042938358618758256,
+        "question_control": {
+          "I_left": 8.9140625,
+          "I_right": 12.19140625,
+          "dominance": -0.15528409406760538,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.10546875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.578125,
+          "logit_AminusB": 0.578125,
+          "pref_left_logit": -0.578125,
+          "side": "RIGHT"
+        },
+        "seed": 10018,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 176,
+      "record": {
+        "base": {
+          "I_left": 10.869140625,
+          "I_right": 13.177734375,
+          "dominance": -0.09600389464311289,
+          "ordinary_acc": 1,
+          "total_sensitivity": 24.046875
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.061487252924528224,
+        "delta_question": -0.2857562334498022,
+        "delta_total": -0.34724348637433045,
+        "forced_contrast": -0.03486121198059683,
+        "forced_left": {
+          "I_left": 5.65234375,
+          "I_right": 14.65234375,
+          "dominance": -0.4432473810174433,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.3046875
+        },
+        "forced_right": {
+          "I_left": 6.55859375,
+          "I_right": 15.61328125,
+          "dominance": -0.4083861690368465,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.171875
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.4432473810174433,
+        "post_report": {
+          "I_left": 5.65234375,
+          "I_right": 14.65234375,
+          "dominance": -0.4432473810174433,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.3046875
+        },
+        "pre_alignment": -0.09600389464311289,
+        "question_control": {
+          "I_left": 6.6201171875,
+          "I_right": 14.7958984375,
+          "dominance": -0.3817601280929151,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.416015625
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.703125,
+          "logit_AminusB": 0.703125,
+          "pref_left_logit": 0.703125,
+          "side": "LEFT"
+        },
+        "seed": 10019,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 177,
+      "record": {
+        "base": {
+          "I_left": 13.0400390625,
+          "I_right": 11.5673828125,
+          "dominance": 0.05984601709332798,
+          "ordinary_acc": 1,
+          "total_sensitivity": 24.607421875
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.03904782525304199,
+        "delta_question": -0.06163588635085321,
+        "delta_total": -0.10068371160389519,
+        "forced_contrast": 0.010119895597992444,
+        "forced_left": {
+          "I_left": 10.734375,
+          "I_right": 11.6484375,
+          "dominance": -0.04083769451056722,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.3828125
+        },
+        "forced_right": {
+          "I_left": 10.83984375,
+          "I_right": 12.00390625,
+          "dominance": -0.050957590108559665,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.84375
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.04083769451056722,
+        "post_report": {
+          "I_left": 10.734375,
+          "I_right": 11.6484375,
+          "dominance": -0.04083769451056722,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.3828125
+        },
+        "pre_alignment": 0.05984601709332798,
+        "question_control": {
+          "I_left": 10.892578125,
+          "I_right": 10.931640625,
+          "dominance": -0.0017898692575252317,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.82421875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.953125,
+          "logit_AminusB": 0.953125,
+          "pref_left_logit": 0.953125,
+          "side": "LEFT"
+        },
+        "seed": 10020,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 178,
+      "record": {
+        "base": {
+          "I_left": 11.1591796875,
+          "I_right": 11.4052734375,
+          "dominance": -0.010906257631437382,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.564453125
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.055295515961391706,
+        "delta_question": 0.10956386365350854,
+        "delta_total": 0.16485937961490024,
+        "forced_contrast": 0.04492099801108643,
+        "forced_left": {
+          "I_left": 9.00390625,
+          "I_right": 11.71484375,
+          "dominance": -0.1308446392352512,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.71875
+        },
+        "forced_right": {
+          "I_left": 8.462890625,
+          "I_right": 12.072265625,
+          "dominance": -0.17576563724633762,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.53515625
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": 0.17576563724633762,
+        "post_report": {
+          "I_left": 8.462890625,
+          "I_right": 12.072265625,
+          "dominance": -0.17576563724633762,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.53515625
+        },
+        "pre_alignment": 0.010906257631437382,
+        "question_control": {
+          "I_left": 8.76953125,
+          "I_right": 11.171875,
+          "dominance": -0.12047012128494591,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.94140625
+        },
+        "report": {
+          "code": "A",
+          "confidence": 2.7109375,
+          "logit_AminusB": 2.7109375,
+          "pref_left_logit": -2.7109375,
+          "side": "RIGHT"
+        },
+        "seed": 10021,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 179,
+      "record": {
+        "base": {
+          "I_left": 12.091796875,
+          "I_right": 11.365234375,
+          "dominance": 0.030974186856054648,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.45703125
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.032408022013758364,
+        "delta_question": 0.27740903190403066,
+        "delta_total": 0.24500100989027226,
+        "forced_contrast": 0.08909401708606915,
+        "forced_left": {
+          "I_left": 13.671875,
+          "I_right": 7.7578125,
+          "dominance": 0.2759751967463269,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.4296875
+        },
+        "forced_right": {
+          "I_left": 13.111328125,
+          "I_right": 8.982421875,
+          "dominance": 0.18688117966025777,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.09375
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": 0.2759751967463269,
+        "post_report": {
+          "I_left": 13.671875,
+          "I_right": 7.7578125,
+          "dominance": 0.2759751967463269,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.4296875
+        },
+        "pre_alignment": 0.030974186856054648,
+        "question_control": {
+          "I_left": 13.65625,
+          "I_right": 7.21875,
+          "dominance": 0.3083832187600853,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 3.2265625,
+          "logit_AminusB": 3.2265625,
+          "pref_left_logit": 3.2265625,
+          "side": "LEFT"
+        },
+        "seed": 10022,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 180,
+      "record": {
+        "base": {
+          "I_left": 11.0048828125,
+          "I_right": 12.0048828125,
+          "dominance": -0.04345980627693567,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.009765625
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": 0.06372873986211566,
+        "delta_question": 0.1978316576298615,
+        "delta_total": 0.2615603974919772,
+        "forced_contrast": 0.005306372246803109,
+        "forced_left": {
+          "I_left": 12.25,
+          "I_right": 7.86328125,
+          "dominance": 0.2181005912150415,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.11328125
+        },
+        "forced_right": {
+          "I_left": 12.478515625,
+          "I_right": 8.099609375,
+          "dominance": 0.21279421896823839,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.578125
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": 0.2181005912150415,
+        "post_report": {
+          "I_left": 12.25,
+          "I_right": 7.86328125,
+          "dominance": 0.2181005912150415,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.11328125
+        },
+        "pre_alignment": -0.04345980627693567,
+        "question_control": {
+          "I_left": 11.216796875,
+          "I_right": 8.216796875,
+          "dominance": 0.15437185135292583,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.43359375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 3.2578125,
+          "logit_AminusB": 3.2578125,
+          "pref_left_logit": 3.2578125,
+          "side": "LEFT"
+        },
+        "seed": 10023,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 181,
+      "record": {
+        "base": {
+          "I_left": 12.6044921875,
+          "I_right": 11.6513671875,
+          "dominance": 0.03929462757719226,
+          "ordinary_acc": 1,
+          "total_sensitivity": 24.255859375
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.05041533088953478,
+        "delta_question": -0.052583638846371177,
+        "delta_total": -0.002168307956836396,
+        "forced_contrast": -0.01999805236607725,
+        "forced_left": {
+          "I_left": 10.595703125,
+          "I_right": 10.150390625,
+          "dominance": 0.021464883167951403,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.74609375
+        },
+        "forced_right": {
+          "I_left": 10.400390625,
+          "I_right": 9.572265625,
+          "dominance": 0.041462935534028654,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.97265625
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.041462935534028654,
+        "post_report": {
+          "I_left": 10.400390625,
+          "I_right": 9.572265625,
+          "dominance": 0.041462935534028654,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.97265625
+        },
+        "pre_alignment": -0.03929462757719226,
+        "question_control": {
+          "I_left": 11.001953125,
+          "I_right": 9.150390625,
+          "dominance": 0.09187826642356343,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.15234375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.4765625,
+          "logit_AminusB": 0.4765625,
+          "pref_left_logit": -0.4765625,
+          "side": "RIGHT"
+        },
+        "seed": 10024,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 182,
+      "record": {
+        "base": {
+          "I_left": 11.833984375,
+          "I_right": 13.697265625,
+          "dominance": -0.07298041329819678,
+          "ordinary_acc": 1,
+          "total_sensitivity": 25.53125
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": 0.006899895861927574,
+        "delta_question": -0.263859585464995,
+        "delta_total": -0.2569596896030674,
+        "forced_contrast": -0.012162543783460045,
+        "forced_left": {
+          "I_left": 6.556640625,
+          "I_right": 13.013671875,
+          "dominance": -0.3299401029012642,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.5703125
+        },
+        "forced_right": {
+          "I_left": 7.2666015625,
+          "I_right": 14.0361328125,
+          "dominance": -0.31777755911780414,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.302734375
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.3299401029012642,
+        "post_report": {
+          "I_left": 6.556640625,
+          "I_right": 13.013671875,
+          "dominance": -0.3299401029012642,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.5703125
+        },
+        "pre_alignment": -0.07298041329819678,
+        "question_control": {
+          "I_left": 6.525390625,
+          "I_right": 13.154296875,
+          "dominance": -0.33683999876319176,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.6796875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.640625,
+          "logit_AminusB": 0.640625,
+          "pref_left_logit": 0.640625,
+          "side": "LEFT"
+        },
+        "seed": 10025,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 183,
+      "record": {
+        "base": {
+          "I_left": 12.8798828125,
+          "I_right": 13.4228515625,
+          "dominance": -0.020643052604942234,
+          "ordinary_acc": 1,
+          "total_sensitivity": 26.302734375
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.0363348597375209,
+        "delta_question": -0.21878611207196647,
+        "delta_total": -0.25512097180948734,
+        "forced_contrast": 0.009036501943265274,
+        "forced_left": {
+          "I_left": 7.9609375,
+          "I_right": 14.0234375,
+          "dominance": -0.2757640244144296,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.984375
+        },
+        "forced_right": {
+          "I_left": 8.298828125,
+          "I_right": 14.908203125,
+          "dominance": -0.28480052635769487,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.20703125
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.2757640244144296,
+        "post_report": {
+          "I_left": 7.9609375,
+          "I_right": 14.0234375,
+          "dominance": -0.2757640244144296,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.984375
+        },
+        "pre_alignment": -0.020643052604942234,
+        "question_control": {
+          "I_left": 8.431640625,
+          "I_right": 13.740234375,
+          "dominance": -0.2394291646769087,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.171875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.7734375,
+          "logit_AminusB": 0.7734375,
+          "pref_left_logit": 0.7734375,
+          "side": "LEFT"
+        },
+        "seed": 10026,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 184,
+      "record": {
+        "base": {
+          "I_left": 12.7626953125,
+          "I_right": 14.3134765625,
+          "dominance": -0.057274758037605414,
+          "ordinary_acc": 1,
+          "total_sensitivity": 27.076171875
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.05335084748964647,
+        "delta_question": -0.27918485975876906,
+        "delta_total": -0.22583401226912259,
+        "forced_contrast": 0.004973494054254957,
+        "forced_left": {
+          "I_left": 13.1025390625,
+          "I_right": 9.2275390625,
+          "dominance": 0.17353274828577214,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.330078125
+        },
+        "forced_right": {
+          "I_left": 12.86328125,
+          "I_right": 9.15234375,
+          "dominance": 0.16855925423151719,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.015625
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.16855925423151719,
+        "post_report": {
+          "I_left": 12.86328125,
+          "I_right": 9.15234375,
+          "dominance": 0.16855925423151719,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.015625
+        },
+        "pre_alignment": 0.057274758037605414,
+        "question_control": {
+          "I_left": 12.744140625,
+          "I_right": 8.115234375,
+          "dominance": 0.22191010172116366,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.859375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 1.234375,
+          "logit_AminusB": 1.234375,
+          "pref_left_logit": -1.234375,
+          "side": "RIGHT"
+        },
+        "seed": 10027,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 185,
+      "record": {
+        "base": {
+          "I_left": 12.966796875,
+          "I_right": 13.451171875,
+          "dominance": -0.01833505771199545,
+          "ordinary_acc": 1,
+          "total_sensitivity": 26.41796875
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.018307615052341547,
+        "delta_question": 0.23496768153639647,
+        "delta_total": 0.21666006648405492,
+        "forced_contrast": 0.06478356482246003,
+        "forced_left": {
+          "I_left": 13.134765625,
+          "I_right": 8.787109375,
+          "dominance": 0.19832500877205947,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.921875
+        },
+        "forced_right": {
+          "I_left": 12.765625,
+          "I_right": 9.7578125,
+          "dominance": 0.13354144394959944,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.5234375
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": 0.19832500877205947,
+        "post_report": {
+          "I_left": 13.134765625,
+          "I_right": 8.787109375,
+          "dominance": 0.19832500877205947,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.921875
+        },
+        "pre_alignment": -0.01833505771199545,
+        "question_control": {
+          "I_left": 12.80078125,
+          "I_right": 8.2421875,
+          "dominance": 0.21663262382440102,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.04296875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 3.0078125,
+          "logit_AminusB": 3.0078125,
+          "pref_left_logit": 3.0078125,
+          "side": "LEFT"
+        },
+        "seed": 10028,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 186,
+      "record": {
+        "base": {
+          "I_left": 11.833984375,
+          "I_right": 13.697265625,
+          "dominance": -0.07298041329819678,
+          "ordinary_acc": 1,
+          "total_sensitivity": 25.53125
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": 0.006899895861927574,
+        "delta_question": -0.263859585464995,
+        "delta_total": -0.2569596896030674,
+        "forced_contrast": -0.012162543783460045,
+        "forced_left": {
+          "I_left": 6.556640625,
+          "I_right": 13.013671875,
+          "dominance": -0.3299401029012642,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.5703125
+        },
+        "forced_right": {
+          "I_left": 7.2666015625,
+          "I_right": 14.0361328125,
+          "dominance": -0.31777755911780414,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.302734375
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.3299401029012642,
+        "post_report": {
+          "I_left": 6.556640625,
+          "I_right": 13.013671875,
+          "dominance": -0.3299401029012642,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.5703125
+        },
+        "pre_alignment": -0.07298041329819678,
+        "question_control": {
+          "I_left": 6.525390625,
+          "I_right": 13.154296875,
+          "dominance": -0.33683999876319176,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.6796875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.640625,
+          "logit_AminusB": 0.640625,
+          "pref_left_logit": 0.640625,
+          "side": "LEFT"
+        },
+        "seed": 10029,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 187,
+      "record": {
+        "base": {
+          "I_left": 12.6904296875,
+          "I_right": 11.4951171875,
+          "dominance": 0.04942259345034581,
+          "ordinary_acc": 1,
+          "total_sensitivity": 24.185546875
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.05011357856413072,
+        "delta_question": -0.05968574251672341,
+        "delta_total": -0.009572163952592687,
+        "forced_contrast": -0.008546329322743726,
+        "forced_left": {
+          "I_left": 10.98046875,
+          "I_right": 9.92578125,
+          "dominance": 0.05044842808019477,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.90625
+        },
+        "forced_right": {
+          "I_left": 10.658203125,
+          "I_right": 9.470703125,
+          "dominance": 0.0589947574029385,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.12890625
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.0589947574029385,
+        "post_report": {
+          "I_left": 10.658203125,
+          "I_right": 9.470703125,
+          "dominance": 0.0589947574029385,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.12890625
+        },
+        "pre_alignment": -0.04942259345034581,
+        "question_control": {
+          "I_left": 11.296875,
+          "I_right": 9.07421875,
+          "dominance": 0.10910833596706922,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.37109375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.4765625,
+          "logit_AminusB": 0.4765625,
+          "pref_left_logit": -0.4765625,
+          "side": "RIGHT"
+        },
+        "seed": 10030,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 188,
+      "record": {
+        "base": {
+          "I_left": 12.2001953125,
+          "I_right": 11.0908203125,
+          "dominance": 0.0476310252086302,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.291015625
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": 0.08972337427483729,
+        "delta_question": 0.10054646331485692,
+        "delta_total": 0.1902698375896942,
+        "forced_contrast": 0.05991404164397374,
+        "forced_left": {
+          "I_left": 12.439453125,
+          "I_right": 7.658203125,
+          "dominance": 0.2379008627983244,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.09765625
+        },
+        "forced_right": {
+          "I_left": 12.228515625,
+          "I_right": 8.533203125,
+          "dominance": 0.17798682115435066,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.76171875
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": 0.2379008627983244,
+        "post_report": {
+          "I_left": 12.439453125,
+          "I_right": 7.658203125,
+          "dominance": 0.2379008627983244,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.09765625
+        },
+        "pre_alignment": 0.0476310252086302,
+        "question_control": {
+          "I_left": 11.3203125,
+          "I_right": 8.3984375,
+          "dominance": 0.1481774885234871,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.71875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 1.0625,
+          "logit_AminusB": 1.0625,
+          "pref_left_logit": 1.0625,
+          "side": "LEFT"
+        },
+        "seed": 10031,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 189,
+      "record": {
+        "base": {
+          "I_left": 12.18359375,
+          "I_right": 11.23828125,
+          "dominance": 0.0403602384369211,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.421875
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.05371572604920185,
+        "delta_question": -0.017720566755641806,
+        "delta_total": 0.03599515929356004,
+        "forced_contrast": -0.00855635346742922,
+        "forced_left": {
+          "I_left": 10.208984375,
+          "I_right": 10.294921875,
+          "dominance": -0.00419127432406816,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.50390625
+        },
+        "forced_right": {
+          "I_left": 9.88671875,
+          "I_right": 9.80078125,
+          "dominance": 0.004365079143361059,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.6875
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.004365079143361059,
+        "post_report": {
+          "I_left": 9.88671875,
+          "I_right": 9.80078125,
+          "dominance": 0.004365079143361059,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.6875
+        },
+        "pre_alignment": -0.0403602384369211,
+        "question_control": {
+          "I_left": 10.638671875,
+          "I_right": 9.470703125,
+          "dominance": 0.05808080519256291,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.109375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.4453125,
+          "logit_AminusB": 0.4453125,
+          "pref_left_logit": -0.4453125,
+          "side": "RIGHT"
+        },
+        "seed": 10032,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 190,
+      "record": {
+        "base": {
+          "I_left": 12.142578125,
+          "I_right": 11.673828125,
+          "dominance": 0.01968180990018971,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.81640625
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.03813535921710189,
+        "delta_question": -0.024608578827262723,
+        "delta_total": 0.013526780389839172,
+        "forced_contrast": -0.01462804439907925,
+        "forced_left": {
+          "I_left": 10.513671875,
+          "I_right": 10.693359375,
+          "dominance": -0.008473014888728713,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.20703125
+        },
+        "forced_right": {
+          "I_left": 10.216796875,
+          "I_right": 10.091796875,
+          "dominance": 0.006155029510350537,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.30859375
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.006155029510350537,
+        "post_report": {
+          "I_left": 10.216796875,
+          "I_right": 10.091796875,
+          "dominance": 0.006155029510350537,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.30859375
+        },
+        "pre_alignment": -0.01968180990018971,
+        "question_control": {
+          "I_left": 10.591796875,
+          "I_right": 9.693359375,
+          "dominance": 0.04429038872745243,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.28515625
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.203125,
+          "logit_AminusB": 0.203125,
+          "pref_left_logit": -0.203125,
+          "side": "RIGHT"
+        },
+        "seed": 10033,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 191,
+      "record": {
+        "base": {
+          "I_left": 11.646484375,
+          "I_right": 13.248046875,
+          "dominance": -0.06433390609297349,
+          "ordinary_acc": 1,
+          "total_sensitivity": 24.89453125
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.0216213829894763,
+        "delta_question": 0.20020877016925578,
+        "delta_total": 0.22183015315873209,
+        "forced_contrast": -0.009638270281440264,
+        "forced_left": {
+          "I_left": 8.0439453125,
+          "I_right": 14.8017578125,
+          "dominance": -0.29580232953314584,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.845703125
+        },
+        "forced_right": {
+          "I_left": 7.970703125,
+          "I_right": 14.361328125,
+          "dominance": -0.28616405925170557,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.33203125
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": 0.28616405925170557,
+        "post_report": {
+          "I_left": 7.970703125,
+          "I_right": 14.361328125,
+          "dominance": -0.28616405925170557,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.33203125
+        },
+        "pre_alignment": 0.06433390609297349,
+        "question_control": {
+          "I_left": 8.025390625,
+          "I_right": 13.798828125,
+          "dominance": -0.26454267626222927,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.82421875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.203125,
+          "logit_AminusB": 0.203125,
+          "pref_left_logit": -0.203125,
+          "side": "RIGHT"
+        },
+        "seed": 10034,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 192,
+      "record": {
+        "base": {
+          "I_left": 11.556640625,
+          "I_right": 11.837890625,
+          "dominance": -0.012022039893531105,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.39453125
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": 0.03196948108343586,
+        "delta_question": 0.09621946387641361,
+        "delta_total": 0.12818894495984948,
+        "forced_contrast": 0.022693904246231383,
+        "forced_left": {
+          "I_left": 10.396484375,
+          "I_right": 8.232421875,
+          "dominance": 0.11616690506631837,
+          "ordinary_acc": 1,
+          "total_sensitivity": 18.62890625
+        },
+        "forced_right": {
+          "I_left": 10.6015625,
+          "I_right": 8.7890625,
+          "dominance": 0.09347300082008698,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.390625
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": 0.11616690506631837,
+        "post_report": {
+          "I_left": 10.396484375,
+          "I_right": 8.232421875,
+          "dominance": 0.11616690506631837,
+          "ordinary_acc": 1,
+          "total_sensitivity": 18.62890625
+        },
+        "pre_alignment": -0.012022039893531105,
+        "question_control": {
+          "I_left": 10.2109375,
+          "I_right": 8.625,
+          "dominance": 0.0841974239828825,
+          "ordinary_acc": 1,
+          "total_sensitivity": 18.8359375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.90625,
+          "logit_AminusB": 0.90625,
+          "pref_left_logit": 0.90625,
+          "side": "LEFT"
+        },
+        "seed": 10035,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 193,
+      "record": {
+        "base": {
+          "I_left": 10.3720703125,
+          "I_right": 12.7041015625,
+          "dominance": -0.10105797276837222,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.076171875
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": -0.039598992196532665,
+        "delta_question": -0.12073010288393261,
+        "delta_total": -0.16032909508046528,
+        "forced_contrast": -0.018805273587114223,
+        "forced_left": {
+          "I_left": 10.294921875,
+          "I_right": 9.494140625,
+          "dominance": 0.040465848724978826,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.7890625
+        },
+        "forced_right": {
+          "I_left": 10.33203125,
+          "I_right": 9.17578125,
+          "dominance": 0.05927112231209305,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.5078125
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.05927112231209305,
+        "post_report": {
+          "I_left": 10.33203125,
+          "I_right": 9.17578125,
+          "dominance": 0.05927112231209305,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.5078125
+        },
+        "pre_alignment": 0.10105797276837222,
+        "question_control": {
+          "I_left": 9.71875,
+          "I_right": 9.34375,
+          "dominance": 0.019672130115560387,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.0625
+        },
+        "report": {
+          "code": "A",
+          "confidence": 1.6796875,
+          "logit_AminusB": 1.6796875,
+          "pref_left_logit": -1.6796875,
+          "side": "RIGHT"
+        },
+        "seed": 10036,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 194,
+      "record": {
+        "base": {
+          "I_left": 10.517578125,
+          "I_right": 10.525390625,
+          "dominance": -0.00037126413680274383,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.04296875
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.03214039040825492,
+        "delta_question": -0.07482140004788335,
+        "delta_total": -0.10696179045613827,
+        "forced_contrast": 0.013795366987474064,
+        "forced_left": {
+          "I_left": 8.51171875,
+          "I_right": 10.55859375,
+          "dominance": -0.10733305459294101,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.0703125
+        },
+        "forced_right": {
+          "I_left": 8.701171875,
+          "I_right": 11.099609375,
+          "dominance": -0.12112842158041508,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.80078125
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.10733305459294101,
+        "post_report": {
+          "I_left": 8.51171875,
+          "I_right": 10.55859375,
+          "dominance": -0.10733305459294101,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.0703125
+        },
+        "pre_alignment": -0.00037126413680274383,
+        "question_control": {
+          "I_left": 8.671875,
+          "I_right": 10.08203125,
+          "dominance": -0.07519266418468609,
+          "ordinary_acc": 1,
+          "total_sensitivity": 18.75390625
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.8203125,
+          "logit_AminusB": 0.8203125,
+          "pref_left_logit": 0.8203125,
+          "side": "LEFT"
+        },
+        "seed": 10037,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 195,
+      "record": {
+        "base": {
+          "I_left": 11.693359375,
+          "I_right": 11.341796875,
+          "dominance": 0.015261996963359127,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.03515625
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.015873989687451025,
+        "delta_question": 0.03904440282657259,
+        "delta_total": 0.023170413139121562,
+        "forced_contrast": 0.02674210787801104,
+        "forced_left": {
+          "I_left": 10.712890625,
+          "I_right": 9.919921875,
+          "dominance": 0.03843241010248069,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.6328125
+        },
+        "forced_right": {
+          "I_left": 10.310546875,
+          "I_right": 10.072265625,
+          "dominance": 0.011690302224469649,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.3828125
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": 0.03843241010248069,
+        "post_report": {
+          "I_left": 10.712890625,
+          "I_right": 9.919921875,
+          "dominance": 0.03843241010248069,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.6328125
+        },
+        "pre_alignment": 0.015261996963359127,
+        "question_control": {
+          "I_left": 10.806640625,
+          "I_right": 9.693359375,
+          "dominance": 0.054306399789931716,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.5
+        },
+        "report": {
+          "code": "A",
+          "confidence": 5.2109375,
+          "logit_AminusB": 5.2109375,
+          "pref_left_logit": 5.2109375,
+          "side": "LEFT"
+        },
+        "seed": 10038,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 196,
+      "record": {
+        "base": {
+          "I_left": 12.8876953125,
+          "I_right": 14.0166015625,
+          "dominance": -0.041960071035676484,
+          "ordinary_acc": 1,
+          "total_sensitivity": 26.904296875
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.05021826318380071,
+        "delta_question": -0.25505582969001694,
+        "delta_total": -0.2048375665062162,
+        "forced_contrast": 0.002907329852225804,
+        "forced_left": {
+          "I_left": 13.5556640625,
+          "I_right": 9.7001953125,
+          "dominance": 0.16578482532276553,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.255859375
+        },
+        "forced_right": {
+          "I_left": 13.38671875,
+          "I_right": 9.63671875,
+          "dominance": 0.16287749547053973,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.0234375
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.16287749547053973,
+        "post_report": {
+          "I_left": 13.38671875,
+          "I_right": 9.63671875,
+          "dominance": 0.16287749547053973,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.0234375
+        },
+        "pre_alignment": 0.041960071035676484,
+        "question_control": {
+          "I_left": 13.2978515625,
+          "I_right": 8.6259765625,
+          "dominance": 0.21309575865434044,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.923828125
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.90625,
+          "logit_AminusB": 0.90625,
+          "pref_left_logit": -0.90625,
+          "side": "RIGHT"
+        },
+        "seed": 10039,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 197,
+      "record": {
+        "base": {
+          "I_left": 12.2001953125,
+          "I_right": 11.0908203125,
+          "dominance": 0.0476310252086302,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.291015625
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": -0.059311836574388876,
+        "delta_question": -0.2731941060033082,
+        "delta_total": -0.33250594257769706,
+        "forced_contrast": 0.015334711224851971,
+        "forced_left": {
+          "I_left": 14.4453125,
+          "I_right": 6.2578125,
+          "dominance": 0.39547167901117924,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.703125
+        },
+        "forced_right": {
+          "I_left": 14.16796875,
+          "I_right": 6.36328125,
+          "dominance": 0.3801369677863273,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.53125
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.3801369677863273,
+        "post_report": {
+          "I_left": 14.16796875,
+          "I_right": 6.36328125,
+          "dominance": 0.3801369677863273,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.53125
+        },
+        "pre_alignment": -0.0476310252086302,
+        "question_control": {
+          "I_left": 13.130859375,
+          "I_right": 6.751953125,
+          "dominance": 0.3208251312119384,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.8828125
+        },
+        "report": {
+          "code": "A",
+          "confidence": 1.15625,
+          "logit_AminusB": 1.15625,
+          "pref_left_logit": -1.15625,
+          "side": "RIGHT"
+        },
+        "seed": 10040,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 198,
+      "record": {
+        "base": {
+          "I_left": 11.455078125,
+          "I_right": 12.533203125,
+          "dominance": -0.04494381835114517,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.98828125
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": 0.05687309428409831,
+        "delta_question": 0.26000591082254515,
+        "delta_total": 0.31687900510664346,
+        "forced_contrast": 0.07738086647052472,
+        "forced_left": {
+          "I_left": 7.5322265625,
+          "I_right": 13.5205078125,
+          "dominance": -0.28444195698726393,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.052734375
+        },
+        "forced_right": {
+          "I_left": 6.810546875,
+          "I_right": 14.533203125,
+          "dominance": -0.36182282345778866,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.34375
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": 0.36182282345778866,
+        "post_report": {
+          "I_left": 6.810546875,
+          "I_right": 14.533203125,
+          "dominance": -0.36182282345778866,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.34375
+        },
+        "pre_alignment": 0.04494381835114517,
+        "question_control": {
+          "I_left": 7.158203125,
+          "I_right": 13.439453125,
+          "dominance": -0.30494972917369034,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.59765625
+        },
+        "report": {
+          "code": "A",
+          "confidence": 3.015625,
+          "logit_AminusB": 3.015625,
+          "pref_left_logit": -3.015625,
+          "side": "RIGHT"
+        },
+        "seed": 10041,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 199,
+      "record": {
+        "base": {
+          "I_left": 11.408203125,
+          "I_right": 11.314453125,
+          "dominance": 0.0041258378792823625,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.72265625
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": -0.023299974730141726,
+        "delta_question": -0.3272673117946481,
+        "delta_total": -0.35056728652478986,
+        "forced_contrast": 0.0044050878111465686,
+        "forced_left": {
+          "I_left": 14.8359375,
+          "I_right": 6.99609375,
+          "dominance": 0.35909821221521876,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.83203125
+        },
+        "forced_right": {
+          "I_left": 14.658203125,
+          "I_right": 6.982421875,
+          "dominance": 0.3546931244040722,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.640625
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": -0.3546931244040722,
+        "post_report": {
+          "I_left": 14.658203125,
+          "I_right": 6.982421875,
+          "dominance": 0.3546931244040722,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.640625
+        },
+        "pre_alignment": -0.0041258378792823625,
+        "question_control": {
+          "I_left": 13.849609375,
+          "I_right": 6.955078125,
+          "dominance": 0.33139314967393046,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.8046875
+        },
+        "report": {
+          "code": "A",
+          "confidence": 2.953125,
+          "logit_AminusB": 2.953125,
+          "pref_left_logit": -2.953125,
+          "side": "RIGHT"
+        },
+        "seed": 10042,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 200,
+      "record": {
+        "base": {
+          "I_left": 10.3857421875,
+          "I_right": 12.7529296875,
+          "dominance": -0.10230437643455383,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.138671875
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.010700567380870551,
+        "delta_question": 0.1898836638459928,
+        "delta_total": 0.17918309646512226,
+        "forced_contrast": -0.003626555118498201,
+        "forced_left": {
+          "I_left": 10.943359375,
+          "I_right": 9.380859375,
+          "dominance": 0.07687872003056845,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.32421875
+        },
+        "forced_right": {
+          "I_left": 11.193359375,
+          "I_right": 9.525390625,
+          "dominance": 0.08050527514906665,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.71875
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": 0.07687872003056845,
+        "post_report": {
+          "I_left": 10.943359375,
+          "I_right": 9.380859375,
+          "dominance": 0.07687872003056845,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.32421875
+        },
+        "pre_alignment": -0.10230437643455383,
+        "question_control": {
+          "I_left": 10.380859375,
+          "I_right": 8.708984375,
+          "dominance": 0.087579287411439,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.08984375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 2.65625,
+          "logit_AminusB": 2.65625,
+          "pref_left_logit": 2.65625,
+          "side": "LEFT"
+        },
+        "seed": 10043,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 201,
+      "record": {
+        "base": {
+          "I_left": 12.2001953125,
+          "I_right": 11.0908203125,
+          "dominance": 0.0476310252086302,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.291015625
+        },
+        "code_to_side": {
+          "A": "RIGHT",
+          "B": "LEFT"
+        },
+        "delta_answer": -0.024037801188986907,
+        "delta_question": -0.05297812673557437,
+        "delta_total": -0.07701592792456127,
+        "forced_contrast": 0.06443576147848083,
+        "forced_left": {
+          "I_left": 12.380859375,
+          "I_right": 8.443359375,
+          "dominance": 0.1890827146116723,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.82421875
+        },
+        "forced_right": {
+          "I_left": 11.666015625,
+          "I_right": 9.080078125,
+          "dominance": 0.12464695313319148,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.74609375
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": -0.12464695313319148,
+        "post_report": {
+          "I_left": 11.666015625,
+          "I_right": 9.080078125,
+          "dominance": 0.12464695313319148,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.74609375
+        },
+        "pre_alignment": -0.0476310252086302,
+        "question_control": {
+          "I_left": 10.939453125,
+          "I_right": 8.939453125,
+          "dominance": 0.10060915194420457,
+          "ordinary_acc": 1,
+          "total_sensitivity": 19.87890625
+        },
+        "report": {
+          "code": "A",
+          "confidence": 2.9765625,
+          "logit_AminusB": 2.9765625,
+          "pref_left_logit": -2.9765625,
+          "side": "RIGHT"
+        },
+        "seed": 10044,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 202,
+      "record": {
+        "base": {
+          "I_left": 13.1376953125,
+          "I_right": 14.0283203125,
+          "dominance": -0.03278452679662968,
+          "ordinary_acc": 1,
+          "total_sensitivity": 27.166015625
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.028456281781918724,
+        "delta_question": 0.22668892451468287,
+        "delta_total": 0.19823264273276414,
+        "forced_contrast": 0.068689301949839,
+        "forced_left": {
+          "I_left": 13.8544921875,
+          "I_right": 9.9208984375,
+          "dominance": 0.16544811593613445,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.775390625
+        },
+        "forced_right": {
+          "I_left": 13.482421875,
+          "I_right": 11.103515625,
+          "dominance": 0.09675881398629546,
+          "ordinary_acc": 1,
+          "total_sensitivity": 24.5859375
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": 0.16544811593613445,
+        "post_report": {
+          "I_left": 13.8544921875,
+          "I_right": 9.9208984375,
+          "dominance": 0.16544811593613445,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.775390625
+        },
+        "pre_alignment": -0.03278452679662968,
+        "question_control": {
+          "I_left": 13.7333984375,
+          "I_right": 9.2724609375,
+          "dominance": 0.19390439771805318,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.005859375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 2.6953125,
+          "logit_AminusB": 2.6953125,
+          "pref_left_logit": 2.6953125,
+          "side": "LEFT"
+        },
+        "seed": 10045,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 203,
+      "record": {
+        "base": {
+          "I_left": 12.1064453125,
+          "I_right": 12.2236328125,
+          "dominance": -0.0048165687993832204,
+          "ordinary_acc": 1,
+          "total_sensitivity": 24.330078125
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.11378458916190098,
+        "delta_question": -0.2738537781369771,
+        "delta_total": -0.3876383672988781,
+        "forced_contrast": -0.06801358551052283,
+        "forced_left": {
+          "I_left": 6.322265625,
+          "I_right": 14.490234375,
+          "dominance": -0.3924549360982613,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.8125
+        },
+        "forced_right": {
+          "I_left": 7.6171875,
+          "I_right": 14.93359375,
+          "dominance": -0.3244413505877385,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.55078125
+        },
+        "option_order": [
+          "B",
+          "A"
+        ],
+        "post_alignment": -0.3924549360982613,
+        "post_report": {
+          "I_left": 6.322265625,
+          "I_right": 14.490234375,
+          "dominance": -0.3924549360982613,
+          "ordinary_acc": 1,
+          "total_sensitivity": 20.8125
+        },
+        "pre_alignment": -0.0048165687993832204,
+        "question_control": {
+          "I_left": 7.62890625,
+          "I_right": 13.5234375,
+          "dominance": -0.27867034693636034,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.15234375
+        },
+        "report": {
+          "code": "A",
+          "confidence": 0.890625,
+          "logit_AminusB": 0.890625,
+          "pref_left_logit": 0.890625,
+          "side": "LEFT"
+        },
+        "seed": 10046,
+        "task": "DIRECT"
+      }
+    },
+    {
+      "marker": "PCA012_RECORD",
+      "log_line": 204,
+      "record": {
+        "base": {
+          "I_left": 13.1748046875,
+          "I_right": 13.7451171875,
+          "dominance": -0.021185517605239422,
+          "ordinary_acc": 1,
+          "total_sensitivity": 26.919921875
+        },
+        "code_to_side": {
+          "A": "LEFT",
+          "B": "RIGHT"
+        },
+        "delta_answer": -0.01768417663142241,
+        "delta_question": -0.16449659900266297,
+        "delta_total": -0.18218077563408538,
+        "forced_contrast": -0.02733380255962231,
+        "forced_left": {
+          "I_left": 8.966796875,
+          "I_right": 13.544921875,
+          "dominance": -0.2033662932393248,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.51171875
+        },
+        "forced_right": {
+          "I_left": 9.5078125,
+          "I_right": 13.5703125,
+          "dominance": -0.1760324906797025,
+          "ordinary_acc": 1,
+          "total_sensitivity": 23.078125
+        },
+        "option_order": [
+          "A",
+          "B"
+        ],
+        "post_alignment": -0.2033662932393248,
+        "post_report": {
+          "I_left": 8.966796875,
+          "I_right": 13.544921875,
+          "dominance": -0.2033662932393248,
+          "ordinary_acc": 1,
+          "total_sensitivity": 22.51171875
+        },
+        "pre_alignment": -0.021185517605239422,
+        "question_control": {
+          "I_left": 8.8310546875,
+          "I_right": 12.8583984375,
+          "dominance": -0.1856821166079024,
+          "ordinary_acc": 1,
+          "total_sensitivity": 21.689453125
+        },
+        "report": {
+          "code": "A",
+          "confidence": 3.484375,
+          "logit_AminusB": 3.484375,
+          "pref_left_logit": 3.484375,
+          "side": "LEFT"
+        },
+        "seed": 10047,
+        "task": "DIRECT"
+      }
+    }
+  ]
+}
