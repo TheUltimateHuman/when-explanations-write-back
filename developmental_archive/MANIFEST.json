@@ -347,5 +347,9 @@
         }
       }
     }
-  ]
+  ],
+  "zenodo_v1_1_contains_this_supplement": true,
+  "zenodo_v1_1_record": "https://zenodo.org/records/23145243",
+  "zenodo_v1_1_doi": "10.5281/zenodo.23145243",
+  "zenodo_v1_1_publication_date": "2026-10-04"
 }
