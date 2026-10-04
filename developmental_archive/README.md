@@ -18,4 +18,10 @@ No missing observations were synthesized or back-filled. Parsed family records a
 
 ## Archival relation
 
-Zenodo v1.0 (DOI 10.5281/zenodo.22728293) is a frozen earlier snapshot and does **not** contain this 2026-10-04 developmental recovery supplement. This repository supplement should be deposited as a new archival version if a permanent Zenodo v1.1 snapshot is desired.
+The recovered developmental archive is included in **Zenodo v1.1**:
+
+- Record: https://zenodo.org/records/23145243
+- DOI: https://doi.org/10.5281/zenodo.23145243
+- Published: 2026-10-04
+
+Zenodo v1.0 (DOI 10.5281/zenodo.22728293) remains the earlier frozen snapshot and does not contain this October 4 recovery.
