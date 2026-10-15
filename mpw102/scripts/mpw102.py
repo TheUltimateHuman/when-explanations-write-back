@@ -44,7 +44,7 @@ VAL_ACC_MIN=.90
 MAX_SECONDS=70*60
 # This hash is learned from a preflight that cannot load the inference model.
 # It MUST be pinned in a separate code commit before validation execution.
-EXPECTED_MANIFEST_SHA='UNSET_PREFLIGHT_REQUIRED'
+EXPECTED_MANIFEST_SHA='90ac38a668c6fa03ebdd1a37f294dc7280b24533b5d5caacbd8ed034f54549c5'
 NEUTRAL_Q=('The next case is another sentiment classification. Continue following '
            'exactly the existing decision rule. Acknowledge with Understood.')
 LABEL_Q=('The next case still uses passage labels LEFT and RIGHT. '
