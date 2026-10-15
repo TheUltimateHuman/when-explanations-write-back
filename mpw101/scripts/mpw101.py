@@ -42,6 +42,7 @@ CAL_SENS_MIN=1.0
 VAL_ACC_MIN=.90
 THRESHOLDS=(0.0, .02, .05, .10)
 RUN_LABEL='MPW101_20261014_FREEZE'
+EXPECTED_MANIFEST_SHA='9559ac6421cb4c5498009b25831766bbdbd5a3fa563083ce9eecfaadde6dda3f'
 MAX_GPU_SECONDS=8*3600
 PILOT_CAL_FAMILIES=8
 
@@ -253,6 +254,9 @@ def main():
     cal,val,manifest,mmeta=sampled_families(train,valid)
     (out/'manifest.json').write_bytes(manifest)
     log('MPW101_MANIFEST',mmeta)
+    if sha256(manifest)!=EXPECTED_MANIFEST_SHA:
+        log('MPW101_INVALID',{'reason':'manifest_sha_mismatch','expected':EXPECTED_MANIFEST_SHA,'actual':sha256(manifest)})
+        sys.exit(2)
     log('MPW101_PROVENANCE',{'mode':args.mode,'python':platform.python_version(),
         'numpy':np.__version__,'datasets':datasets.__version__,
         'hub':huggingface_hub.__version__,'model_sha':mi.sha,'dataset_sha':di.sha,
