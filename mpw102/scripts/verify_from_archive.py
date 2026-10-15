@@ -25,10 +25,11 @@ def main():
  base=f'https://raw.githubusercontent.com/TheUltimateHuman/when-explanations-write-back/{commit}/mpw102/'
  manifest=json.loads(fetch(base+'results/RESULTS_MANIFEST.json'))
  if manifest['n']!=256 or len(manifest['shards'])!=4:raise RuntimeError('BAD_RESULTS_MANIFEST')
- raw=[]
+ raw=[];gz_hashes=[]
  for j,item in enumerate(manifest['shards']):
   b64=fetch(base+f'results/shard{j+1:02d}.jsonl.gz.b64').strip()
   b=base64.b64decode(b64,validate=True)
+  gz_hashes.append(sha(b))
   if item.get('gz_sha256') and sha(b)!=item['gz_sha256']:raise RuntimeError('COMPRESSED_SHA_MISMATCH')
   text=gzip.decompress(b)
   if sha(text)!=item['raw_sha256']:raise RuntimeError('RAW_SHA_MISMATCH')
@@ -46,6 +47,7 @@ def main():
   mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
   result=mod.compute(rows)
  result['combined_raw_sha256']=sha(combined)
+ result['compressed_shard_sha256']=gz_hashes
  result['result_manifest_sha256']=sha(fetch(base+'results/RESULTS_MANIFEST.json'))
  result['archive_commit']=commit
  print('MPW102_INDEPENDENT_RECOMPUTATION '+json.dumps(result,sort_keys=True),flush=True)
