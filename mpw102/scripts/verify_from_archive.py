@@ -5,11 +5,11 @@
 """Independent remote archivist/verifier, no model inference.
 
 Expected usage: uv run verify_from_archive.py COMMIT_SHA
-Fetches exactly 4 binary gzip shard files from the frozen GitHub archive;
+Fetches exactly 4 base64-encoded gzip shard files from the frozen GitHub archive;
 verifies every member against RESULTS_MANIFEST.json, runs separate
 independent_analysis.py, and prints independent verdict and SHA-256.
 """
-import gzip,hashlib,importlib.util,json,sys,tempfile
+import base64,gzip,hashlib,importlib.util,json,sys,tempfile
 from pathlib import Path
 from urllib.request import urlopen
 
@@ -27,7 +27,8 @@ def main():
  if manifest['n']!=256 or len(manifest['shards'])!=4:raise RuntimeError('BAD_RESULTS_MANIFEST')
  raw=[]
  for j,item in enumerate(manifest['shards']):
-  b=fetch(base+f'results/shard{j+1:02d}.jsonl.gz')
+  b64=fetch(base+f'results/shard{j+1:02d}.jsonl.gz.b64').strip()
+  b=base64.b64decode(b64,validate=True)
   if sha(b)!=item['gz_sha256']:raise RuntimeError('COMPRESSED_SHA_MISMATCH')
   text=gzip.decompress(b)
   if sha(text)!=item['raw_sha256']:raise RuntimeError('RAW_SHA_MISMATCH')
