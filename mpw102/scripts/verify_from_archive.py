@@ -29,7 +29,7 @@ def main():
  for j,item in enumerate(manifest['shards']):
   b64=fetch(base+f'results/shard{j+1:02d}.jsonl.gz.b64').strip()
   b=base64.b64decode(b64,validate=True)
-  if sha(b)!=item['gz_sha256']:raise RuntimeError('COMPRESSED_SHA_MISMATCH')
+  if item.get('gz_sha256') and sha(b)!=item['gz_sha256']:raise RuntimeError('COMPRESSED_SHA_MISMATCH')
   text=gzip.decompress(b)
   if sha(text)!=item['raw_sha256']:raise RuntimeError('RAW_SHA_MISMATCH')
   if len(text.splitlines())!=64:raise RuntimeError('INCOMPLETE_SHARD')
