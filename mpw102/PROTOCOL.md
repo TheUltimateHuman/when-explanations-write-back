@@ -2,8 +2,8 @@
 
 **Project:** Mechanistic Provenance: When Explanations Write Back — Paper II follow-up  
 **Investigator:** Aidan Edward Lawson, Independent Researcher (Modal Path Ethics)  
-**Protocol prepared:** 2026-10-14 CDT after MPW-101/MPW-101E outcomes, before MPW-102 validation.  
-**Status:** PROTOCOL DRAFT PENDING CPU PREFLIGHT HASH AND GITHUB FREEZE.  
+**Protocol prepared:** 2026-10-14 CDT after MPW-101/MPW-101E outcomes, before MPW-102 validation. Modified after unsuccessful CPU-only token preflight, prior to any GPU validation; see AMENDMENT-001.  
+**Status:** PROTOCOL v1.1 PENDING REPEAT CPU PREFLIGHT AND FINAL GIT FREEZE.  
 **Experiment ID:** MPW-102 / Phase A (Phi single-architecture).  
 **Prior evidence:** MPW-101 primary natural-report conversion FAILED (18 vs 11, p=.26493); MPW-101E confirmed sensitivity to reporting token, extra context, and LEFT/RIGHT presentation order on reused families (exploratory).
 
@@ -23,7 +23,7 @@ Hardware: L4 GPU, FP16, torch 2.6.0, transformers 4.49.0, batch up to 12 prompts
 
 ## Interventions and controls
 
-Three response-code pairs: **A/B**, **X/Y**, **1/2**. Every code must tokenize as a *single* native next-token candidate; no fallback substitution after observing validation. For each family, carrier and both display orders, use mapping M0 (first code LEFT, second RIGHT) and M1 (first code RIGHT, second LEFT). Vary the display order of the two response-code options across families but keep it fixed within that family's comparison. In each mapping, externally insert the LEFT-meaning code and RIGHT-meaning code on independent cloned conversation prefixes.
+Three response-code pairs: **A/B**, **X/Y**, **K/M**. Every code must tokenize as a *single* native next-token candidate; no fallback substitution after observing validation. For each family, carrier and both display orders, use mapping M0 (first code LEFT, second RIGHT) and M1 (first code RIGHT, second LEFT). Vary the display order of the two response-code options across families but keep it fixed within that family's comparison. In each mapping, externally insert the LEFT-meaning code and RIGHT-meaning code on independent cloned conversation prefixes.
 
 Paired case presentation: **LEFT then RIGHT** and **RIGHT then LEFT** while semantic labels and exact passage identities remain invariant. Counterfactual replacement swaps the passage *content* but retains label and display order. Each family is evaluated under both orders, never one order chosen based on outcomes.
 
