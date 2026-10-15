@@ -3,7 +3,7 @@
 **Project:** Mechanistic Provenance: When Explanations Write Back — Paper II follow-up  
 **Investigator:** Aidan Edward Lawson, Independent Researcher (Modal Path Ethics)  
 **Protocol prepared:** 2026-10-14 CDT after MPW-101/MPW-101E outcomes, before MPW-102 validation. Modified after unsuccessful CPU-only token preflight, prior to any GPU validation; see AMENDMENT-001.  
-**Status:** PROTOCOL v1.1 PENDING REPEAT CPU PREFLIGHT AND FINAL GIT FREEZE.  
+**Status:** PROTOCOL v1.1 CPU PREFLIGHT PASSED; FINAL SOURCE-AND-MANIFEST FREEZE READY.  
 **Experiment ID:** MPW-102 / Phase A (Phi single-architecture).  
 **Prior evidence:** MPW-101 primary natural-report conversion FAILED (18 vs 11, p=.26493); MPW-101E confirmed sensitivity to reporting token, extra context, and LEFT/RIGHT presentation order on reused families (exploratory).
 
@@ -58,3 +58,11 @@ Hugging Face Jobs on L4, <=90 minute platform timeout and <=70 minute in-run lim
 Before any GPU validation: source code/manifest and acceptance rules frozen in a timestamped git commit on a separate branch; CPU preflight to check sampling, hashes and atomic tokens, then pin computed new family-manifest SHA and freeze again before validation. If no external OSF record was created, do not claim external preregistration: call this a **prospectively git-frozen protocol**.
 
 Retain complete raw family JSONL, compressed log recovery blocks, script hash, fixed manifest, model/dataset SHA, dependency versions, GPU and runtime, job ID, failure/mutation logs, independent aggregate analysis, and the exact verdict. Stronger cross-architecture claims require an independent eligible model pass in a separate protocol; Phi Phase A cannot establish them.
+
+## CPU preflight outcome and freeze anchors
+
+- Failed preflight `6ad030965ccb47ba0f7a3089`: third numeric pair had two next-token IDs; zero validation observations. Full failure kept in `AMENDMENT-001.md`.
+- Passed preflight `6ad0321f5ccb47ba0f7a30e9`: AB, XY and KM each atomic; no model inference or validation observations.
+- New family-manifest SHA-256 (calibration + validation): `90ac38a668c6fa03ebdd1a37f294dc7280b24533b5d5caacbd8ed034f54549c5`.
+- Original MPW-101 manifest SHA-256: `9559ac6421cb4c5498009b25831766bbdbd5a3fa563083ce9eecfaadde6dda3f`.
+- No external OSF registration is asserted; the frozen Git commit is the prospective timestamp.
