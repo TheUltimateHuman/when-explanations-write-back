@@ -1,0 +1,94 @@
+{
+  "schema_version": "MPW_POSTRESULT_GATE_RECOVERY_V1",
+  "status": "Original raw GPU records archived; post-result time-only amendments preserved",
+  "source_amendment_commit": "bd9c54d9911581ca077d7f85d7122c681fd04871",
+  "original_stopped_runs_still_unmodified": true,
+  "category": "POST_RESULT_TIME_GATE_AMENDMENT",
+  "runs": {
+    "mpw102b_granite": {
+      "category": "POST_RESULT_TIME_GATE_AMENDMENT",
+      "original_job_id": "6adb59f41e112550ce7d4f20",
+      "amended_job_id": "6adbd71c046eb82b1ecd7858",
+      "original_runner_sha256": "13ee183820c3e870a7566c3727593386ab375eff1790687186bd47439ad02eb8",
+      "amended_runner_sha256": "f2d7f6d4a34ae3ebdebb44e6b6fe01856e814e00dfee089b807f20ec04cb4dfe",
+      "model": "ibm-granite/granite-3.3-8b-instruct",
+      "model_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "dataset_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+      "case_manifest_sha256": "5604b42d0264c5ddf228a649e3847ab392b57116d89aaf3c0b625407583928ce",
+      "model_hardware": "NVIDIA L4",
+      "n": 192,
+      "scientific_valid": false,
+      "original_unchanged_inferential_verdicts": {
+        "H1": "INVALID",
+        "H2": "INVALID"
+      },
+      "invalidity_reasons": [
+        "RIGHT-first baseline accuracy 0.8854166667 <0.90",
+        "untouched numerical repeat max absolute D difference 0.07352918800527977 >=0.0001"
+      ],
+      "raw_h1_mean_diagnostic_only": 0.08448023961783475,
+      "raw_h2_mean_diagnostic_only": -0.031697408708540493,
+      "combined_raw_sha256": "b1b4be078b3ef42b6b11750c612b691b8f7d769038c6134c2e2dfab861f5c88f",
+      "independent_original_analysis_sha256": "bdc66e86bc1d853e21574ecd392112824c3a657ebea9f8bb58abe48c18d47736",
+      "shards": [
+        {
+          "n": 48,
+          "raw_sha256": "cd3dcb961a82b34934bea6792dcf5e69f5052fc9d3f5a8cfa073878a7828ad03"
+        },
+        {
+          "n": 48,
+          "raw_sha256": "6c262c646ff86b9ddfdcc60bd9dab7ea37bda6bb57d8dbb1d794f867854bcfa6"
+        },
+        {
+          "n": 48,
+          "raw_sha256": "6f22b1778773f93ea0d8ce4186702905324d9dcf8a3c98e2719d953c0d73eaab"
+        },
+        {
+          "n": 48,
+          "raw_sha256": "af50651e68dc1c4ff54c884379f028f0a52e284a9f6fcf26535b81e5d3ded584"
+        }
+      ]
+    },
+    "mpw103_qwen": {
+      "category": "POST_RESULT_TIME_GATE_AMENDMENT",
+      "original_job_id": "6adbb3371e112550ce7d7e4d",
+      "amended_job_id": "6adbd71e046eb82b1ecd785a",
+      "original_runner_sha256": "78d24e2990fb1d24e9caddd2ce5b161c9554adfebf74ec9b9ab3f83894621bba",
+      "amended_runner_sha256": "153336fc9d93edafe1fad4d40d37d9f9cab101aa2aeda9c3c5d766e35dfd3cd4",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "dataset_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+      "case_manifest_sha256": "370a225c22762ba97f4bac87692a9ff6cab032713d467f6a040ebcfd96d4f08b",
+      "model_hardware": "NVIDIA L4",
+      "n": 128,
+      "scientific_valid": true,
+      "original_unchanged_inferential_verdicts": {
+        "H1": "CONFIRMED",
+        "H2": "CONFIRMED",
+        "H3": "CONFIRMED",
+        "H4": "NOT_CONFIRMED"
+      },
+      "combined_raw_sha256": "129ca194314319456189a26d1953223a50cb138e2159e3b0346b14ce1fdff2a9",
+      "independent_original_analysis_sha256": "5f715b181679c6f23768319d6056cbcd6160d07987878d86c8c50c9b27220e9a",
+      "shards": [
+        {
+          "n": 32,
+          "raw_sha256": "4237b2d0b8d443bf4460f2e186c84f15bb22854e888f0cf712f8dd365dad05d6"
+        },
+        {
+          "n": 32,
+          "raw_sha256": "4843043bb46df4a340f80302ccc2abcea80b4f2112f5c1bb8495ce912f6b19fe"
+        },
+        {
+          "n": 32,
+          "raw_sha256": "fff31dfa62e35749dd34e5e38301fe62b9adc47d8d936c958c06d9ad4a98994e"
+        },
+        {
+          "n": 32,
+          "raw_sha256": "cb80e6847ae3f6eb0892c3c56b65d642c3bd9929f4741ee96fe83e0ea1775507"
+        }
+      ]
+    }
+  },
+  "limitations": "Original raw observations from two separate model runs; original statistical analysis code reused; the protocol adjustment occurred after other related experiment outcomes were known. Validity failure in 102B Granite forbids inferential confirmation."
+}
