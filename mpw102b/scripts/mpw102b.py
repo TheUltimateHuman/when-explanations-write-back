@@ -2,7 +2,7 @@
 # requires-python = ">=3.10,<3.13"
 # dependencies = [
 # "torch==2.6.0","transformers==4.57.3","accelerate==1.6.0",
-# "datasets==3.6.0","huggingface_hub==0.32.0",
+# "datasets==3.6.0","huggingface_hub==0.36.0",
 # "numpy==2.1.3","scipy==1.15.3","sentencepiece==0.2.0"
 # ]
 # ///
