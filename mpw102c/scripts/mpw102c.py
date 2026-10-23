@@ -28,7 +28,7 @@ MODELS={'qwen3':'Qwen/Qwen3-4B-Instruct-2507',
         'granite':'ibm-granite/granite-3.3-8b-instruct'}
 MODEL_PINS={'qwen3':'cdbee75f17c01a7cc42f958dc650907174af0554',
             'granite':'51dd4bc2ade4059a6bd87649d68aa11e4fb2529b'}
-EXPECTED_MANIFEST='UNSET_PREFLIGHT_REQUIRED'
+EXPECTED_MANIFEST='55435add76c33a0a6eafedb1e4044902025ed4c1a41d37df9d8514f6372a5ff1'
 SEED=2026102303
 CAL_N=32;VAL_N=160;EPS=1e-6
 TIME_LIMITS={'qwen3':65*60,'granite':90*60}
