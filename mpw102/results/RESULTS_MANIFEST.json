@@ -1,0 +1,36 @@
+{
+  "study": "MPW-102 Phase A",
+  "status": "completed GPU run, independently reanalysis pending",
+  "gpu_job_id": "6ad0329e5ccb47ba0f7a3139",
+  "gpu_job_url": "https://huggingface.co/jobs/TheUltimateHuman/6ad0329e5ccb47ba0f7a3139",
+  "frozen_gpu_runner_commit": "817a15118286553bb1758d8f4d47803ae06a9147",
+  "frozen_gpu_runner_sha256": "36f2125299ac918db044359e9e8ebebe4c1e5b20029ec19e48a3cfe2f7e39118",
+  "calibration_n": 32,
+  "n": 256,
+  "model": "microsoft/Phi-3.5-mini-instruct",
+  "model_sha": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+  "dataset": "stanfordnlp/sst2",
+  "dataset_sha": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "case_manifest_sha256": "90ac38a668c6fa03ebdd1a37f294dc7280b24533b5d5caacbd8ed034f54549c5",
+  "combined_raw_sha256": "6b7164146f594392db8d1545892bcc0f3ecccf79f0c7d2585c7cc3e55a523469",
+  "independent_analysis_sha256": "86ac45270c62abecf0b054a0a27f3c97c68e3f34da5b04f50d2a5ba94cf99188",
+  "shards": [
+    {
+      "n": 64,
+      "raw_sha256": "dbf81cf434e2805f406a035cef6cb598c1fb857118516a04535495a709cb3750"
+    },
+    {
+      "n": 64,
+      "raw_sha256": "a45515cdfcb1cf371109ca9c5357d54db9ad00d4732e2bb8ae4a2b762f2d1da8"
+    },
+    {
+      "n": 64,
+      "raw_sha256": "72adc99ad9d70316184ab62e50e0443aa30e63634a3ccdc10769f164de380ff3"
+    },
+    {
+      "n": 64,
+      "raw_sha256": "6d923d5aedf7d6dd5445c50fa2c37029cb06f2fc7d272e33071a3b95cff925c2"
+    }
+  ],
+  "provenance_note": "Original job archive; compressed bytes reconstructed from 10 ordered log messages per shard without modifying any family records; primary was frozen prior to the 2026-10-15 GPU run. No OSF registration."
+}
