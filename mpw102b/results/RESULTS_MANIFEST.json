@@ -1,0 +1,79 @@
+{
+  "schema_version": "MPW102B_RESULT_ARCHIVE_V1",
+  "study": "MPW-102B: independent-architecture transport and grammatical-person specificity",
+  "raw_data_source": "exact MPW102B_SHARD_B64 messages from Hugging Face Jobs completed GPU run",
+  "freeze_commit": "f56a74626df150c382c565c268c403762ca487d6",
+  "source_sha256": "13ee183820c3e870a7566c3727593386ab375eff1790687186bd47439ad02eb8",
+  "case_manifest_sha256": "5604b42d0264c5ddf228a649e3847ab392b57116d89aaf3c0b625407583928ce",
+  "dataset": "stanfordnlp/sst2",
+  "dataset_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "independent_analysis_sha256": "bdc66e86bc1d853e21574ecd392112824c3a657ebea9f8bb58abe48c18d47736",
+  "status_note": "These records were recovered after the two GPU jobs finished. Neither the frozen hypotheses nor the executed model-runner source were modified.",
+  "models": {
+    "qwen3": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "job_id": "6adb597a1e112550ce7d4ecb",
+      "job_status": "COMPLETED",
+      "scientific_status": "192 complete validation families; independent analysis pending",
+      "calibration_accuracy_LR": 1,
+      "calibration_accuracy_RL": 0.90625,
+      "calibration_sensitivity": 27.3935546875,
+      "n": 192,
+      "combined_raw_sha256": "be27ed4591eddadbb622708b5857ff13a91e8a3d2e4f347eabad4e574350a2db",
+      "shards": [
+        {
+          "n": 48,
+          "range": [
+            0,
+            47
+          ],
+          "raw_sha256": "e86243d571a8b05361969b547f43390672f5b38100c2510b6bf2bd78523a0f30"
+        },
+        {
+          "n": 48,
+          "range": [
+            48,
+            95
+          ],
+          "raw_sha256": "ab56e9c118307d7ead8362304d74aac65898af3db6ba6284e049a5b8a7f35189"
+        },
+        {
+          "n": 48,
+          "range": [
+            96,
+            143
+          ],
+          "raw_sha256": "803713bcc9014cf3c74fde9c35cd49d2cf168f6908c612993f7f5a2757d5c14e"
+        },
+        {
+          "n": 48,
+          "range": [
+            144,
+            191
+          ],
+          "raw_sha256": "4b24a9c3d17317d8b963c4fcba7318b73b9985ca3fd6ce92c608dd832c31df6a"
+        }
+      ]
+    },
+    "granite": {
+      "model_id": "ibm-granite/granite-3.3-8b-instruct",
+      "model_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "job_id": "6adb59f41e112550ce7d4f20",
+      "job_status": "COMPLETED",
+      "scientific_status": "RUNTIME_GATE_FAIL; NO VALIDATION EXECUTED",
+      "calibration_accuracy_LR": 0.96875,
+      "calibration_accuracy_RL": 0.9375,
+      "calibration_sensitivity": 17.1719970703125,
+      "projected_total_seconds": 4009.342105167,
+      "max_seconds": 3900,
+      "n": 0,
+      "shards": [],
+      "exclusion_reason": "Prospectively frozen calibration-only timing gate rejected projected run before validation, not a negative hypothesis result."
+    }
+  },
+  "hypotheses": {
+    "H1": "AB-coded report-meaning effect; exact mapping reversal and paired case presentation",
+    "H2": "Mean first/second/third-person declarative report-meaning effect minus side-reference LEFT/R effect"
+  }
+}
