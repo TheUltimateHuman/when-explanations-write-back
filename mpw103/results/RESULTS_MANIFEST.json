@@ -1,0 +1,108 @@
+{
+  "schema": "MPW103_PHASE_A_RESULTS_V1",
+  "study": "MPW-103 sequential mechanistic provenance",
+  "record_created_date": "2026-10-23",
+  "source_freeze_commit": "80a1015c044d352264b43f9b188ec6be52001e6b",
+  "runner_source_sha256": "78d24e2990fb1d24e9caddd2ce5b161c9554adfebf74ec9b9ab3f83894621bba",
+  "independent_analysis_sha256": "5f715b181679c6f23768319d6056cbcd6160d07987878d86c8c50c9b27220e9a",
+  "independent_archive_verifier_sha256": "cd325534c9412db11fc314c7fd62f29869219b6ad548cdf1ec9f08e8958dfc0b",
+  "sample_manifest_sha256": "370a225c22762ba97f4bac87692a9ff6cab032713d467f6a040ebcfd96d4f08b",
+  "dataset_id": "stanfordnlp/sst2",
+  "dataset_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "calibration_n": 32,
+  "planned_validation_n": 128,
+  "significance": {
+    "familywise_alpha": 0.05,
+    "comparisons": 8,
+    "per_test_alpha": 0.00625,
+    "bootstrap_resamples": 50000,
+    "bootstrap_seed": 520261025
+  },
+  "models": {
+    "qwen3": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "job_id": "6adbb3371e112550ce7d7e4d",
+      "job_url": "https://huggingface.co/jobs/TheUltimateHuman/6adbb3371e112550ce7d7e4d",
+      "hardware": "NVIDIA L4",
+      "provider_status": "COMPLETED",
+      "scientific_status": "RUNTIME_GATE_FAIL",
+      "n": 0,
+      "calibration_accuracy_by_order": {
+        "LR": 0.96875,
+        "RL": 0.96875
+      },
+      "calibration_sensitivity": 26.5146484375,
+      "complete_branch_timing_sec_per_family": 22.70021710599997,
+      "projected_total_sec": 4114.3644667697945,
+      "in_process_max_sec": 3900,
+      "no_validation": true,
+      "verdicts": {
+        "H1": "UNKNOWN_NOT_TESTED",
+        "H2": "UNKNOWN_NOT_TESTED",
+        "H3": "UNKNOWN_NOT_TESTED",
+        "H4": "UNKNOWN_NOT_TESTED"
+      },
+      "shards": [],
+      "explanation": "The prospectively frozen runtime projection exceeded the 3900-sec script limit; no confirmatory validation observations were generated."
+    },
+    "granite": {
+      "model_id": "ibm-granite/granite-3.3-8b-instruct",
+      "model_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "job_id": "6adbb3381e112550ce7d7e50",
+      "job_url": "https://huggingface.co/jobs/TheUltimateHuman/6adbb3381e112550ce7d7e50",
+      "hardware": "NVIDIA L40S",
+      "provider_status": "COMPLETED",
+      "scientific_status": "FULL_128_VALIDATION_RECORDED",
+      "n": 128,
+      "validation_accuracy_by_order": {
+        "LR": 0.9609375,
+        "RL": 0.9296875
+      },
+      "numerical_floor_max": 0,
+      "combined_raw_sha256": "abc7880fb845b22ba182e505ed83001341d5d112ebad66c30927b2fe1987a7d4",
+      "verdicts": {
+        "H1": "CONFIRMED",
+        "H2": "NOT_CONFIRMED",
+        "H3": "CONFIRMED",
+        "H4": "NOT_CONFIRMED"
+      },
+      "shards": [
+        {
+          "n": 32,
+          "range": [
+            0,
+            31
+          ],
+          "raw_sha256": "34b74a0ed36aa8ff927902057c23b80acf6a8f195987c9b3a443bf532a3a72f4"
+        },
+        {
+          "n": 32,
+          "range": [
+            32,
+            63
+          ],
+          "raw_sha256": "13b77eff0f425e34ecedcf6781bec955d96692659e3b3080f1dcf58bc5e8d4e8"
+        },
+        {
+          "n": 32,
+          "range": [
+            64,
+            95
+          ],
+          "raw_sha256": "904c73589da409fc30ae3efeb00fcc943652d0cbfa2aa527a023a39183af2124"
+        },
+        {
+          "n": 32,
+          "range": [
+            96,
+            127
+          ],
+          "raw_sha256": "4753969e8c70503b15470f0ed1404bea54b019802a8e1f74905c5863ee31794c"
+        }
+      ]
+    }
+  },
+  "provenance_caveat": "The original GPU logs were used to reconstruct exact compressed 32-family shards. All reported effects remain provisional until an independent CPU verifier checks shard and combined SHA-256 and recomputes exact frozen verdicts.",
+  "no_osf_registration": true
+}
