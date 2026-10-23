@@ -1,0 +1,136 @@
+{
+  "schema_version": "MPW102C_ARCHIVE_V1",
+  "study": "MPW-102C: two-model report-meaning and person-matched follow-up",
+  "source_protocol_commit": "b02449a43edbdc4332d893d69a269f954e3d1e42",
+  "executing_source_sha256": "a6951dfa98ca00ddf02e50bf09798b09d38ff3845cfaff3583ce3948f0ec8b6a",
+  "dataset": "stanfordnlp/sst2",
+  "dataset_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "case_manifest_sha256": "55435add76c33a0a6eafedb1e4044902025ed4c1a41d37df9d8514f6372a5ff1",
+  "calibration_n": 32,
+  "validation_n": 160,
+  "independent_analysis_sha256": "4cfbf773acd007ef09539d5642512351ebe396bb187c580f5630600f79832790",
+  "independent_verifier_sha256": "5c14b4388be3b0216ca1abb82629cc2e4e16fb74d048b3a8ac03daa8be77f0b7",
+  "test_familywise_alpha": 0.008333333333333333,
+  "bootstrap_resamples": 50000,
+  "models": {
+    "qwen3": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "job_id": "6adb939b046eb82b1ecd5a01",
+      "job_url": "https://huggingface.co/jobs/TheUltimateHuman/6adb939b046eb82b1ecd5a01",
+      "job_stage": "COMPLETED",
+      "run_stage": "COMPLETED",
+      "gpu": "NVIDIA L4",
+      "calibration_accuracy_by_order": {
+        "LR": 0.9375,
+        "RL": 0.90625
+      },
+      "calibration_sensitivity": 24.45556640625,
+      "validation_accuracy_by_order": {
+        "LR": 0.9375,
+        "RL": 0.94375
+      },
+      "n": 160,
+      "combined_raw_sha256": "f7489af84417006cac1410674c336878b986c965dff889dcee141867e42ad002",
+      "logged_verdicts": {
+        "H1": "CONFIRMED",
+        "H2": "CONFIRMED",
+        "H3": "CONFIRMED"
+      },
+      "shards": [
+        {
+          "n": 40,
+          "range": [
+            0,
+            39
+          ],
+          "raw_sha256": "351d79564ee71235a40707bdac565e4c194ef1de24770a73e4619c5c79181812"
+        },
+        {
+          "n": 40,
+          "range": [
+            40,
+            79
+          ],
+          "raw_sha256": "bc3e4da164301bee036350780d13160344f6070b93585c684e208d27ce23f869"
+        },
+        {
+          "n": 40,
+          "range": [
+            80,
+            119
+          ],
+          "raw_sha256": "e1c18018c38f00f9f2d6778521ca25c261955e3bc346c60a5908f89257386f9a"
+        },
+        {
+          "n": 40,
+          "range": [
+            120,
+            159
+          ],
+          "raw_sha256": "e501cf8f678bfc68315120bba6cf042afff180bce45580b18019d0858e92be69"
+        }
+      ]
+    },
+    "granite": {
+      "model_id": "ibm-granite/granite-3.3-8b-instruct",
+      "model_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "job_id": "6adb93921e112550ce7d6a2e",
+      "job_url": "https://huggingface.co/jobs/TheUltimateHuman/6adb93921e112550ce7d6a2e",
+      "job_stage": "COMPLETED",
+      "run_stage": "COMPLETED",
+      "gpu": "NVIDIA L40S",
+      "calibration_accuracy_by_order": {
+        "LR": 1,
+        "RL": 0.96875
+      },
+      "calibration_sensitivity": 16.64190673828125,
+      "validation_accuracy_by_order": {
+        "LR": 0.925,
+        "RL": 0.9
+      },
+      "n": 160,
+      "combined_raw_sha256": "f3f0b8c89331cadb2a0a7ff5577dc1d3d74ad164b31ab8a5a351b95f292fbf8b",
+      "logged_verdicts": {
+        "H1": "CONFIRMED",
+        "H2": "NOT_CONFIRMED",
+        "H3": "CONFIRMED"
+      },
+      "shards": [
+        {
+          "n": 40,
+          "range": [
+            0,
+            39
+          ],
+          "raw_sha256": "275233ca90b7fd820067efe7b3bddd9b38a1cbba6c082c21804bf6540e076e3d"
+        },
+        {
+          "n": 40,
+          "range": [
+            40,
+            79
+          ],
+          "raw_sha256": "1de5a1e3bb906fbef7e406d9ea84c6200ea454c10aac71cc5de12e74a6f75046"
+        },
+        {
+          "n": 40,
+          "range": [
+            80,
+            119
+          ],
+          "raw_sha256": "953be357bb246dd1199dbef5807b5fa87fda12d496410fc73440db68518f26a8"
+        },
+        {
+          "n": 40,
+          "range": [
+            120,
+            159
+          ],
+          "raw_sha256": "cd70bf6f737e3ac6f7c0177c1f2ecaacd20f9a60f654317504ea9d75584b7d33"
+        }
+      ]
+    }
+  },
+  "status_note": "Original complete model-run outputs, after frozen protocol. No raw rows changed. Preserve all confirmed and failed hypotheses; independent verification forthcoming."
+}
