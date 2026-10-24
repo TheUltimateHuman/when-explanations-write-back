@@ -228,8 +228,13 @@ def main():
                 "J":float(iL-iR),"I_left":float(iL),"I_right":float(iR),
                 "sens":float(total),"acc":int(a>=0)}
     def prompt_for_report(f,question):
-        answer="positive" if f["label"]==1 else "negative"
-        return base+[old104.case_text(f,"LR",f["left"],f["right"]),
+        source_case=old104.case_text(f,"LR",f["left"],f["right"])
+        original_logits=forward_last_logits([base+[source_case]])[0]
+        # Reconstruct the actual frozen model's own prior classification,
+        # NOT an oracle-supplied ground-truth answer.
+        answer=("positive" if original_logits[ids["positive"]]>=
+                original_logits[ids["negative"]] else "negative")
+        return base+[source_case,
             {"role":"assistant","content":answer},
             {"role":"user","content":question}]
     def generate_report(f):
