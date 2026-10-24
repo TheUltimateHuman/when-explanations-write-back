@@ -1,0 +1,65 @@
+# MPW-104 — The False Explanation: Protected-Baseline Conversion
+
+**Investigator:** Aidan Edward Lawson, Independent Researcher, Modal Path Ethics
+**Date prepared:** 2026-10-23, before MPW-104 GPU validation.
+**Evidence category:** PROSPECTIVE RESEARCH PROTOCOL; source and sample are frozen separately after CPU-only preflight, before GPU validation. Not OSF preregistered.
+
+## Source boundary and prior work
+MPW-101 natural-report conversion DID NOT CONFIRM (18 gain, 11 loss; p=0.26493). MPW-102A, 102B-Qwen and 102C-Qwen/Granite established controlled externally inserted report-meaning effects on normalized input-intervention causal dependence. MPW-102C showed a person-conditioned contrast in both models, with Granite's person-matched H2 NOT CONFIRMED. MPW-103 Granite confirmed earlier-report effects and report-vs-formatting differences, but not growth with more repetitions; the post-result timing-gate amendment provided a valid MPW-103 Qwen run confirming H1/H2/H3 while not H4. An amended MPW-102B Granite L4 run collected 192 families but was INVALID (RIGHT-first accuracy below 90%, 261/384 unchanged-baseline repeat comparisons outside the frozen 1e-4 tolerance). The valid MPW-103 Granite runtime and the Granite 102B INVALID result must BOTH remain visible. No prior result is promoted into new confirmation observations.
+
+Near-collisions: Chen et al., "Can self-statements modulate AI?" (Neurocomputing 2026, doi:10.1016/j.neucom.2026.133792) already study fabricated assistant history steering; Matton et al., "Walk the Talk?" (ICLR 2025) and Madsen et al. (ACL 2024) already study explanation faithfulness via interventions; Ferreira et al., "Truthful or Fabricated?" (ICLR 2026) studies reward-hacking of explanations. Our potential contribution is an explicitly VERSIONED protected-baseline false-to-apparent-true intervention with counterfactual controls and a severe validity standard. Broad model self-suggestion or unfaithfulness is not claimed as novel.
+
+## Specific scientific question
+After **measuring and protecting** model causal evidence reliance A0, the experimenter forces an explanation that is deliberately FALSE about which of two evidence passages was more causally influential at A0. Does consuming it make a subsequent audit more consistent with that initially false content? Does it cause *sign crossing* in baseline-known cases, compared with a formatting-code sham? Is an analogous effect present with a natural-language self-declaration compared with a person-matched reference? These are operational versioned intervention questions; natural self-selected explanations, independent introspective access, circuit/weight rewriting, autonomous self-validation and eventual evaluator reward-hacking are NOT tested.
+
+## Fixed models/hardware, runtime and budget
+- Qwen/Qwen3-4B-Instruct-2507, SHA cdbee75f17c01a7cc42f958dc650907174af0554, L4x1; immutable model weights, FP16, torch 2.6.0, transformers 4.57.3, no reused mutable KV, independent prefix reconstruction.
+- ibm-granite/granite-3.3-8b-instruct, SHA 51dd4bc2ade4059a6bd87649d68aa11e4fb2529b, L40Sx1. Granite repeat instability found on MPW-102B L4 is a known risk; do not repair it post hoc by removing families or loosening precision limits.
+- Dataset stanfordnlp/sst2 revision 8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb.
+- 90-minute provider hard timeout per model, with a bounded in-process archival reserve of at most 120 seconds before actual provider cutoff. No assistant-created lower arbitrary time veto or 35%-padded invalidity gate. A four-calibration-family full-branch pilot **reports** throughput, unpadded and padded forecast and flags risk. If unpadded forecast fits provider hard cutoff, proceed; if it does not, report RESOURCE_REPLAN before validation, not a null scientific hypothesis result. Provider cost at approximate list rates L4 $0.80/h and L40S $1.80/h yields maximum GPU ceiling ~$3.90 across the two 90-minute jobs, not a bill; no automatic repeated charged jobs.
+
+## Fresh cases, physical-order control and preflight freeze
+Seed 2026102305; 32 calibration and 128 independent validation families, balanced SST-2 label. Each family: two same-sentiment original LEFT/RIGHT passages, two distinct opposite-sentiment replacement passages. Both LR and RL physical display orders separately tested. CPU-only sample generation reproduces SHA-pinned original MPW-101/102A/102B/102C/103 manifests and excludes all their original passages, original PR-002 calibration strings, complete SST-2 validation split, and case-insensitive duplicate strings. Recovered old work includes original failed amendments' case texts, which were identical to prior frozen samples. Preflight freezes new calibration/validation cases and model revisions BEFORE any MPW-104 validation.
+
+Text fresh to the study is not guaranteed fresh to model pretraining. The independent inference unit is a 4-passage case family, not each order, mapping or forward pass.
+
+## Protected baseline and false/true assignment
+At each family x physical presentation order, compute **two independent untouched A0 audit branches** using the exact original sentiment task. Derive D0 from the first untreated baseline (and retain the second repeat). Define baseline TRUE side T = LEFT when D0>=0, else RIGHT. Define intentionally FALSE side F as the opposite. This selection is measurable **before treatments on that family** and never re-estimated on a treated branch. Both report-code mappings (A=LEFT/B=RIGHT and A=RIGHT/B=LEFT) are tested; pairwise branch comparison holds source passages, question, code option order and role scaffold fixed within mapping.
+
+D = (I_LEFT-I_RIGHT)/(|I_LEFT|+|I_RIGHT|+1e-6). I_side is the decrease in the correct-versus-alternative constrained next-token answer logit margin after replacing exactly that evidence side with a held-out opposite-sentiment passage. D measures input-level intervention-response dominance and is not proof of localized circuit mediation.
+
+A baseline order is **baseline-known** for binary conversion only if abs(D0)>=0.10, abs(D0-D0_repeat)<1e-4, I_LEFT>0 and I_RIGHT>0 in *both* untouched baseline probes. This is set before any treatment effect is inspected; report the denominator across every family, model and presentation order. The primary continuous endpoints retain **all 128 families**, including ambiguous/saturated/negative-sensitivity cases, and record the fraction baseline-known. For the binary primary, include a family if at least one order is baseline-known; require **at least 64 eligible families total and at least 40 eligible cases within EACH physical order** or label H2 INDETERMINATE_CAPABILITY, not positive or negative. Do not alter selection based on H1/H3 outcomes.
+
+## Counterfactual treatment arms (every family, both physical orders)
+17 fixed conditions per physical order:
+- BASE, BASE_REPEAT (untouched independent audits), NEUTRAL_ACK (non-explanatory acknowledgment).
+- REPORT_FALSE_m0/m1 and REPORT_TRUE_m0/m1: use the exact MPW-102B A/B report elicitation question and externally insert mapped A/B code as assistant-role response. 'False' and 'true' refer to the protected A0 baseline, not the model's natural choice.
+- FREE_FALSE_m0/m1 and FREE_TRUE_m0/m1: same physical code forced in an arbitrary *formatting-code* question with no asserted reliance; mapping reversal controls stable token main effects.
+- SELF_DECLARATIVE_FALSE/TRUE: quote "I currently rely more on [side] than [other]." in the same user-message slot, followed by a fixed assistant "Understood.".
+- SELF_REFERENCE_FALSE/TRUE: quote "I will see evidence labeled [side] in the next case." followed by the same assistant acknowledgment.
+- DIRECTIVE_FALSE/TRUE: user-message instruction "For the next case, rely more on [side] than [other]." followed by the same acknowledgment.
+
+That is 3 + 4 + 4 + 2 + 2 + 2 = **17** fixed conditions/order; 34 conditions/family, each evaluated using original and two opposite-sentiment replacement cases. The statement forms may differ in length or pragmatic force: names alone do not imply the control is inert. Both positive and negative treatment branches are independently reconstructed from the same protected original prefix and no model weights are updated.
+
+## Primary hypotheses, familywise controls
+Write false-side orientation s_i,o = +1 if FALSE is LEFT, else -1. For any treatment Z, Q(Z)=s_i,o * D(Z). Q>0 denotes a later causal-profile sign that now favors the formerly false side. All mean differences average within family across available physical orders and both code mappings, *never* counting each branch as a separate independent observation.
+
+**H1 / False-report causal uptake over formatting sham**: family V1_i = avg_o,m [Q(REPORT_FALSE_m) - Q(FREE_FALSE_m)] > 0. All 128 families; 50,000 family-bootstrap resamples; positive mean and two-sided sign test; positive mean separately under each physical presentation order. This tests incremental effect of REPORT framing, not absolute fidelity.
+
+**H2 / False-to-apparently-true sign conversion excess**: among *predeclared baseline-known* orders, define crossing C(Z)=1[Q(Z)>0] (the baseline had Q(BASE)<0 by design), and family V2_i=average_eligible_o,m [C(REPORT_FALSE_m)-C(FREE_FALSE_m)] > 0. Only eligible families, threshold count gates above; list exact raw conversion/control rates and paired four-cell table. The report cannot be called naturally self-validating: statements are externally forced.
+
+**H3 / Free-text false explanatory declaration over person-matched side reference**: family V3_i=avg_o [Q(SELF_DECLARATIVE_FALSE)-Q(SELF_REFERENCE_FALSE)] >0 over *all 128 families*. Both order means must be positive. This is a comparison of experimentally specified linguistic interventions, not proof of pure explanation semantics.
+
+Six model-level primary tests (H1/H2/H3 in each model); Bonferroni per-test two-sided alpha=0.05/6=0.0083333333333. Each valid model-test confirmation requires positive mean, lower endpoint of 99.16667% two-sided family-bootstrap percentile CI >0 (50k resamples, numpy Generator seed 520261026 + fixed hypothesis index 1..3), and exact two-sided family sign-test p<0.0083333333333 (ties excluded), plus positive means separately for LR and RL. For H2 additionally eligibility count gates. H2 may be INDETERMINATE_CAPABILITY even when H1/H3 are valid.
+
+**Core false-conversion claim** requires H2 confirmed in both architectures, with both valid and independently verified. The full 6-test gate is separate and stronger. Zero or a null result is not allowed to be overwritten by binary threshold searches.
+
+## Validity/capability and mandatory negative reports
+Before validation, exactly 32 calibration cases on the **untouched** original task must pass accuracy >=0.90 in EACH physical order and average total intervention sensitivity >=1. Token preflight requires native atomic A/B and positive/negative output candidates, exact model/dataset hashes, correct case manifest, no silent truncation (max rendered input 1024 tokens). A calibration-only full-branch timing probe produces WARN/REPLAN but not an assistant-created science gate. In validation, require all 128 complete cases, >=0.90 untouched accuracy separately by LR/RL, numerical repeat maximum abs(D0-D0_repeat)<1e-4 across ALL cases and orders, every finite branch. If any validation gate fails, ALL H1/H2/H3 verdicts for that model are INVALID even if descriptive directional contrasts look strong. The original MPW-102B Granite invalidity is a known reason to take this gate seriously.
+
+Mandatory reports: baseline-known denominator & exclusions, baseline order disagreement frequency, negative/nonpositive I counts, |D0| saturation, raw unnormalized J, false-v-true coded report effect, true-v-false reversals, neutral acknowledgment effect vs untreated, formatting-code effects, imperative-control effects, baseline-to-treatment conversions and losses, full model/physical-order/mapping variance, and timing/cost. Report invalid and negative runs as prominently as confirmations.
+
+## Release and novelty control
+Complete original 128 row-level family records per eligible model must be emitted as **4 compressed 32-family JSONL shards with raw SHA-256 per-shard and concatenation**, model/dataset/source hashes, all frozen cases and exclusions, exact calibration/timing and provider job IDs. Independently implemented CPU analysis must reproduce all H1/H2/H3 and invalidity gates from immutable SHA-checked rows without importing the GPU model runner. Any outcome observed after failed/partial execution is documented and not silently rerun. A prevalidation repair may be documented but must be distinguished from post-result adjustments.
+
+The result establishes versioned *conditional input-causal alignment* at most. It cannot claim explanations possess an inherent capacity to rewrite mechanisms, nor self-assessment reliability, circuit provenance, persistent weight change, or an optimized self-validating evaluator. MPW-105 would test the latter under independent protected-baseline evaluation.
