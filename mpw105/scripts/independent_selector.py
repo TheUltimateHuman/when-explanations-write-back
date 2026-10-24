@@ -63,6 +63,16 @@ def check_native(record):
     if p["P0"]["source"]!="NATURAL_PROSE_OR_DECLARED_FALLBACK":
         raise RuntimeError("NATURAL_BASELINE_PROVENANCE_MISSING")
 
+def post_only_f1(record,policy):
+    candidate=record["candidates"][policy]
+    post=record["audits"][policy]
+    if set(post)!=set(ORDERS):raise RuntimeError("INCOMPLETE_TWO_ORDER_AUDIT")
+    if any(not math.isfinite(float(v[k])) for v in post.values()
+           for k in ("D","J","I_left","I_right","sens")):
+        raise RuntimeError("NONFINITE_POST_WRITEBACK")
+    side=candidate["side"]
+    return int(all(dside(post[o]["D"])==side for o in ORDERS))
+
 def score_report(record,policy):
     cand=record["candidates"][policy]
     post=record["audits"][policy]
@@ -92,7 +102,7 @@ def select_policy(train_records,selection):
         for policy in POLICIES:
             # ONLY F1 is visible in the report selector. No F0, q or screen baseline
             # fidelity contributes to choosing the policy.
-            _,f1,_=score_report(r,policy)
+            f1=post_only_f1(r,policy)
             score_totals[policy]+=f1
     means={p:score_totals[p]/N for p in POLICIES}
     winner=min(POLICIES,key=lambda p:(-means[p],POLICIES.index(p)))
