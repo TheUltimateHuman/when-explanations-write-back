@@ -1,0 +1,123 @@
+{
+  "schema": "MPW104B_SCREEN_ARCHIVE_V1",
+  "source_protocol_commit": "f23419671acd425a60cd66f1c8cd173d652ba033",
+  "source_runner_sha256": "d6f102401b4f74e543df7b4339becb5c9aa8b5bfdf2d7830a8b04b8e042d1b49",
+  "independent_analysis_sha256": "845e49791d8a2a8bf93ca0546bf24aa1490698688c77e589d157af2f52dc68e9",
+  "screen_verifier_sha256": "0ef866b3923dcfbfaddea72cd31b6efd913eccaa4a0f4201acfdae2363c1d4bc",
+  "candidate_manifest_sha256": "86eee90fa35e92b82a653e74e473fa1cffae5cee5681ed2a88bcedd4f9682cae",
+  "dataset_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "calibration_n": 64,
+  "n_candidates": 2048,
+  "selected_n_per_model": 80,
+  "stage": "SCREEN_ONLY_NO_FALSE_REPORT_TREATMENTS",
+  "models": {
+    "qwen3": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "provider_job_id": "6adc36a3046eb82b1ecda4bb",
+      "provider_job_url": "https://huggingface.co/jobs/TheUltimateHuman/6adc36a3046eb82b1ecda4bb",
+      "scientific_status": "SCREEN_COMPLETED",
+      "calibration_accuracy": {
+        "LR": 0.96875,
+        "RL": 0.953125
+      },
+      "calibration_sensitivity": 28.950439453125,
+      "n_candidates": 2048,
+      "n_selected": 80,
+      "eligible_per_label": {
+        "0": 87,
+        "1": 86
+      },
+      "original_screen_selected_sha256": "7727a4b8a520bb843825fd7aee8643ee814ab009043365a4cd4d8caa580bb7c8",
+      "combined_raw_sha256": "8ca51d4ce010f6e2b5443c00af0c8bef87d1fc9b293a3f2c9f6bfc343cde47fe",
+      "shards": [
+        {
+          "raw_sha256": "21828080fb9c10de318e71e00c8a49424595651da192d4c16413cce93d13eb42",
+          "n": 256
+        },
+        {
+          "raw_sha256": "258bf09ace30223c56b1921fc53c24a6244479be64c29a805a2b4c09e41d6b56",
+          "n": 256
+        },
+        {
+          "raw_sha256": "96680168e469950be881260c8c6ff945e831a3b732003b94c972dbd5a6c90b4b",
+          "n": 256
+        },
+        {
+          "raw_sha256": "56213280bca716a6b99156bd6915cf6fd92a1ae999b350c8058d7de8f8abf79e",
+          "n": 256
+        },
+        {
+          "raw_sha256": "bb8e7a719f4d0dfe04c67abddc61c0052bbc90d5ca1c7a77184c4fa632b97e13",
+          "n": 256
+        },
+        {
+          "raw_sha256": "cc0cbbc5ad49fe897d654a1dbfb97a906b42cb73876bb2d08de49319d750a398",
+          "n": 256
+        },
+        {
+          "raw_sha256": "807eedac48da48046b20c89cfc8834308c33c191258d041406c67f98bb4be297",
+          "n": 256
+        },
+        {
+          "raw_sha256": "5baf58c79a821c39eec3e57bb4e534987afdf4c9e953d84839787016025a6b43",
+          "n": 256
+        }
+      ]
+    },
+    "granite": {
+      "model_id": "ibm-granite/granite-3.3-8b-instruct",
+      "model_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "provider_job_id": "6adc36a5046eb82b1ecda4bd",
+      "provider_job_url": "https://huggingface.co/jobs/TheUltimateHuman/6adc36a5046eb82b1ecda4bd",
+      "scientific_status": "SCREEN_COMPLETED",
+      "calibration_accuracy": {
+        "LR": 0.984375,
+        "RL": 0.90625
+      },
+      "calibration_sensitivity": 17.62457275390625,
+      "n_candidates": 2048,
+      "n_selected": 80,
+      "eligible_per_label": {
+        "0": 426,
+        "1": 310
+      },
+      "original_screen_selected_sha256": "7a9dfc6ecb70810d196722661eb285f6b632cc63432180b412931609a7b15c08",
+      "combined_raw_sha256": "99b7965f913b800213cd7cbe4842760eb49c934ba20d49c17136e6cafcd49ff3",
+      "shards": [
+        {
+          "raw_sha256": "d884bf65bd7aca700c3b2429cd8e7ec048359bcb6b0783a6e31edd04365384ac",
+          "n": 256
+        },
+        {
+          "raw_sha256": "0e9c2cbb6ebd85163c819953b956c95dd036d12c7e25e614f10bbc3b220c823d",
+          "n": 256
+        },
+        {
+          "raw_sha256": "98fc2c46f4d57bf4b58e5f1f34c38e7f9876cc3a7241b2715ff6c417ff184981",
+          "n": 256
+        },
+        {
+          "raw_sha256": "42a9f3a6f4516d8e18bdc4de2472bfd4d68d50d39ae99945050563ed2cd5eba8",
+          "n": 256
+        },
+        {
+          "raw_sha256": "7d213342396e23147508cae2cfd80d66f585abfcf73b64ba6b3461f8125664a1",
+          "n": 256
+        },
+        {
+          "raw_sha256": "b85e2388130d6f74d86f07505846430758ab427a4a30b2afa266b5871f646d77",
+          "n": 256
+        },
+        {
+          "raw_sha256": "8b280d7e6e79a560d6686a9796d9b04df93d851df94eea53389000eed7e685fe",
+          "n": 256
+        },
+        {
+          "raw_sha256": "1cbfc322b7e92338785507f0819cbdd9d7a6e4b572ff3a38a0389b4b32ffbd02",
+          "n": 256
+        }
+      ]
+    }
+  }
+}
