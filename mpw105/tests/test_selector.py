@@ -72,7 +72,10 @@ print("MPW105_FIXTURE_TRUE_FIDELITY "+json.dumps(out2["primary_verdicts"]),flush
 # If the selector learns P0 (baseline), there can be no held-out gain.
 tr3,sel3=fixture("P1",True)
 for row in tr3:
-  row["audits"]["P1"]={o:d(.4) for o in ("LR","RL")}
+  for p in au.POLICIES:
+   # Every candidate must be post-writeback unfaithful: all scores tie at zero.
+   sign=.4 if row["candidates"][p]["side"]=="RIGHT" else -.4
+   row["audits"][p]={o:d(sign) for o in ("LR","RL")}
 p3=au.select_policy(tr3,sel3)
 assert p3["selected_policy"]=="P0"
 e3,s3=fixture("P1",False)
