@@ -18,7 +18,7 @@ from urllib.request import urlopen
 ROOT="https://raw.githubusercontent.com/TheUltimateHuman/when-explanations-write-back/"
 SCREEN_URL=ROOT+"26683c46c1ce34fa3ad1b5fc23c98571cd08cb9d/mpw105/scripts/mpw105_screen.py"
 SCREEN_SHA="0c27f2964158254ee8db959760fed7bcd995824a7e575b1e7a727cb5a7e27825"
-EXPECTED_MANIFEST="UNSET_PREFLIGHT_REQUIRED"
+EXPECTED_MANIFEST="21dcef582979554f9b7d9d1a76c745803fdb84e8ab79111eee6a73bd14a1ac86"
 MODELS={"qwen3":"Qwen/Qwen3-4B-Instruct-2507",
         "granite":"ibm-granite/granite-3.3-8b-instruct"}
 PINS={"qwen3":"cdbee75f17c01a7cc42f958dc650907174af0554",
