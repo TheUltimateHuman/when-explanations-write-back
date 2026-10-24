@@ -23,7 +23,7 @@ MODEL_REPOS={"qwen3":"Qwen/Qwen3-4B-Instruct-2507",
              "granite":"ibm-granite/granite-3.3-8b-instruct"}
 MODEL_PINS={"qwen3":"cdbee75f17c01a7cc42f958dc650907174af0554",
             "granite":"51dd4bc2ade4059a6bd87649d68aa11e4fb2529b"}
-EXPECTED_MANIFEST="UNSET_PREFLIGHT_REQUIRED"
+EXPECTED_MANIFEST="f80ccf2b2901acdc7d8fbd7ad8df3edcc297a14b97fb5b2e7a26da0576d3a97d"
 SEED=2026102305
 CAL_N=32;VAL_N=128
 EPS=1e-6
