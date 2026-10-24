@@ -73,7 +73,8 @@ for label in ("positive","negative","invalid"):
  data=synth_data(label)
  x=r.aggregate_treatment(data,sel,"qwen3")
  y=a.reanalyze_treatment(data,sel)
- assert x==y,("ANALYSIS_MISMATCH",label,x["verdicts"],y["verdicts"])
+ xx=dict(x);xx.pop("model")
+ assert xx==y,("ANALYSIS_MISMATCH",label,x["verdicts"],y["verdicts"])
  if label=="positive":
   assert all(v=="CONFIRMED" for v in x["verdicts"].values())
  elif label=="negative":
