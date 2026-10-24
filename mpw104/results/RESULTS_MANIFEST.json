@@ -1,0 +1,144 @@
+{
+  "schema_version": "MPW104_PROSPECTIVE_RESULTS_ARCHIVE_V1",
+  "study": "MPW-104 Phase A: The False Explanation",
+  "source_class": "RESEARCH ARTIFACT",
+  "source_freeze_commit": "c94d1299e8862686bb728880c3f36a1527e7b7c0",
+  "source_runner_sha256": "d8866d46dcb4bc6f5e2289108c22c434add56c423e63f1731c929aed86d6d1e1",
+  "independent_analysis_sha256": "797effb9607a1fdc26b20971b8fbbb85c0f79f2e591ab0e979696a9736e7bcfd",
+  "archive_verifier_sha256": "b3131fbe22385506e72e342ffb6782d12f5ec38dfbd3998d519e227c795d58d6",
+  "case_manifest_sha256": "f80ccf2b2901acdc7d8fbd7ad8df3edcc297a14b97fb5b2e7a26da0576d3a97d",
+  "dataset": "stanfordnlp/sst2",
+  "dataset_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "calibration_n": 32,
+  "planned_validation_n": 128,
+  "acceptance": {
+    "alpha_per_model_hypothesis": 0.008333333333333333,
+    "bootstrap_resamples": 50000,
+    "min_baseline_accuracy_per_order": 0.9,
+    "max_numerical_repeat_absolute_D": "<0.0001",
+    "binary_baseline_known_threshold_abs_D": 0.1,
+    "min_binary_eligible_families": 64,
+    "min_binary_eligible_per_order": 40
+  },
+  "models": {
+    "qwen3": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "provider_job_id": "6adc12a1046eb82b1ecd97a7",
+      "provider_job_url": "https://huggingface.co/jobs/TheUltimateHuman/6adc12a1046eb82b1ecd97a7",
+      "stage": "COMPLETED",
+      "n": 128,
+      "gpu": "NVIDIA L4",
+      "runner_elapsed_seconds": 839.658091916,
+      "calibration_accuracy": {
+        "LR": 1,
+        "RL": 1
+      },
+      "validation_accuracy": {
+        "LR": 0.96875,
+        "RL": 0.9140625
+      },
+      "raw_reported_verdicts": {
+        "H1": "CONFIRMED",
+        "H2": "CONFIRMED",
+        "H3": "CONFIRMED"
+      },
+      "original_combined_raw_sha256": "45eac201b6e6cc998221c2d58c951770d1e4c973a2830e6dd7b38749b5e72bb1",
+      "raw_shards": [
+        {
+          "n": 32,
+          "range": [
+            0,
+            31
+          ],
+          "raw_sha256": "d593077d225b0db1e0d5b708dd9cd3c608d73ef32ec4e7ca00fbf550324cabc0"
+        },
+        {
+          "n": 32,
+          "range": [
+            32,
+            63
+          ],
+          "raw_sha256": "04b56e0e26b6a283f1edf58bc6576e684e38dc99ccfd19fe39586d282327c668"
+        },
+        {
+          "n": 32,
+          "range": [
+            64,
+            95
+          ],
+          "raw_sha256": "1d45812c16c0ac7c27a56ca4a83fab616cea9e6bebf20d67ccbed09249769316"
+        },
+        {
+          "n": 32,
+          "range": [
+            96,
+            127
+          ],
+          "raw_sha256": "0f4d8dc8068d438c24d6e4792cfc1ea03da0eb24b82d6e573a3e8960950af2fd"
+        }
+      ]
+    },
+    "granite": {
+      "model_id": "ibm-granite/granite-3.3-8b-instruct",
+      "model_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "provider_job_id": "6adc12a31e112550ce7dba2d",
+      "provider_job_url": "https://huggingface.co/jobs/TheUltimateHuman/6adc12a31e112550ce7dba2d",
+      "stage": "COMPLETED",
+      "n": 128,
+      "gpu": "NVIDIA L40S",
+      "runner_elapsed_seconds": 594.53161696,
+      "calibration_accuracy": {
+        "LR": 1,
+        "RL": 1
+      },
+      "validation_accuracy": {
+        "LR": 0.9296875,
+        "RL": 0.8984375
+      },
+      "raw_reported_verdicts": {
+        "H1": "INVALID",
+        "H2": "INVALID",
+        "H3": "INVALID"
+      },
+      "original_combined_raw_sha256": "83fe8678181c7d4bd6c11db7462f956307998e2138b909376090e6e5b2ec79cd",
+      "invalidity_reason": "RIGHT-first task accuracy 115/128 = 0.8984375 below the frozen 0.90 gate; original baseline-repeat floor 0",
+      "raw_shards": [
+        {
+          "n": 32,
+          "range": [
+            0,
+            31
+          ],
+          "raw_sha256": "be376ea57ed84ee9c0c43b936ef6a523ad84a3b422fbceeec789b0f0f52f9975"
+        },
+        {
+          "n": 32,
+          "range": [
+            32,
+            63
+          ],
+          "raw_sha256": "a198d257665e72441d056931dc40280153b241b5f305e0bd33faceb52c21280a"
+        },
+        {
+          "n": 32,
+          "range": [
+            64,
+            95
+          ],
+          "raw_sha256": "9258fe89a3b69c1278f4b9c9cd358cc098cf3427a11f9e8bfa96c8dad3fcee41"
+        },
+        {
+          "n": 32,
+          "range": [
+            96,
+            127
+          ],
+          "raw_sha256": "0ec3f20563e7de2b333de6ddd956f2d4ed9abb913f02b92ae8794760a8ab8ef5"
+        }
+      ]
+    }
+  },
+  "status": "Archived original GPU-output shards; independent verification pending at the time this machine manifest was created.",
+  "caveat": "No result interpreted as model's spontaneous self-description; false content externally inserted."
+}
