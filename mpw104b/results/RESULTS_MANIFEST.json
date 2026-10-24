@@ -1,0 +1,102 @@
+{
+  "schema_version": "MPW104B_STABLE_FALSE_TREATMENT_ARCHIVE_V1",
+  "study": "MPW-104B: false explanation against previously screened order-stable causal preferences",
+  "class": "RESEARCH_ARTIFACT",
+  "protocol_freeze_commit": "f23419671acd425a60cd66f1c8cd173d652ba033",
+  "executing_runner_sha256": "d6f102401b4f74e543df7b4339becb5c9aa8b5bfdf2d7830a8b04b8e042d1b49",
+  "independent_analysis_sha256": "845e49791d8a2a8bf93ca0546bf24aa1490698688c77e589d157af2f52dc68e9",
+  "independent_treatment_verifier_sha256": "790fe2a10033aacd86b0a48e62b30cbf5ac42a1698d5a201d3ed7034e15e7a38",
+  "screen_selection_commit": "1d4842a8db8af239505d09a89c91e56b03cbd5c4",
+  "candidate_manifest_sha256": "86eee90fa35e92b82a653e74e473fa1cffae5cee5681ed2a88bcedd4f9682cae",
+  "dataset_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "n_candidates_per_model": 2048,
+  "n_selected_per_model": 80,
+  "cross_model_selected_overlap": 12,
+  "primary_test_policy": {
+    "n_model_level_tests": 6,
+    "per_hypothesis_two_sided_alpha": 0.008333333333333333,
+    "bootstrap_samples": 50000,
+    "screen_to_treatment_max_abs_D_strict": "<0.0001",
+    "untouched_repeat_max_abs_D_strict": "<0.0001",
+    "joint_conversion_all_four_required": true
+  },
+  "models": {
+    "qwen3": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "screen_job": "6adc36a3046eb82b1ecda4bb",
+      "treatment_job": "6adce55a1e112550ce7e1e1b",
+      "screen_selection_commit": "1d4842a8db8af239505d09a89c91e56b03cbd5c4",
+      "calibration": {
+        "LR": 0.96875,
+        "RL": 0.953125
+      },
+      "n": 80,
+      "scientific_status": "VALID",
+      "selected_source_selection_sha256": "7727a4b8a520bb843825fd7aee8643ee814ab009043365a4cd4d8caa580bb7c8",
+      "combined_raw_sha256": "419ec164ac41fe1108f3ba58c670ab1856b46744e3764b6994c314d1dd61074f",
+      "logged_verdicts": {
+        "H1": "NOT_CONFIRMED",
+        "H2": "NOT_CONFIRMED",
+        "H3": "NOT_CONFIRMED"
+      },
+      "shards": [
+        {
+          "n": 20,
+          "raw_sha256": "43740aa3b7bbe997caab88272a8ff3aa8721865a20f04ee03c18baf7b4a27827"
+        },
+        {
+          "n": 20,
+          "raw_sha256": "d68d9f1a281ca2a322b4ad091a6483a858d9c1e807244e9e0fe64c23a87ab92e"
+        },
+        {
+          "n": 20,
+          "raw_sha256": "aee511ad05aa8a61e53f960ef08ef63fb0c9269bcd69826a172b3e55b3b4f758"
+        },
+        {
+          "n": 20,
+          "raw_sha256": "9d08442183a23dae6d7263081d94718a13806f23d144c88991f043880c566497"
+        }
+      ]
+    },
+    "granite": {
+      "model_id": "ibm-granite/granite-3.3-8b-instruct",
+      "revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "screen_job": "6adc36a5046eb82b1ecda4bd",
+      "treatment_job": "6adce55c046eb82b1ecde2a9",
+      "screen_selection_commit": "1d4842a8db8af239505d09a89c91e56b03cbd5c4",
+      "calibration": {
+        "LR": 0.984375,
+        "RL": 0.90625
+      },
+      "n": 80,
+      "scientific_status": "VALID",
+      "selected_source_selection_sha256": "7a9dfc6ecb70810d196722661eb285f6b632cc63432180b412931609a7b15c08",
+      "combined_raw_sha256": "c22eb79cecb7a5977503674a559d568a2ceada06f73dba893d12ff94b3c9fd95",
+      "logged_verdicts": {
+        "H1": "NOT_CONFIRMED",
+        "H2": "NOT_CONFIRMED",
+        "H3": "NOT_CONFIRMED"
+      },
+      "shards": [
+        {
+          "n": 20,
+          "raw_sha256": "521b2f63333565119ad0ae88a41b3ada601348500b92f9adcfc44461c4b83fcf"
+        },
+        {
+          "n": 20,
+          "raw_sha256": "a677b437a9920364f6a68c4a81d036be07b4736a63aebbf4d4bb7c7df6b8cd27"
+        },
+        {
+          "n": 20,
+          "raw_sha256": "903242a904f4c5a1678aa3b665462e523e63137b4ae2317b051f9e4ca24a7d60"
+        },
+        {
+          "n": 20,
+          "raw_sha256": "40a721543fbd85c5eaf01eb183bc8c1a816583b4f76e95317637fc226d2a874d"
+        }
+      ]
+    }
+  },
+  "interpretive_boundary": "Exact GPU output and frozen study acceptance gates. A failure to confirm does not prove absence of all context effects or all false-report induced sign crossing."
+}
