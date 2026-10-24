@@ -24,7 +24,7 @@ MODELS={"qwen3":"Qwen/Qwen3-4B-Instruct-2507",
         "granite":"ibm-granite/granite-3.3-8b-instruct"}
 PINS={"qwen3":"cdbee75f17c01a7cc42f958dc650907174af0554",
       "granite":"51dd4bc2ade4059a6bd87649d68aa11e4fb2529b"}
-EXPECTED_CANDIDATE_MANIFEST="UNSET_CPU_PREFLIGHT_REQUIRED"
+EXPECTED_CANDIDATE_MANIFEST="86eee90fa35e92b82a653e74e473fa1cffae5cee5681ed2a88bcedd4f9682cae"
 SEED=2026102402
 CAL_N=64
 POOL_N=2048
