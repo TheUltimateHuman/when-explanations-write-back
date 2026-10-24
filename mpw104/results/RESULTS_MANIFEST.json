@@ -43,8 +43,8 @@
         "H2": "CONFIRMED",
         "H3": "CONFIRMED"
       },
-      "original_combined_raw_sha256": "45eac201b6e6cc998221c2d58c951770d1e4c973a2830e6dd7b38749b5e72bb1",
-      "raw_shards": [
+      "combined_raw_sha256": "45eac201b6e6cc998221c2d58c951770d1e4c973a2830e6dd7b38749b5e72bb1",
+      "shards": [
         {
           "n": 32,
           "range": [
@@ -101,9 +101,9 @@
         "H2": "INVALID",
         "H3": "INVALID"
       },
-      "original_combined_raw_sha256": "83fe8678181c7d4bd6c11db7462f956307998e2138b909376090e6e5b2ec79cd",
       "invalidity_reason": "RIGHT-first task accuracy 115/128 = 0.8984375 below the frozen 0.90 gate; original baseline-repeat floor 0",
-      "raw_shards": [
+      "combined_raw_sha256": "83fe8678181c7d4bd6c11db7462f956307998e2138b909376090e6e5b2ec79cd",
+      "shards": [
         {
           "n": 32,
           "range": [
@@ -139,6 +139,6 @@
       ]
     }
   },
-  "status": "Archived original GPU-output shards; independent verification pending at the time this machine manifest was created.",
+  "status": "Original GPU raw-shard archive completed. Independent CPU reanalysis pending.",
   "caveat": "No result interpreted as model's spontaneous self-description; false content externally inserted."
 }
