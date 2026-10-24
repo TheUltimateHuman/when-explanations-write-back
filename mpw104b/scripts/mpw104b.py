@@ -433,9 +433,19 @@ def main():
                     "elapsed_sec":time.monotonic()-t0})
         selected=select_from_screen(rows)
         raw_sha=emit_shards("MPW104B_SCREEN",rows,256)
+        selection_json=canonical(selected)
+        for offset in range(0,len(selection_json),9000):
+            emit("MPW104B_SELECTION_CHUNK",{"model":name,"part":offset//9000,
+                "total":(len(selection_json)+8999)//9000,
+                "selection_sha256":sha(selection_json),
+                "data":selection_json[offset:offset+9000]})
         emit("MPW104B_SCREEN_SELECTED",{"model":name,
-            "selected_manifest_sha256":sha(canonical(selected)),
-            "selection":selected})
+            "selected_manifest_sha256":sha(selection_json),
+            "n_selected":selected["n_selected"],
+            "counts":selected["selected_per_label"],
+            "eligible":selected["eligible_per_label"],
+            "selection_complete":selected["selection_complete"],
+            "selected_indices":[s["idx"] for s in selected["selected"]]})
         emit("MPW104B_END",{"status":"SCREEN_COMPLETED","model":name,
             "n_candidates":len(rows),"n_selected":selected["n_selected"],
             "selected_complete":selected["selection_complete"],
