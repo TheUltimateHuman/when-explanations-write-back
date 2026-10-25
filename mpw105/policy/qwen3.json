@@ -1,0 +1,29 @@
+{
+  "candidate_count": 7,
+  "n_train": 80,
+  "native_prose_parse_count": 80,
+  "native_prose_parse_rate": 1,
+  "original_screen_selection_sha256": "718b7e5d3c40004e90ad861cc761ba2c92d6d73c95eefbe50baaa8c32e5ae0e6",
+  "policy_order": [
+    "P0",
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6"
+  ],
+  "schema": "MPW105_POLICY_SELECTION_V1",
+  "selected_policy": "P0",
+  "selection_training_data_sha256": "60a37fabba633b117e46fae4d4b6b7984653f21db6f3629e11c27fcc37d349fe",
+  "selector": "ARGMAX_TRAIN_JOINT_POST_WRITEBACK_FIDELITY_ONLY",
+  "training_scores": {
+    "P0": 0.775,
+    "P1": 0.5,
+    "P2": 0.55,
+    "P3": 0.5625,
+    "P4": 0.5,
+    "P5": 0.525,
+    "P6": 0.5125
+  }
+}
