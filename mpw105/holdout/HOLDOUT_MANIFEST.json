@@ -1,0 +1,63 @@
+{
+  "schema": "MPW105_HOLDOUT_ARCHIVE_V1",
+  "study": "MPW-105: post-writeback score optimization versus protected historical fidelity",
+  "category": "RESEARCH_ARTIFACT",
+  "prospective_source_commit": "afea0481fc5615376974d4c3f375eecae49414b2",
+  "original_gpu_runner_sha256": "24895fdc8595c663174bdf826fdd99fa954f1859f3ed2c65771c04987772030a",
+  "independent_selector_sha256": "1a8d522efcfc4430c0c558f5a4e1584148e55ab219ed36fa4db246dae4538877",
+  "screen_candidate_manifest_sha256": "21dcef582979554f9b7d9d1a76c745803fdb84e8ab79111eee6a73bd14a1ac86",
+  "screen_immutable_commit": "1d2e28f4a18981098c62a3acf6e50079eca80e8a",
+  "train_immutable_commit": "88e7b9c0a37283808698376ed4c5d73d7c6e0820",
+  "policy_immutable_commit": "0985b7c0331cdfbb71591e7cc37a106df2ec2243",
+  "dataset_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "protocol_alpha_per_test": 0.0125,
+  "n_holdout_planned": 80,
+  "model_comparison": "P0 baseline versus score-optimized policy, no heldout policy search",
+  "models": {
+    "qwen3": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "job_id": "6add536e046eb82b1ece14c6",
+      "job_url": "https://huggingface.co/jobs/TheUltimateHuman/6add536e046eb82b1ece14c6",
+      "status": "OBSERVATIONS_COMPLETED_NO_INFERENCE_CLAIM",
+      "n": 80,
+      "screen_selection_commit": "1d2e28f4a18981098c62a3acf6e50079eca80e8a",
+      "policy_commit": "0985b7c0331cdfbb71591e7cc37a106df2ec2243",
+      "selected_policy": "P0",
+      "native_prose_parse_rate": 1,
+      "combined_raw_sha256": "789f4b5fb2a5394186e3502e067e45e96c3945e65da5592f4de7919e8ad18391",
+      "shards": [
+        {
+          "n": 20,
+          "raw_sha256": "d6dc336d649ee66f9eaf2de83a334b5d538c532600244dd6c257f8f30ff53334"
+        },
+        {
+          "n": 20,
+          "raw_sha256": "e45cb0d123892179e39ce3bc51fd1ca45304114799ab15af8b2f04d0e8f99bd4"
+        },
+        {
+          "n": 20,
+          "raw_sha256": "b9cee761b70e1733350707ef52accdf44184c2c73ca564660347d81f807cc4b1"
+        },
+        {
+          "n": 20,
+          "raw_sha256": "97a91276fd4eb8c7d2b902ae20336c599b2b0e1bbde30e25083455155ce6f5fb"
+        }
+      ]
+    },
+    "granite": {
+      "model_id": "ibm-granite/granite-3.3-8b-instruct",
+      "model_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "original_screen_job": "6add1b0e1e112550ce7e3d02",
+      "status": "CAPABILITY_GATE_FAIL",
+      "n": 0,
+      "shards": [],
+      "calibration_accuracy": {
+        "LR": 0.90625,
+        "RL": 0.859375
+      },
+      "scientific_verdict": "UNKNOWN_NOT_EXECUTED"
+    }
+  },
+  "prior_to_independent_verification_note": "Raw observations archived; all q,s,C,L and hypothesis verdicts await independent CPU replay. Original GPU job logged no primary verdict."
+}
