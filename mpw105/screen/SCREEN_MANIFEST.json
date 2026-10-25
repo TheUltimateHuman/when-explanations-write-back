@@ -1,0 +1,101 @@
+{
+  "schema": "MPW105_SCREEN_ARCHIVE_V1",
+  "source_class": "RESEARCH_ARTIFACT",
+  "source_prospective_freeze_commit": "afea0481fc5615376974d4c3f375eecae49414b2",
+  "runner_sha256": "3b3e485f7c7313a369a4521dfe9a7c53f7062e732fefc69bf35ef88595005b2c",
+  "independent_screen_sha256": "1fc295fb7d3a2f7b50d92fa6a1ac49f4c58fa16ba658d51d8f878b6eb91acc59",
+  "case_manifest_sha256": "21dcef582979554f9b7d9d1a76c745803fdb84e8ab79111eee6a73bd14a1ac86",
+  "candidate_manifest_sha256": "21dcef582979554f9b7d9d1a76c745803fdb84e8ab79111eee6a73bd14a1ac86",
+  "dataset_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "n_calibration": 64,
+  "planned_candidates_per_model": 3072,
+  "training_cases_per_model": 80,
+  "holdout_cases_per_model": 80,
+  "models": {
+    "qwen3": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "job_id": "6add1b0c1e112550ce7e3d00",
+      "status": "SCREEN_COMPLETED",
+      "n_candidates": 3072,
+      "n_selected": 160,
+      "calibration_accuracy": {
+        "LR": 0.921875,
+        "RL": 0.96875
+      },
+      "calibration_mean_sensitivity": 27.6942138671875,
+      "eligible_per_label": {
+        "0": 141,
+        "1": 153
+      },
+      "selection_sha256": "718b7e5d3c40004e90ad861cc761ba2c92d6d73c95eefbe50baaa8c32e5ae0e6",
+      "combined_raw_sha256": "1dd76fb431c2db06d4b1a7ccd8831c2c29429efd4790011e51ee8405d5e4c39e",
+      "shards": [
+        {
+          "raw_sha256": "7d70253a762c2f1a9dd1925b5387b056cac4d30e96194e12aa90cce749211884",
+          "n": 256
+        },
+        {
+          "raw_sha256": "37a0c2992684a021be22f9c2485985dcab575ca3e90131db8903831f8fab1d11",
+          "n": 256
+        },
+        {
+          "raw_sha256": "f2d5e8251b81c36443f9222b8b792d32bc5da2e4f3fbc2cc4bc987c8e3345167",
+          "n": 256
+        },
+        {
+          "raw_sha256": "5bbcdfddf2f500c0918e9a4e05971435e6f9cf6716e8fcccde4bafd4d4aef7e6",
+          "n": 256
+        },
+        {
+          "raw_sha256": "df7d8647727ee077464bec2906d32f2c616b60cfe2eebab15038ce07c04b205b",
+          "n": 256
+        },
+        {
+          "raw_sha256": "4c51cddb33179fdbc39f725bb5e54f0f09f69edad8a1f3b3f90f3c86f0f813e8",
+          "n": 256
+        },
+        {
+          "raw_sha256": "245897ae0a2523728cec19a83df475b6769add439480ca48a299c575f6654957",
+          "n": 256
+        },
+        {
+          "raw_sha256": "ac78889083a7143e6f56cb93dddc8fb260bdf9f52c8d30cbfb25dc5caa74c1ac",
+          "n": 256
+        },
+        {
+          "raw_sha256": "11bea6b4e4fd5e74348afac212775b915dd15981293903dcfcbfcbfabf7016ef",
+          "n": 256
+        },
+        {
+          "raw_sha256": "74715c776431adbc8432cb9fe2c28974a9082a4485756980f41a7ec4206bcb82",
+          "n": 256
+        },
+        {
+          "raw_sha256": "f33ee82917a8ac64d827c0b95a69f64648c26170289cee5c2da3e68caa91887e",
+          "n": 256
+        },
+        {
+          "raw_sha256": "93ef44e4498c57d4ea5082db3f74ef973a42ae48fb284ceaeb83302c2a162cfd",
+          "n": 256
+        }
+      ]
+    },
+    "granite": {
+      "model_id": "ibm-granite/granite-3.3-8b-instruct",
+      "revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "job_id": "6add1b0e1e112550ce7e3d02",
+      "status": "CAPABILITY_GATE_FAIL",
+      "n_candidates": 0,
+      "n_selected": 0,
+      "shards": [],
+      "calibration_accuracy": {
+        "LR": 0.90625,
+        "RL": 0.859375
+      },
+      "calibration_mean_sensitivity": 16.717376708984375,
+      "scientific_disposition": "NO_VALIDATION; NO_TRAIN; NO_HOLDOUT; model-level hypothesis result UNKNOWN_NOT_EXECUTED"
+    }
+  },
+  "no_outcome_leakage": true
+}
