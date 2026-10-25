@@ -1,0 +1,46 @@
+{
+  "schema": "MPW105_TRAIN_ARCHIVE_V1",
+  "prospective_freeze_commit": "afea0481fc5615376974d4c3f375eecae49414b2",
+  "gpu_source_sha256": "24895fdc8595c663174bdf826fdd99fa954f1859f3ed2c65771c04987772030a",
+  "independent_selector_sha256": "1a8d522efcfc4430c0c558f5a4e1584148e55ab219ed36fa4db246dae4538877",
+  "candidate_manifest_sha256": "21dcef582979554f9b7d9d1a76c745803fdb84e8ab79111eee6a73bd14a1ac86",
+  "original_screen_commit": "1d2e28f4a18981098c62a3acf6e50079eca80e8a",
+  "training_only": true,
+  "holdout_not_evaluated": true,
+  "models": {
+    "qwen3": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "job_id": "6add4ec9046eb82b1ece127e",
+      "screen_selection_commit": "1d2e28f4a18981098c62a3acf6e50079eca80e8a",
+      "status": "OBSERVATIONS_COMPLETED_NO_INFERENCE_CLAIM",
+      "n": 80,
+      "native_prose_parse_rate": 1,
+      "combined_raw_sha256": "60a37fabba633b117e46fae4d4b6b7984653f21db6f3629e11c27fcc37d349fe",
+      "shards": [
+        {
+          "raw_sha256": "20d6864ee2ff9d401870ab6a0ae2b8c86a72f565fbc935c01ceb68ced3c4678e",
+          "n": 20
+        },
+        {
+          "raw_sha256": "2e28929a6be5128a8d52e09b22d92184fd28cb8f90462fe8fbd63f21ce21c57e",
+          "n": 20
+        },
+        {
+          "raw_sha256": "48f5b41b110764e6b8e6aa6478b4b57a19fa77caaa5f2d8d6481f88ad78bdb63",
+          "n": 20
+        },
+        {
+          "raw_sha256": "223bb6d9e543dcf598f6b136151ad16be3a79b3d976883ea5ad5fdc8d3f05942",
+          "n": 20
+        }
+      ]
+    },
+    "granite": {
+      "status": "NOT_EXECUTED_CALIBRATION_GATE_FAIL",
+      "n": 0,
+      "original_screen_job_id": "6add1b0e1e112550ce7e3d02",
+      "scientific_hypotheses": "UNKNOWN_NOT_TESTED"
+    }
+  }
+}
