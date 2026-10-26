@@ -33,7 +33,8 @@ def build(mode):
   report_value={"positive":-.2,"negative":.49,"invalid":-.2}[mode]
   future_value={"positive":-.9,"negative":.49,"invalid":-.9}[mode]
   natvals={t:float(.5+(report_value-.5)*min(t,1)+(future_value-report_value)*max(t-1,0)/7) for t in range(9)}
-  ctrvals={arm:{t:float(.5-(.01*t)) for t in range(9)}
+  if mode=="invalid":natvals[0]=.49
+  ctrvals={arm:{t:float((.49 if mode=="invalid" else .5)-(.01*t)) for t in range(9)}
            for arm in ARMS if arm!="NATIVE_REPORT"}
   armd={}
   for arm in ARMS:
