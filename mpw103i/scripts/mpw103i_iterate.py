@@ -117,7 +117,7 @@ def aggregate(rows,model):
     repeat_bounds=[]
     invalid_count=0
     parsed=0;total_reports=0
-    flips_mechanism=0;flips_report=0;oscillating=0
+    flips_mechanism=0;flips_report=0;oscillating=0;returned_to_original=0;plateau_depth4to8=0
     for r in rows:
         if set(r["arms"])!=set(ARMS):raise RuntimeError("MISSING_ITERATION_ARM")
         original=r["screen_orders"]
@@ -183,6 +183,9 @@ def aggregate(rows,model):
         sign_changes=sum(a!=b for a,b in zip(signs,signs[1:]))
         flips_mechanism+=sign_changes
         oscillating+=int(sign_changes>=2)
+        returned_to_original+=int(any(z!=signs[0] for z in signs[1:8]) and signs[8]==signs[0])
+        plateau_depth4to8+=int(abs(dist(nat["checkpoints"]["8"],zero)-
+                                   dist(nat["checkpoints"]["4"],zero))<.05)
     valid=invalid_count==0 and max(repeat_bounds)<1e-4 and max(drift_bounds)<1e-4
     parsable=parsed/total_reports if total_reports else 0
     instruments_ok=parsable>=PARSE_THRESHOLD
@@ -215,7 +218,9 @@ def aggregate(rows,model):
       "invalid_original_cells":invalid_count,
       "native_report_side_changes_total":flips_report,
       "native_mechanism_tuple_changes_total":flips_mechanism,
-      "native_families_with_2plus_mechanism_changes":oscillating}
+      "native_families_with_2plus_mechanism_changes":oscillating,
+      "native_families_returning_to_original_sign_tuple":returned_to_original,
+      "native_families_depth4to8_drift_plateau_delta_lt_005":plateau_depth4to8}
 
 def chunked_archive(tag,rows):
     if len(rows)%MAX_RAW_SHARD_FAMILIES:raise RuntimeError("SHARD_WRONG_CARDINALITY")
