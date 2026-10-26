@@ -61,7 +61,7 @@ def compute(rows):
     errors=0
     repeat=[];crossjob=[]
     parseable=0;total=0
-    report_flips=0;profile_flips=0;oscillations=0
+    report_flips=0;profile_flips=0;oscillations=0;returned_to_original=0;plateau_depth4to8=0
     for record in rows:
         if len(record.get("case_sha256",""))!=64:raise RuntimeError("MISSING_CASE_HASH")
         if not record.get("original_true_side") in ("LEFT","RIGHT"):
@@ -167,6 +167,9 @@ def compute(rows):
         ch=sum(x!=y for x,y in zip(profile,profile[1:]))
         profile_flips+=ch
         oscillations+=int(ch>=2)
+        returned_to_original+=int(any(z!=profile[0] for z in profile[1:8]) and profile[8]==profile[0])
+        plateau_depth4to8+=int(abs(distance(native["checkpoints"]["8"])-
+                                   distance(native["checkpoints"]["4"]))<.05)
     confidence={k:signed_mean(v,i+1) for i,(k,v) in enumerate(tests.items())}
     order_effects={k:{order:float(np.mean(v)) for order,v in os.items()}
                    for k,os in by_order.items()}
@@ -199,7 +202,9 @@ def compute(rows):
       "versioned_native_fidelity":fidelity,
       "native_report_side_changes_total":report_flips,
       "native_mechanism_tuple_changes_total":profile_flips,
-      "native_families_with_2plus_mechanism_changes":oscillations}
+      "native_families_with_2plus_mechanism_changes":oscillations,
+      "native_families_returning_to_original_sign_tuple":returned_to_original,
+      "native_families_depth4to8_drift_plateau_delta_lt_005":plateau_depth4to8}
 if __name__=="__main__":
     a=argparse.ArgumentParser();a.add_argument("original_records")
     z=a.parse_args()
