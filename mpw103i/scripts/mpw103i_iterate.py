@@ -136,7 +136,7 @@ def aggregate(rows,model):
         zero={o:ref[o]["baseline"] for o in ORDERS}
         for arm in ARMS:
             checkpoints=r["arms"][arm]["checkpoints"]
-            if set(map(int,checkpoints))!=set(CHECKPOINTS):
+            if not set(CHECKPOINTS).issubset(set(map(int,checkpoints))):
                 raise RuntimeError("CHECKPOINTS_MISSING_"+arm)
             if len(r["arms"][arm]["cycles"])!=MAX_ITERATIONS:
                 raise RuntimeError("INCOMPLETE_EIGHT_CYCLES_"+arm)
