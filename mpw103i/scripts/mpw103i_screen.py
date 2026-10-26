@@ -455,7 +455,6 @@ def main():
             "counts":selected["selected_per_label"],
             "eligible":selected["eligible_per_label"],
             "selection_complete":selected["selection_complete"],
-            "selected_indices":[s["idx"] for s in selected["selected"]],
             "selected_indices":[s["idx"] for s in selected["selected"]]})
         emit("MPW103I_END",{"status":"SCREEN_COMPLETED","model":name,
             "n_candidates":len(rows),"n_selected":selected["n_selected"],
