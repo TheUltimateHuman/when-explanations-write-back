@@ -16,9 +16,9 @@ from pathlib import Path
 from urllib.request import urlopen
 
 ROOT="https://raw.githubusercontent.com/TheUltimateHuman/when-explanations-write-back/"
-SCREEN_SOURCE_URL="UNSET_AFTER_CPU_SAMPLE_PREFLIGHT"
-SCREEN_SOURCE_SHA="UNSET_AFTER_CPU_SAMPLE_PREFLIGHT"
-EXPECTED_CASE_MANIFEST="UNSET_AFTER_CPU_SAMPLE_PREFLIGHT"
+SCREEN_SOURCE_URL="https://raw.githubusercontent.com/TheUltimateHuman/when-explanations-write-back/613a165b21fd7d4e589108ffe3fe198ca52cd8c4/mpw103i/scripts/mpw103i_screen.py"
+SCREEN_SOURCE_SHA="4f89a4d759b82cd74ec21465239e48c2558df9f359f5cdff2bf5b4a208e9a04f"
+EXPECTED_CASE_MANIFEST="00cf578b03d0aeabc08b0226c5d84702695e9aa3f5b3264392b31d914526c20a"
 SOURCE_ORIGINAL_104_URL=ROOT+"c94d1299e8862686bb728880c3f36a1527e7b7c0/mpw104/scripts/mpw104.py"
 SOURCE_ORIGINAL_104_SHA="d8866d46dcb4bc6f5e2289108c22c434add56c423e63f1731c929aed86d6d1e1"
 DATASET="stanfordnlp/sst2"
