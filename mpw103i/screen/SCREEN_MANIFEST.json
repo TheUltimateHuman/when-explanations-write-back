@@ -1,0 +1,90 @@
+{
+  "schema": "MPW103I_BASELINE_ONLY_SCREEN_ARCHIVE_V1",
+  "protocol_source_commit": "f0a12228e223a0a41948935dc3b1ef75f73574c4",
+  "source_runner_sha256": "4f89a4d759b82cd74ec21465239e48c2558df9f359f5cdff2bf5b4a208e9a04f",
+  "independent_screen_sha256": "92f275c4373b404cfe8e742ff39cf938d0360eccafc21d9dc7daf1a443ca0274",
+  "verifier_sha256": "df1826d7abdc48664438154ac06108df52480b6699f3c22ca39364c489c8f1da",
+  "candidate_manifest_sha256": "00cf578b03d0aeabc08b0226c5d84702695e9aa3f5b3264392b31d914526c20a",
+  "dataset_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "n_calibration": 32,
+  "planned_screen_n": 2048,
+  "models": {
+    "qwen3": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "job_id": "6ade9c09046eb82b1ece9553",
+      "job_url": "https://huggingface.co/jobs/TheUltimateHuman/6ade9c09046eb82b1ece9553",
+      "provider_stage": "COMPLETED",
+      "scientific_stage": "SCREEN_COMPLETED",
+      "n_candidates": 2048,
+      "n_selected": 64,
+      "eligible_per_label": {
+        "0": 105,
+        "1": 86
+      },
+      "selected_per_label": {
+        "0": 32,
+        "1": 32
+      },
+      "calibration_accuracy": {
+        "LR": 0.96875,
+        "RL": 0.96875
+      },
+      "calibration_sensitivity": 26.3642578125,
+      "selection_sha256": "9ffe21f78add86b1f4e079637d680af5702d25d46a1f5a24f79c6a0c4a7ebf0a",
+      "combined_raw_sha256": "1caf96300c109d5d619827898883c908c9bd7afaa6d522b21590266a8477bcc1",
+      "shards": [
+        {
+          "n": 256,
+          "raw_sha256": "93e45d668adbcb8098bd7a349dabd4bd3820a3f586f13da9c6f785a2b6152fd6"
+        },
+        {
+          "n": 256,
+          "raw_sha256": "3fafb0c0ba6ba6af5b9e400817540e669813cd9bb25211e7676f69faeac24f7d"
+        },
+        {
+          "n": 256,
+          "raw_sha256": "0a57ea3819461af3f7d85803bd247b6d28d5447a9a734343e83a82b96f4384d9"
+        },
+        {
+          "n": 256,
+          "raw_sha256": "836f6929afaf78649043fab108b7246680a7048ceb14054746ae73700ab5380f"
+        },
+        {
+          "n": 256,
+          "raw_sha256": "c776627f0f468e0d0f42392a73e6d6f33c3d8a48e62c3f5b0dbc332be12962d8"
+        },
+        {
+          "n": 256,
+          "raw_sha256": "6b4b8640b084968e344fe18ef8b982bc6fe97c35b83e889cc1ba1990ef3d7f59"
+        },
+        {
+          "n": 256,
+          "raw_sha256": "10e0e43778dfbc6aec010bcea6356111eae5e66fd5666ed143a9442b77d564ea"
+        },
+        {
+          "n": 256,
+          "raw_sha256": "108ebfe81dcd78d67becd922fa351f662639aedd0871f38ba13ff93232f71ff5"
+        }
+      ]
+    },
+    "granite": {
+      "model_id": "ibm-granite/granite-3.3-8b-instruct",
+      "model_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "job_id": "6ade9c0b046eb82b1ece9555",
+      "job_url": "https://huggingface.co/jobs/TheUltimateHuman/6ade9c0b046eb82b1ece9555",
+      "provider_stage": "COMPLETED",
+      "scientific_stage": "CAPABILITY_GATE_FAIL",
+      "n_candidates": 0,
+      "n_selected": 0,
+      "calibration_accuracy": {
+        "LR": 0.84375,
+        "RL": 0.96875
+      },
+      "calibration_sensitivity": 15.663818359375,
+      "reason": "LEFT-first 27/32 correct < 90% required in every order. No validation observations.",
+      "shards": []
+    }
+  },
+  "status": "Screen original records archived and selection logged. CPU independent verification pending."
+}
