@@ -8,7 +8,7 @@ Comparing two independently authored analyzers and explicit null/invalid cases.
 import json,urllib.request,importlib.util,tempfile
 from pathlib import Path
 BASE="https://raw.githubusercontent.com/TheUltimateHuman/when-explanations-write-back/"
-COMMIT="ac8a58f54dd4966a4d899ebf2522ca06dd028c5f"
+COMMIT="bb8b46c650974ebfd2fbaf26d6a862d88d963165"
 modules={}
 with tempfile.TemporaryDirectory() as td:
  for name,path in (("runner","mpw103i/scripts/mpw103i_iterate.py"),
