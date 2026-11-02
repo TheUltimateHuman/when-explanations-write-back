@@ -1,0 +1,101 @@
+{
+  "schema": "MPW103I_GENUINE_ITERATION_ORIGINAL_GPU_ARCHIVE_V1",
+  "evidence_category": "RESEARCH_ARTIFACT",
+  "original_protocol_commit": "f0a12228e223a0a41948935dc3b1ef75f73574c4",
+  "original_runner_sha256": "6fc0467425777a8c5e7ae7c32878a53c886a6f808306f734a4e58badf3763206",
+  "independent_analysis_sha256": "bec4c408964163e96ccd9bb92b6c05326979828e31f0b55b6b885c6acfeeb4e7",
+  "independent_verifier_sha256": "eed1238a3147de80834ac2073595b0ad393c9ce6acede8ac2480388483783b40",
+  "screen_selection_commit": "064e9f5ce3610f6a38332987e459d393b669a56a",
+  "selected_screen_sha256": "9ffe21f78add86b1f4e079637d680af5702d25d46a1f5a24f79c6a0c4a7ebf0a",
+  "candidate_manifest_sha256": "00cf578b03d0aeabc08b0226c5d84702695e9aa3f5b3264392b31d914526c20a",
+  "data_id": "stanfordnlp/sst2",
+  "data_revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+  "primary_tests_per_model": 3,
+  "model_panel_n": 2,
+  "per_test_alpha": 0.008333333333333333,
+  "bootstrap_resamples": 50000,
+  "original_execution_note": "Pre-result compliance note: runner used two-case full iteration feasibility pilot, while frozen protocol specified four. No changed hypothesis/sample or threshold.",
+  "models": {
+    "qwen3": {
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "original_job_id": "6adec9c71e112550ce7f1e63",
+      "original_job_url": "https://huggingface.co/jobs/TheUltimateHuman/6adec9c71e112550ce7f1e63",
+      "provider_status": "COMPLETED",
+      "scientific_status": "COMPLETED",
+      "n": 64,
+      "gpu": "NVIDIA L4",
+      "calibration_accuracy": {
+        "LR": 0.96875,
+        "RL": 0.96875
+      },
+      "sensitivity": 26.3642578125,
+      "original_gpu_elapsed_seconds": 4091.994859323,
+      "original_gpu_verdicts": {
+        "H1": "NOT_CONFIRMED",
+        "H2": "NOT_CONFIRMED",
+        "H3": "NOT_CONFIRMED"
+      },
+      "original_gpu_validity": true,
+      "original_gpu_native_parse_rate": 0.986328125,
+      "combined_raw_sha256": "d2ba98a60e504a4e8cc1d422c61c31b280e4fe26b05ed65bc2a9e744ba8bff87",
+      "shards": [
+        {
+          "n": 16,
+          "range": [
+            0,
+            15
+          ],
+          "raw_sha256": "24d1a75ae877869fb3f02dd819fe09a58b6dfb90ac678f0ad19ef5a9d9e5865e"
+        },
+        {
+          "n": 16,
+          "range": [
+            16,
+            31
+          ],
+          "raw_sha256": "73262b72bb54dd3b46b3c955ab4cca9ad3cbd8cc8d1301da912f1f0859f67ad5"
+        },
+        {
+          "n": 16,
+          "range": [
+            32,
+            47
+          ],
+          "raw_sha256": "7a1dfd55aa531d890fa12746a91bb27f795ebb9fbb1837e457f2d50c35a9bfac"
+        },
+        {
+          "n": 16,
+          "range": [
+            48,
+            63
+          ],
+          "raw_sha256": "a125a877608fd696f329ac39323aee2b3e10511ab366a8e58910c8f7311fb5e8"
+        }
+      ]
+    },
+    "granite": {
+      "model_id": "ibm-granite/granite-3.3-8b-instruct",
+      "revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "original_job_id": "6ade9c0b046eb82b1ece9555",
+      "original_job_url": "https://huggingface.co/jobs/TheUltimateHuman/6ade9c0b046eb82b1ece9555",
+      "provider_status": "COMPLETED",
+      "scientific_status": "CAPABILITY_GATE_FAIL",
+      "n": 0,
+      "calibration_accuracy": {
+        "LR": 0.84375,
+        "RL": 0.96875
+      },
+      "sensitivity": 15.663818359375,
+      "reason": "Baseline LEFT-first accuracy 27/32 < required 0.90; no screening or generated iteration performed.",
+      "shards": [],
+      "verdicts": {
+        "H1": "UNKNOWN_NOT_EXECUTED",
+        "H2": "UNKNOWN_NOT_EXECUTED",
+        "H3": "UNKNOWN_NOT_EXECUTED"
+      }
+    }
+  },
+  "status_at_manifest": "All Qwen original raw records deposited without alterations; separate CPU verification forthcoming.",
+  "original_gpu_raw_shard_note": "Each shard's raw_sha256 anchors the exact decompressed JSONL output in 16-family increments."
+}
