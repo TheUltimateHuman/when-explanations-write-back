@@ -68,84 +68,94 @@ def parent_module(uri,expected,name):
     return o
 
 def make_cases(train,valid):
-    old103i=parent_module(OLD103I_URL,OLD103I_SHA,"mpw103i_frozen_original")
-    ci,vi,bi,_=old103i.make_cases(train,valid)
-    if sha(bi)!=OLD103I_MANIFEST:raise RuntimeError("MPW106_HISTORICAL_CASE_SHA_FAILED")
+    """Byte-verified old cohorts, then reconstruct 103I from the SAME exclusion set.
+    Avoid redundant recursive 103I prior-corpus regeneration. Its exact original
+    case SHA must match before any new sample is accepted.
+    """
     old105=parent_module(OLD105_URL,OLD105_SHA,"mpw105_frozen_original")
     c105,v105,b105,_=old105.make_cases(train,valid)
-    if sha(b105)!=OLD105_MANIFEST:raise RuntimeError("MPW106_CASE_SOURCE_MANIFEST_MISMATCH")
+    if sha(b105)!=OLD105_MANIFEST:raise RuntimeError("MPW105_CASE_SHA_FAILED")
     oldb=parent_module(OLD104B_URL,OLD104B_SHA,"mpw104b_frozen_original")
     cb_prev,vb_prev,bb_prev,_=oldb.make_cases(train,valid)
-    if sha(bb_prev)!=OLD104B_MANIFEST:raise RuntimeError("MPW106_MANIFEST_MISMATCH")
+    if sha(bb_prev)!=OLD104B_MANIFEST:raise RuntimeError("MPW104B_CASE_SHA_FAILED")
     old=parent_module(OLD104_URL,OLD104_SHA,"mpw104_frozen_original")
     c104,v104,bytes104,_=old.sample_cases(train,valid)
-    if sha(bytes104)!=OLD104_MANIFEST:raise RuntimeError("MPW104A_MANIFEST_MISMATCH")
+    if sha(bytes104)!=OLD104_MANIFEST:raise RuntimeError("MPW104A_CASE_SHA_FAILED")
     prior=parent_module(old.PREVIOUS_URL,old.PREVIOUS_SHA,"mpw103_frozen")
     c103,v103,m103,_=prior.make_cases(train,valid)
-    if sha(m103)!=old.PREVIOUS_MANIFEST:raise RuntimeError("MPW103_MANIFEST_MISMATCH")
+    if sha(m103)!=old.PREVIOUS_MANIFEST:raise RuntimeError("MPW103_CASE_SHA_FAILED")
     old102=parent_module(prior.PARENT_URL,prior.PARENT_SHA,"mpw102_frozen")
     old102b=parent_module(prior.PREVIOUS_B_URL,prior.PREVIOUS_B_SHA,"mpw102b_frozen")
     old102c=parent_module(prior.PREVIOUS_C_URL,prior.PREVIOUS_C_SHA,"mpw102c_frozen")
     old101=old102.parent_module()
     c101,v101,m101,_=old101.sampled_families(train,valid)
-    if sha(m101)!=old102.PARENT_MANIFEST:raise RuntimeError("MPW101_MANIFEST_MISMATCH")
+    if sha(m101)!=old102.PARENT_MANIFEST:raise RuntimeError("MPW101_CASE_SHA_FAILED")
     ca,va,ma,_=old102.draw(train,valid,old101)
-    if sha(ma)!=prior.PARENT_MANIFEST:raise RuntimeError("MPW102A_MANIFEST_MISMATCH")
+    if sha(ma)!=prior.PARENT_MANIFEST:raise RuntimeError("MPW102A_CASE_SHA_FAILED")
     cb,vb,mb,_=old102b.make_cases(train,valid)
-    if sha(mb)!=prior.PREVIOUS_B_MANIFEST:raise RuntimeError("MPW102B_MANIFEST_MISMATCH")
+    if sha(mb)!=prior.PREVIOUS_B_MANIFEST:raise RuntimeError("MPW102B_CASE_SHA_FAILED")
     cc,vc,mc,_=old102c.make_cases(train,valid)
-    if sha(mc)!=prior.PREVIOUS_C_MANIFEST:raise RuntimeError("MPW102C_MANIFEST_MISMATCH")
-    historical=(c101+v101+ca+va+cb+vb+cc+vc+c103+v103+c104+v104+cb_prev+vb_prev+c105+v105+ci+vi)
-    exclude={key(f[k]) for f in historical
+    if sha(mc)!=prior.PREVIOUS_C_MANIFEST:raise RuntimeError("MPW102C_CASE_SHA_FAILED")
+    previous=(c101+v101+ca+va+cb+vb+cc+vc+c103+v103+c104+v104+cb_prev+vb_prev+c105+v105)
+    old_excluded={key(f[k]) for f in previous
              for k in ("left","right","flip_left","flip_right")}
-    exclude.update(key(f["sentence"]) for f in valid)
+    old_excluded.update(key(f["sentence"]) for f in valid)
     first={0:[],1:[]}
     for f in train:
         y=f["label"]
         if y in (0,1):
-            s=norm(f["sentence"])
-            if 4<=len(s.split())<=36:first[y].append(s)
+            text=norm(f["sentence"])
+            if 4<=len(text.split())<=36:first[y].append(text)
     rr=random.Random(old101.ORIGINAL_PR002_SEED)
     for y in (0,1):rr.shuffle(first[y])
-    exclude.update(key(s) for y in (0,1) for s in first[y][:48])
-    seen=set(exclude)
-    pool={0:[],1:[]}
-    for f in train:
-        y=f["label"]
-        if y not in (0,1):continue
-        s=norm(f["sentence"])
-        if 4<=len(s.split())<=36 and key(s) not in seen:
-            pool[y].append(s);seen.add(key(s))
-    rng=random.Random(SEED)
-    for y in (0,1):rng.shuffle(pool[y])
-    needed=2*(CAL_N+POOL_N)
-    if any(len(pool[y])<needed for y in (0,1)):
-        raise RuntimeError("INSUFFICIENT_UNIQUE_CANDIDATE_TEXTS")
-    ix={0:0,1:0}
-    def take(label):
-        s=pool[label][ix[label]]
-        ix[label]+=1
-        return s
-    def batch(n,start):
-        labs=[0,1]*(n//2);rng.shuffle(labs)
-        out=[]
-        for j,y in enumerate(labs):
-            out.append({"idx":start+j,"label":y,
-                        "left":take(y),"right":take(y),
-                        "flip_left":take(1-y),"flip_right":take(1-y),
-                        "code_orders":{"AB":rng.choice((0,1))}})
-        return out
-    cal=batch(CAL_N,0)
-    candidates=batch(POOL_N,CAL_N)
-    all_cases=cal+candidates
-    texts=[key(f[k]) for f in all_cases for k in
-           ("left","right","flip_left","flip_right")]
-    if len(texts)!=len(set(texts)) or any(t in exclude for t in texts):
-        raise RuntimeError("HISTORICAL_TEXT_OVERLAP_OR_DUPLICATE")
-    manifest=canonical(all_cases).encode()
+    old_excluded.update(key(txt) for y in (0,1) for txt in first[y][:48])
+    def draw(excluded,seed,ncal,npool):
+        seen=set(excluded)
+        pools={0:[],1:[]}
+        for f in train:
+            y=f["label"]
+            if y not in (0,1):continue
+            txt=norm(f["sentence"])
+            if 4<=len(txt.split())<=36 and key(txt) not in seen:
+                pools[y].append(txt);seen.add(key(txt))
+        rng=random.Random(seed)
+        for y in (0,1):rng.shuffle(pools[y])
+        needed=2*(ncal+npool)
+        if any(len(pools[y])<needed for y in (0,1)):
+            raise RuntimeError("INSUFFICIENT_UNIQUE_FRESH_CASE_TEXTS")
+        index={0:0,1:0}
+        def take(label):
+            text=pools[label][index[label]]
+            index[label]+=1
+            return text
+        def batch(n,start):
+            labels=[0,1]*(n//2);rng.shuffle(labels)
+            result=[]
+            for j,y in enumerate(labels):
+                result.append({"idx":start+j,"label":y,
+                      "left":take(y),"right":take(y),
+                      "flip_left":take(1-y),"flip_right":take(1-y),
+                      "code_orders":{"AB":rng.choice((0,1))}})
+            return result
+        cal=batch(ncal,0);val=batch(npool,ncal)
+        allrows=cal+val
+        strings=[key(f[k]) for f in allrows for k in
+                   ("left","right","flip_left","flip_right")]
+        if len(strings)!=len(set(strings)) or any(t in excluded for t in strings):
+            raise RuntimeError("CASE_OVERLAP_OR_DUPLICATE")
+        return cal,val,canonical(allrows).encode(),len(strings)
+    # Exact reconstruction of original MPW-103I cohort from already recovered
+    # older cohorts. This is byte-checked against its immutable actual study SHA.
+    ci,vi,bi,_=draw(old_excluded,2026102501,32,2048)
+    if sha(bi)!=OLD103I_MANIFEST:
+        raise RuntimeError("MPW103I_EXACT_SAMPLE_RECONSTRUCTION_FAILED")
+    excluded=set(old_excluded)
+    excluded.update(key(f[k]) for f in ci+vi
+                    for k in ("left","right","flip_left","flip_right"))
+    cal,candidates,manifest,ntexts=draw(excluded,SEED,CAL_N,POOL_N)
     meta={"n_cal":CAL_N,"n_candidates":POOL_N,
-          "excluded_historical_text_keys":len(exclude),
-          "distinct_new_texts":len(texts),
+          "excluded_historical_text_keys":len(excluded),
+          "distinct_new_texts":ntexts,
           "candidate_labels":{"0":sum(f["label"]==0 for f in candidates),
                               "1":sum(f["label"]==1 for f in candidates)},
           "prior_family_counts":{"101":len(c101+v101),"102a":len(ca+va),
@@ -153,7 +163,8 @@ def make_cases(train,valid):
               "103":len(c103+v103),"104a":len(c104+v104),
               "104b":len(cb_prev+vb_prev),"105":len(c105+v105),
               "103i":len(ci+vi)},
-          "text_disjoint":True}
+          "text_disjoint":True,
+          "method":"RECONSTRUCT_PRIOR_103I_WITH_IMMUTABLE_SHA"}
     return cal,candidates,manifest,meta
 
 def select_from_screen(rows):
