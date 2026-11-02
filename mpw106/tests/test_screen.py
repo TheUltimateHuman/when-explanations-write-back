@@ -8,7 +8,7 @@ All source records synthetic; no GPU inference or scientific evidence.
 import importlib.util,urllib.request,json,tempfile
 from pathlib import Path
 ROOT="https://raw.githubusercontent.com/TheUltimateHuman/when-explanations-write-back/"
-REF="f1fd015c7ad3a3cd8e1c48cf4afb6c7fbc2fc532"
+REF="8bbdc1fe581e5a0d0d6bfb4e7b6455466e733b31"
 modules={}
 with tempfile.TemporaryDirectory() as td:
  for name,path in (("source","mpw106/scripts/mpw106_screen.py"),
