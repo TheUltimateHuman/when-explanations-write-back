@@ -83,3 +83,19 @@ One newly loaded model with NO writer conversation, code cache or KV transferred
 No GPU re-runs to chase positive results. Distinguish external retrieval effect from intrinsic model persistence, correction instruction effect from model self-repair, and ACTIVE tombstone from complete archival deletion.
 
 **Tracking issue:** https://github.com/TheUltimateHuman/when-explanations-write-back/issues/2
+
+
+## November 2, 2026 — pre-GPU gates completed and screen jobs submitted
+
+**Actual source freezer commit:** 1f11fa6a8fc4ff889241899ea49998826846da63. All 11 exact source SHA-256 anchors and full 32+2048 case SHA are recorded in mpw106/FREEZE.md. The historical-exclusion CPU preflights (6ae821bfc78863f9c6301405 and 6ae82688c78863f9c6301642), screen regression, writer regression, independent analysis regression, and final byte/pin audit 6ae8ec110e0338d1bb7e8daf all passed before submitting GPU screening. The prior-art note adds direct collisions with AfterDeleteBench, MemSecBench, MemForm and MemGPT.
+
+- **Qwen3 SCREEN GPU L4:** https://huggingface.co/jobs/TheUltimateHuman/6ae8ec8dc78863f9c630f1aa
+- **Granite SCREEN GPU L40S:** https://huggingface.co/jobs/TheUltimateHuman/6ae8ec8f0e0338d1bb7e8df1
+- Exact frozen screen script: https://raw.githubusercontent.com/TheUltimateHuman/when-explanations-write-back/1f11fa6a8fc4ff889241899ea49998826846da63/mpw106/scripts/mpw106_screen.py
+- Both: baseline-only; 2048 candidates/model, 32 calibration; actual Hugging Face hard timeout **90 minutes**; **no report generation or external memory writes at screening stage**.
+
+**Strict next-stage gate:** Do not dispatch WRITER until each eligible model's original screen job has scientific MPW106_END status SCREEN_COMPLETED, its eight original 256-family raw shards and selection JSON have been committed to a NEW immutable Git result commit, and the separately frozen mpw106/scripts/verify_screen.py CPU reanalysis validates all source SHA/record count/first-32-per-label case indices. Granite may fail original calibration (as in prior MPW experiments); mark its H1/H2/H3 UNKNOWN_NOT_EXECUTED and stop that model.
+
+Only after WRITER raw data have been independently verified may the harness create N,L,C,D commits of the SAME mpw106/store/state.json, and only after exact store source/hash verification can a separate freshly loaded READER GPU be dispatched. Original and correction content are NEVER selected by observing reader treatment effects. A failed retrieval binding is INVALID, not a negative science result.
+
+At this update, SCREEN jobs had been submitted but **no MPW-106 scientific GPU outcome was known**.
