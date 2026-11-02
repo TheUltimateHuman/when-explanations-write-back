@@ -72,7 +72,8 @@
           ],
           "raw_sha256": "a125a877608fd696f329ac39323aee2b3e10511ab366a8e58910c8f7311fb5e8"
         }
-      ]
+      ],
+      "screen_selection_commit": "064e9f5ce3610f6a38332987e459d393b669a56a"
     },
     "granite": {
       "model_id": "ibm-granite/granite-3.3-8b-instruct",
@@ -93,9 +94,10 @@
         "H1": "UNKNOWN_NOT_EXECUTED",
         "H2": "UNKNOWN_NOT_EXECUTED",
         "H3": "UNKNOWN_NOT_EXECUTED"
-      }
+      },
+      "screen_selection_commit": "064e9f5ce3610f6a38332987e459d393b669a56a"
     }
   },
-  "status_at_manifest": "All Qwen original raw records deposited without alterations; separate CPU verification forthcoming.",
+  "status_at_manifest": "Original raw records preserved; verifier read contract fixed by adding model-level selection ref, no change to raw observations or scientific gates.",
   "original_gpu_raw_shard_note": "Each shard's raw_sha256 anchors the exact decompressed JSONL output in 16-family increments."
 }
