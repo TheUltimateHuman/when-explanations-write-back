@@ -15,11 +15,11 @@ from pathlib import Path
 from urllib.request import urlopen
 
 ROOT="https://raw.githubusercontent.com/TheUltimateHuman/when-explanations-write-back/"
-SCREEN_URL="UNSET_NEW_SCREEN_SOURCE"
-SCREEN_SHA="UNSET_NEW_SCREEN_SHA"
-CONTRACT_URL="UNSET_MEMORY_CONTRACT_SOURCE"
-CONTRACT_SHA="UNSET_MEMORY_CONTRACT_SHA"
-EXPECTED_CASE_BANK="UNSET_NEW_CASE_SHA"
+SCREEN_URL="https://raw.githubusercontent.com/TheUltimateHuman/when-explanations-write-back/f0c8ed39df6037f81071efda1d6ca672e3766336/mpw106/scripts/mpw106_screen.py"
+SCREEN_SHA="b2c43f5871e0eb2837ecb3b4cb9af28973c735850c9eb7c019d59913b6b52df2"
+CONTRACT_URL="https://raw.githubusercontent.com/TheUltimateHuman/when-explanations-write-back/f0c8ed39df6037f81071efda1d6ca672e3766336/mpw106/scripts/memory_contract.py"
+CONTRACT_SHA="1d5e781431991467a0eafbc48f62afee0bd7b19ead0c19363f99554325a40912"
+EXPECTED_CASE_BANK="39992256f2432492527f764a1651fbd3054420c2de73682e668b0e0fa73aed16"
 OLD104_URL=ROOT+"c94d1299e8862686bb728880c3f36a1527e7b7c0/mpw104/scripts/mpw104.py"
 OLD104_SHA="d8866d46dcb4bc6f5e2289108c22c434add56c423e63f1731c929aed86d6d1e1"
 DATASET="stanfordnlp/sst2"
