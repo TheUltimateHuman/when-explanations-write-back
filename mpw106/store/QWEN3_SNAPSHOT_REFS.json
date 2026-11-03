@@ -1,0 +1,42 @@
+{
+  "schema": "MPW106_EXTERNAL_MEMORY_SNAPSHOT_COMMIT_REFS_V1",
+  "research_status": "RESEARCH_ARTIFACT_NOT_HYPOTHESIS_RESULT",
+  "model": "qwen3",
+  "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "source_freeze_commit": "1f11fa6a8fc4ff889241899ea49998826846da63",
+  "screen_commit": "63b8e7fd4385408e724ad81e7e8fcd51b6fc043a",
+  "writer_archive_commit": "577549d58643b34b03abebda3bd49d6102587f99",
+  "writer_original_raw_sha256": "a0ae9a72fb188bf3b96f3e7e4e27895452b24c0c5c158efd467458b7a6dd84de",
+  "case_manifest_sha256": "39992256f2432492527f764a1651fbd3054420c2de73682e668b0e0fa73aed16",
+  "same_git_path": "mpw106/store/state.json",
+  "snapshots": [
+    {
+      "kind": "NEUTRAL",
+      "commit": "857d8ce3fe104b50f5aa5c688f5fd568faf8f07d",
+      "state_sha256": "3031a62047e2f7c84b9475d5a72f1899bd5b1dca24f223112d5bec480167b780"
+    },
+    {
+      "kind": "LIVE",
+      "commit": "de695269f0b6cebc679cb49dfcc4812328f6c6d9",
+      "state_sha256": "927b449f55ba13498b3aec40b02f7bd021c8b2267499e60ce767dd7809bba15b"
+    },
+    {
+      "kind": "CORRECTED",
+      "commit": "4f86d7feba42798c98251d1b85c2b5bbbdd03440",
+      "state_sha256": "a004c7518f45d5c6f73c09d38cee9823774456698162112423489a063ff0cb73"
+    },
+    {
+      "kind": "DELETED",
+      "commit": "ed96aaebe1886652f66090657206e9ccabb6515b",
+      "state_sha256": "0883b0d50ec06a7bca1e897a59c337413ef6b55c301542c897ab4ba65135f25a"
+    }
+  ],
+  "frozen_independent_store_verifier": {
+    "job_id": "6aea5d22c78863f9c6320894",
+    "status": "COMPLETE_FRESH_RETRIEVAL_READY"
+  },
+  "granite": "INVALID_BASELINE_DRIFT; no stored report; no reader",
+  "fresh_reader_job": "6aea5d3ec78863f9c63208a9",
+  "deletion_semantics": "active tombstone; prior immutable Git snapshots remain accessible; old LIVE explicitly stale",
+  "correction_source": "EXTERNAL_AUDITOR_CORRECTION"
+}
