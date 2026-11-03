@@ -1,0 +1,5 @@
+# MPW-106 — screening archive manifest correction (pre-WRITER)
+
+The first Git screening archive commit `0e9abc52c7ac75604b835eae5ed249cada557641` had a **47-character truncated copied gzip SHA-256** in the metadata for Granite original GPU shard 04. The independently frozen `verify_screen.py` correctly failed on `COMPRESSED_SCREEN_CHANGED` rather than proceeding. Qwen verification at the first archive commit passed.
+
+This follow-on commit replaces only that manifest digest with the intact 64-hex original compressed-byte hash `2c5c8a5aeb615f805e13bfb1259101ce983cd06e81e0a86ad76a001ef0f1c74b`, which matches the November 2 pre-writer recovered source archive. **The compressed shard bytes, uncompressed raw shard hash, original 2,048 GPU observations, both selections, protocol, frozen source, and hypotheses are unchanged.** Both models must pass the original independent verifier against the NEW manifest commit before writer dispatch. Original failed archive commit remains in history. The correction is archival metadata, not outcome-driven model or case selection.
