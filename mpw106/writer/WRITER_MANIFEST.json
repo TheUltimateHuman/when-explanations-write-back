@@ -1,0 +1,49 @@
+{
+  "schema": "MPW106_WRITER_MANIFEST_V1",
+  "case_manifest_sha256": "39992256f2432492527f764a1651fbd3054420c2de73682e668b0e0fa73aed16",
+  "source_freeze_commit": "1f11fa6a8fc4ff889241899ea49998826846da63",
+  "independent_writer_sha256": "8fdc4e53a9296a31319089d94c1b0ea7083666a8218752a482cbd22ed4ec2a94",
+  "models": {
+    "qwen3": {
+      "n": 64,
+      "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "screen_selection_commit": "63b8e7fd4385408e724ad81e7e8fcd51b6fc043a",
+      "original_job_id": "6ae92f640e0338d1bb7eba8c",
+      "combined_raw_sha256": "a0ae9a72fb188bf3b96f3e7e4e27895452b24c0c5c158efd467458b7a6dd84de",
+      "native_parse_rate": 0.953125,
+      "calibration": {
+        "accuracy": {
+          "LR": 0.9375,
+          "RL": 0.9375
+        },
+        "calibration_n": 32,
+        "eligible": true,
+        "model": "qwen3",
+        "native_parse_rate": 0.9375,
+        "sensitivity": 27.45654296875
+      },
+      "shards": [
+        {
+          "part": 0,
+          "n": 16,
+          "raw_sha256": "0867626558df2fc7cdebe724a5f8fdc07124ded67566e6ba208942a1a4d44e46"
+        },
+        {
+          "part": 1,
+          "n": 16,
+          "raw_sha256": "6fb02ddf6fd1bb03b96023e629b47a3c9bec32486fa2ae922551f62c53094861"
+        },
+        {
+          "part": 2,
+          "n": 16,
+          "raw_sha256": "deca2397a0ef4cfae56c97c8c6c150cea2bd9c490b7638672ce96968e78c0306"
+        },
+        {
+          "part": 3,
+          "n": 16,
+          "raw_sha256": "284081010d3acf5aa086c75ed6e9bf579c713b1293dd2bd0c2a74e59e844ade1"
+        }
+      ]
+    }
+  }
+}
