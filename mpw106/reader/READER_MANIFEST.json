@@ -1,0 +1,80 @@
+{
+  "schema": "MPW106_READER_ARCHIVE_V1",
+  "case_manifest_sha256": "39992256f2432492527f764a1651fbd3054420c2de73682e668b0e0fa73aed16",
+  "independent_analysis_sha256": "a3b3141a134d5d30b16798bedd0f6d6e43ee216408aeb0659303f65e6c1f29b0",
+  "models": {
+    "qwen3": {
+      "n": 64,
+      "combined_raw_sha256": "33280f6b99dd6355a1b8aa287ab7a9bb6bda94819d8e314aa7e55baf23cb9df8",
+      "shards": [
+        {
+          "n": 16,
+          "part": 0,
+          "range": [
+            0,
+            15
+          ],
+          "raw_sha256": "6bfdb2d0184662dab8da3b2850b35887c83749f8815dff73bac00703544a1912",
+          "compressed_sha256": "7e8a6d2b8b4794306299c93a295af84cd9d2c1caccc7aeabe9547446ac3acd9e"
+        },
+        {
+          "n": 16,
+          "part": 1,
+          "range": [
+            16,
+            31
+          ],
+          "raw_sha256": "b1cf4fc45aa90ed55e92271835d7036f2ad36f73edbd106bb5d2038af479d87c",
+          "compressed_sha256": "12a8d400c97d16c79536f2ea33d34b86637c97b6e639cf3087df94ec976137be"
+        },
+        {
+          "n": 16,
+          "part": 2,
+          "range": [
+            32,
+            47
+          ],
+          "raw_sha256": "41fe95e39d88f9a42445520f4e60a1d1943025d4f509d379b46704fd8b9b5d98",
+          "compressed_sha256": "253e7ceeda47056ffa79abf356ce9697a38763660573efccd645194ff99df176"
+        },
+        {
+          "n": 16,
+          "part": 3,
+          "range": [
+            48,
+            63
+          ],
+          "raw_sha256": "c1b765e96416c364e1ba8f8d27bd9eb3a100a15663882ef2abdf70c0f0caf6e3",
+          "compressed_sha256": "6e3246abab7524b1cfe879ae27602da759cbef68de8b9a38e53303f8e4098fe4"
+        }
+      ],
+      "terminal": {
+        "elapsed_sec": 1044.420410322,
+        "model": "qwen3",
+        "n": 64,
+        "raw_sha256": "33280f6b99dd6355a1b8aa287ab7a9bb6bda94819d8e314aa7e55baf23cb9df8",
+        "scientific_inference": "INDEPENDENT_CPU_VERIFIER_REQUIRED",
+        "snapshot_refs": {
+          "corrected": "4f86d7feba42798c98251d1b85c2b5bbbdd03440",
+          "deleted": "ed96aaebe1886652f66090657206e9ccabb6515b",
+          "live": "de695269f0b6cebc679cb49dfcc4812328f6c6d9",
+          "neutral": "857d8ce3fe104b50f5aa5c688f5fd568faf8f07d",
+          "screen": "63b8e7fd4385408e724ad81e7e8fcd51b6fc043a"
+        },
+        "status": "COMPLETED"
+      },
+      "screen_selection_commit": "63b8e7fd4385408e724ad81e7e8fcd51b6fc043a",
+      "store_commits": {
+        "neutral": "857d8ce3fe104b50f5aa5c688f5fd568faf8f07d",
+        "live": "de695269f0b6cebc679cb49dfcc4812328f6c6d9",
+        "corrected": "4f86d7feba42798c98251d1b85c2b5bbbdd03440",
+        "deleted": "ed96aaebe1886652f66090657206e9ccabb6515b"
+      },
+      "original_job_url": "https://huggingface.co/jobs/TheUltimateHuman/6aea62010e0338d1bb7f7617",
+      "executed_source_commit": "f997a656155af182f32ffd3ac7845a6b9d3b5883"
+    }
+  },
+  "granite_status": "INVALID_BASELINE_DRIFT; no reader records",
+  "archive_date_utc": "2026-11-06",
+  "parent_commit": "10da1059a53b74046a7baec9f0d2937a1340a8a0"
+}

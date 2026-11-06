@@ -1,0 +1,224 @@
+{
+  "scope": "LOCAL_REANALYSIS_OF_ORIGINAL_RECORDS_NOT_IMMUTABLE_READER_ARCHIVE_VERIFIER",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.1.3",
+  "scipy": "1.15.3",
+  "verified_inputs": {
+    "neutral": {
+      "git_blob_sha1": "f05a498dea63d10726b042f98508c41a656d2081",
+      "sha256": "3031a62047e2f7c84b9475d5a72f1899bd5b1dca24f223112d5bec480167b780",
+      "source_url": "https://github.com/TheUltimateHuman/when-explanations-write-back/blob/857d8ce3fe104b50f5aa5c688f5fd568faf8f07d/mpw106/store/state.json"
+    },
+    "live": {
+      "git_blob_sha1": "bcba19dc3d40a44956161aee0855869945fad525",
+      "sha256": "927b449f55ba13498b3aec40b02f7bd021c8b2267499e60ce767dd7809bba15b",
+      "source_url": "https://github.com/TheUltimateHuman/when-explanations-write-back/blob/de695269f0b6cebc679cb49dfcc4812328f6c6d9/mpw106/store/state.json"
+    },
+    "corrected": {
+      "git_blob_sha1": "54200e0f4b7f0a84b9de0dfe6fdd718a4ec5608a",
+      "sha256": "a004c7518f45d5c6f73c09d38cee9823774456698162112423489a063ff0cb73",
+      "source_url": "https://github.com/TheUltimateHuman/when-explanations-write-back/blob/4f86d7feba42798c98251d1b85c2b5bbbdd03440/mpw106/store/state.json"
+    },
+    "deleted": {
+      "git_blob_sha1": "c711bab83bf3ef9f2375172d08381fbdb91c11a1",
+      "sha256": "0883b0d50ec06a7bca1e897a59c337413ef6b55c301542c897ab4ba65135f25a",
+      "source_url": "https://github.com/TheUltimateHuman/when-explanations-write-back/blob/ed96aaebe1886652f66090657206e9ccabb6515b/mpw106/store/state.json"
+    },
+    "selection": {
+      "git_blob_sha1": "9188dd768d2d53eb3e10d1798719ccc824070a0d",
+      "sha256": "19165d2447bdd741da49d7fea7d44c6eb858144a0522fe7f0c16e5ab75d14927",
+      "source_url": "https://github.com/TheUltimateHuman/when-explanations-write-back/blob/63b8e7fd4385408e724ad81e7e8fcd51b6fc043a/mpw106/selection/qwen3.json"
+    },
+    "analysis_source": {
+      "git_blob_sha1": "40888d97b48626b013f6b0c0369adb90db1007f0",
+      "sha256": "a3b3141a134d5d30b16798bedd0f6d6e43ee216408aeb0659303f65e6c1f29b0",
+      "source_url": "https://github.com/TheUltimateHuman/when-explanations-write-back/blob/10da1059a53b74046a7baec9f0d2937a1340a8a0/mpw106/scripts/independent_analysis.py"
+    },
+    "verifier_source": {
+      "git_blob_sha1": "637e44269500575f5fe4dfb2a7ca364cc6e9cefc",
+      "sha256": "654694594f2fcad00c9d5a4a7c417783492c8442c8c018d2ebbeebe2d66885c0",
+      "source_url": "https://github.com/TheUltimateHuman/when-explanations-write-back/blob/10da1059a53b74046a7baec9f0d2937a1340a8a0/mpw106/scripts/verify_reader.py"
+    }
+  },
+  "all_64_exact_screen_baselines": true,
+  "all_896_arm_order_metric_relations_exact": true,
+  "all_64_reader_reports_match_writer": true,
+  "all_256_store_entries_match_exact_protocol_text": true,
+  "read_binding_tests": {
+    "wrong_case_sha": "CASE_BINDING_MISMATCH",
+    "wrong_existing_id": "CASE_BINDING_MISMATCH",
+    "wrong_bank": "WRONG_MEMORY_SOURCE_BANK",
+    "wrong_model": "WRONG_MEMORY_REPORTING_MODEL",
+    "implicit_stale_live_as_deleted": "WRONG_MEMORY_SNAPSHOT_KIND",
+    "bad_schema": "WRONG_MEMORY_SCHEMA_OR_STORE",
+    "unsupported_kind": "WRONG_MEMORY_SNAPSHOT_KIND",
+    "changed_content": "CONTENT_HASH_MISMATCH"
+  },
+  "independent_h1": {
+    "mean": 0.12461084020151117,
+    "positive": 45,
+    "negative": 16,
+    "zero": 3,
+    "sign_p_exact_combinatorial": 0.00026427866182729843,
+    "ci_familywise_independent": [
+      0.012197469051895051,
+      0.24350580311765138
+    ]
+  },
+  "source_side_counts": {
+    "RIGHT": 26,
+    "LEFT": 38
+  },
+  "report_side_counts": {
+    "RIGHT": 15,
+    "LEFT": 46,
+    "None": 3
+  },
+  "descriptive_only_ineligible_false_cohort": {
+    "n": 15,
+    "live_fidelity_count": 2,
+    "neutral_fidelity_count": 0,
+    "corrected_fidelity_count": 0,
+    "no_confirmatory_H2_H3_test": true
+  },
+  "arm_diagnostics": {
+    "CLEAN": {
+      "D": {
+        "mean_raw_shift_from_clean": 0.0,
+        "mean_abs_shift_from_clean": 0.0,
+        "mean_report_directed_shift": 0.0
+      },
+      "J": {
+        "mean_raw_shift_from_clean": 0.0,
+        "mean_abs_shift_from_clean": 0.0,
+        "mean_report_directed_shift": 0.0
+      },
+      "task_accuracy": {
+        "LR": 1.0,
+        "RL": 1.0
+      },
+      "conversion_ids": [],
+      "loss_ids": []
+    },
+    "NEUTRAL": {
+      "D": {
+        "mean_raw_shift_from_clean": 0.033730082268401976,
+        "mean_abs_shift_from_clean": 0.20323292414015287,
+        "mean_report_directed_shift": 0.046262750458361784
+      },
+      "J": {
+        "mean_raw_shift_from_clean": 0.68115234375,
+        "mean_abs_shift_from_clean": 6.317138671875,
+        "mean_report_directed_shift": 1.568359375
+      },
+      "task_accuracy": {
+        "LR": 1.0,
+        "RL": 0.984375
+      },
+      "conversion_ids": [],
+      "loss_ids": []
+    },
+    "LIVE": {
+      "D": {
+        "mean_raw_shift_from_clean": 0.029864778316024916,
+        "mean_abs_shift_from_clean": 0.29932411887779214,
+        "mean_report_directed_shift": 0.17087359065987295
+      },
+      "J": {
+        "mean_raw_shift_from_clean": 0.7353515625,
+        "mean_abs_shift_from_clean": 10.792724609375,
+        "mean_report_directed_shift": 6.361328125
+      },
+      "task_accuracy": {
+        "LR": 0.96875,
+        "RL": 1.0
+      },
+      "conversion_ids": [
+        51,
+        195
+      ],
+      "loss_ids": [
+        586,
+        621
+      ]
+    },
+    "CORRECTED": {
+      "D": {
+        "mean_raw_shift_from_clean": 0.007563423300024441,
+        "mean_abs_shift_from_clean": 0.2566782023927048,
+        "mean_report_directed_shift": 0.04822128888196607
+      },
+      "J": {
+        "mean_raw_shift_from_clean": -0.408447265625,
+        "mean_abs_shift_from_clean": 8.338134765625,
+        "mean_report_directed_shift": 1.23193359375
+      },
+      "task_accuracy": {
+        "LR": 1.0,
+        "RL": 0.984375
+      },
+      "conversion_ids": [],
+      "loss_ids": []
+    },
+    "DELETED": {
+      "D": {
+        "mean_raw_shift_from_clean": -0.006249435315907128,
+        "mean_abs_shift_from_clean": 0.11896058717639713,
+        "mean_report_directed_shift": 0.011453586905265304
+      },
+      "J": {
+        "mean_raw_shift_from_clean": -0.290283203125,
+        "mean_abs_shift_from_clean": 3.30810546875,
+        "mean_report_directed_shift": 0.7969970703125
+      },
+      "task_accuracy": {
+        "LR": 1.0,
+        "RL": 1.0
+      },
+      "conversion_ids": [],
+      "loss_ids": []
+    },
+    "MISSING": {
+      "D": {
+        "mean_raw_shift_from_clean": -0.006249435315907128,
+        "mean_abs_shift_from_clean": 0.11896058717639713,
+        "mean_report_directed_shift": 0.011453586905265304
+      },
+      "J": {
+        "mean_raw_shift_from_clean": -0.290283203125,
+        "mean_abs_shift_from_clean": 3.30810546875,
+        "mean_report_directed_shift": 0.7969970703125
+      },
+      "task_accuracy": {
+        "LR": 1.0,
+        "RL": 1.0
+      },
+      "conversion_ids": [],
+      "loss_ids": []
+    },
+    "EXPLICIT_STALE": {
+      "D": {
+        "mean_raw_shift_from_clean": 0.029864778316024916,
+        "mean_abs_shift_from_clean": 0.29932411887779214,
+        "mean_report_directed_shift": 0.17087359065987295
+      },
+      "J": {
+        "mean_raw_shift_from_clean": 0.7353515625,
+        "mean_abs_shift_from_clean": 10.792724609375,
+        "mean_report_directed_shift": 6.361328125
+      },
+      "task_accuracy": {
+        "LR": 0.96875,
+        "RL": 1.0
+      },
+      "conversion_ids": [
+        51,
+        195
+      ],
+      "loss_ids": [
+        586,
+        621
+      ]
+    }
+  }
+}

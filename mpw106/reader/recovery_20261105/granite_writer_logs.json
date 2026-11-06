@@ -1,0 +1,33 @@
+{
+  "operation": "logs",
+  "outcome": {
+    "kind": "logs",
+    "job_id": "6ae92f700e0338d1bb7eba97",
+    "lines": [
+      "\rmodel-00001-of-00004.safetensors:  44%|████▍     | 2.19G/4.97G [00:11<00:12, 228MB/s]\u001b[A",
+      "\rmodel-00003-of-00004.safetensors:  56%|█████▌    | 2.79G/4.97G [00:15<00:11, 195MB/s]\u001b[A",
+      "\rmodel-00001-of-00004.safetensors:  60%|█████▉    | 2.97G/4.97G [00:16<00:10, 185MB/s]\u001b[A",
+      "\rmodel-00003-of-00004.safetensors:  72%|███████▏  | 3.59G/4.97G [00:23<00:09, 148MB/s]\u001b[A",
+      "\rmodel-00001-of-00004.safetensors:  74%|███████▍  | 3.70G/4.97G [00:23<00:08, 146MB/s]\u001b[A",
+      "\rmodel-00003-of-00004.safetensors:  88%|████████▊ | 4.38G/4.97G [00:30<00:04, 130MB/s]\u001b[A",
+      "\rmodel-00001-of-00004.safetensors:  90%|█████████ | 4.49G/4.97G [00:30<00:03, 128MB/s]\u001b[A",
+      "\rmodel-00001-of-00004.safetensors: 100%|██████████| 4.97G/4.97G [00:34<00:00, 129MB/s]\u001b[A\rmodel-00001-of-00004.safetensors: 100%|██████████| 4.97G/4.97G [00:34<00:00, 144MB/s]",
+      "",
+      "\rFetching 4 files:  75%|███████▌  | 3/4 [00:34<00:11, 11.51s/it]\u001b[A",
+      "\rmodel-00003-of-00004.safetensors: 100%|██████████| 4.97G/4.97G [00:34<00:00, 132MB/s]\u001b[A\rmodel-00003-of-00004.safetensors: 100%|██████████| 4.97G/4.97G [00:34<00:00, 143MB/s]",
+      "\rFetching 4 files: 100%|██████████| 4/4 [00:34<00:00,  8.73s/it]",
+      "",
+      "\rLoading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]\u001b[A",
+      "\rLoading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.66it/s]\u001b[A\rLoading checkpoint shards: 100%|██████████| 4/4 [00:01<00:00,  2.21it/s]",
+      "",
+      "\rgeneration_config.json:   0%|          | 0.00/132 [00:00<?, ?B/s]\u001b[A\rgeneration_config.json: 100%|██████████| 132/132 [00:00<00:00, 1.24MB/s]",
+      "MPW106_WRITER_HARDWARE {\"batch_size\":8,\"dtype\":\"float16\",\"gpu\":\"NVIDIA L40S\",\"model\":\"granite\",\"provider_timeout_seconds\":5400,\"torch\":\"2.6.0+cu124\",\"transformers\":\"4.57.3\"}",
+      "MPW106_WRITER_CALIBRATION {\"accuracy\":{\"LR\":0.90625,\"RL\":0.9375},\"calibration_n\":32,\"eligible\":true,\"model\":\"granite\",\"native_parse_rate\":0.9375,\"sensitivity\":17.2890625}",
+      "MPW106_WRITER_END {\"invalid_records\":[{\"idx\":33,\"new_D\":0.6102991801542832,\"order\":\"LR\",\"repeat_D\":0.6102991801542832,\"screen_D\":0.6090591791222475},{\"idx\":33,\"new_D\":0.6661659462000596,\"order\":\"RL\",\"repeat_D\":0.6661659462000596,\"screen_D\":0.6684210204669584},{\"idx\":34,\"new_D\":0.7892719822668516,\"order\":\"LR\",\"repeat_D\":0.7892719822668516,\"screen_D\":0.7851002385421058},{\"idx\":34,\"new_D\":0.8650471587543616,\"order\":\"RL\",\"repeat_D\":0.8650471587543616,\"screen_D\":0.8624409235384773},{\"idx\":35,\"new_D\":0.22704974454717333,\"order\":\"LR\",\"repeat_D\":0.22704974454717333,\"screen_D\":0.22607780268560856},{\"idx\":35,\"new_D\":0.16037450301179812,\"order\":\"RL\",\"repeat_D\":0.16037450301179812,\"screen_D\":0.16060605437649242},{\"idx\":36,\"new_D\":-0.5348836214170006,\"order\":\"LR\",\"repeat_D\":-0.5348836214170006,\"screen_D\":-0.5312953886378315},{\"idx\":36,\"new_D\":-0.43518501326024167,\"order\":\"RL\",\"repeat_D\":-0.43518501326024167,\"screen_D\":-0.4320240021176064},{\"idx\":38,\"new_D\":-0.6846747036172205,\"order\":\"LR\",\"repeat_D\":-0.6846747036172205,\"screen_D\":-0.6851343457503037},{\"idx\":38,\"new_D\":-0.6109214127440946,\"order\":\"RL\",\"repeat_D\":-0.6109214127440946,\"screen_D\":-0.6145951212449537},{\"idx\":39,\"new_D\":-0.9852621906746595,\"order\":\"LR\",\"repeat_D\":-0.9852621906746595,\"screen_D\":-0.9886955971508536},{\"idx\":39,\"new_D\":-0.6075629925344272,\"order\":\"RL\",\"repeat_D\":-0.6075629925344272,\"screen_D\":-0.6045244753334172},{\"idx\":46,\"new_D\":0.6787462845839743,\"order\":\"LR\",\"repeat_D\":0.6787462845839743,\"screen_D\":0.6780821493177519},{\"idx\":46,\"new_D\":0.1971878054100974,\"order\":\"RL\",\"repeat_D\":0.1971878054100974,\"screen_D\":0.19599331382733082},{\"idx\":48,\"new_D\":0.21119131134252,\"order\":\"LR\",\"repeat_D\":0.21119131134252,\"screen_D\":0.2096188504253967},{\"idx\":48,\"new_D\":0.7734056316174215,\"order\":\"RL\",\"repeat_D\":0.7734056316174215,\"screen_D\":0.772634377878012},{\"idx\":50,\"new_D\":-0.36241248077846056,\"order\":\"LR\",\"repeat_D\":-0.36241248077846056,\"screen_D\":-0.3618739778352533},{\"idx\":50,\"new_D\":-0.2946659664118996,\"order\":\"RL\",\"repeat_D\":-0.2946659664118996,\"screen_D\":-0.29344728371891937},{\"idx\":57,\"new_D\":-0.6222478798983445,\"order\":\"LR\",\"repeat_D\":-0.6222478798983445,\"screen_D\":-0.6262974853909133},{\"idx\":57,\"new_D\":-0.3333332433192929,\"order\":\"RL\",\"repeat_D\":-0.3333332433192929,\"screen_D\":-0.3305083849468786}],\"model\":\"granite\",\"n_invalid_cells\":125,\"status\":\"INVALID_BASELINE_DRIFT\",\"writer_memory_not_created\":true}"
+    ],
+    "finished": false,
+    "truncated": false
+  },
+  "total_results": 20,
+  "results_shared": 20
+}
