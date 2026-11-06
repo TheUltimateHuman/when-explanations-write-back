@@ -1,0 +1,14 @@
+{
+  "verified_utc": "2026-11-06",
+  "exit_code": 0,
+  "archive_commit": "d209d440ef09e75be3d2c076a0ba533f71eb3e8f",
+  "verifier_sha256": "654694594f2fcad00c9d5a4a7c417783492c8442c8c018d2ebbeebe2d66885c0",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.1.3",
+    "scipy": "1.15.3"
+  },
+  "stdout_sha256": "5e1c2b5a1c0c61a20f71bf9cd2fa2125ed79ff12fb6a56d7e783de493b038614",
+  "command": "UV_CACHE_DIR=/tmp/mpw106-uv-cache uv run --offline verify_reader.py d209d440ef09e75be3d2c076a0ba533f71eb3e8f qwen3",
+  "method": "Unmodified verifier fetched from immutable archive commit, byte-equal to frozen source; real HTTPS retrieval of archived shards, original screen and four historical snapshots; local CPU only."
+}

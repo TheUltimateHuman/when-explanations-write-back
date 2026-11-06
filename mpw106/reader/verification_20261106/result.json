@@ -1,0 +1,168 @@
+{
+  "independent_result": {
+    "H1_order_means": {
+      "LR": 0.0936223367307423,
+      "RL": 0.15559934367227998
+    },
+    "H3_order_means": {
+      "LR": 0.2517855309239199,
+      "RL": 0.5447256497420838
+    },
+    "active_delete_integrity": "D_EQUALS_EXPLICIT_MISSING",
+    "explicit_stale_integrity": "L_EQUALS_EXPLICIT_STALE",
+    "history_reset": "NO_WRITER_CONVERSATION_IN_READER_PREFIX",
+    "identity_is_arithmetic_check_not_an_inferred_effect": true,
+    "memory_carrier": "EXTERNAL_GIT_FILE_SEPARATE_GPU_PROCESS",
+    "model": "qwen3",
+    "n": 64,
+    "n_originally_unfaithful_parseable_reports": 15,
+    "n_parseable_native_reports": 61,
+    "primary": {
+      "H1": {
+        "by_order": {
+          "LR": 0.0936223367307423,
+          "RL": 0.15559934367227998
+        },
+        "estimate": {
+          "ci95": [
+            0.04137474073571733,
+            0.21232175987787164
+          ],
+          "ci_familywise": [
+            0.012197469051895051,
+            0.24350580311765138
+          ],
+          "mean": 0.12461084020151117,
+          "n": 64,
+          "negative": 16,
+          "positive": 45,
+          "sign_p": 0.0002642786618272985,
+          "zero": 3
+        },
+        "verdict": "CONFIRMED"
+      },
+      "H2": {
+        "n_unfaithful": 15,
+        "required": 16,
+        "verdict": "INDETERMINATE_CAPABILITY"
+      },
+      "H3": {
+        "n_unfaithful": 15,
+        "required": 16,
+        "verdict": "INDETERMINATE_CAPABILITY"
+      }
+    },
+    "valid": true,
+    "versioned_fidelity": {
+      "CLEAN": {
+        "C": 0.0,
+        "L": 0.0,
+        "mean_abs_D_drift_from_screen": 0.0,
+        "post_retrieval_order_disagreements": 0,
+        "q": 0.71875,
+        "s": 0.71875,
+        "transition_table": {
+          "00": 18,
+          "01": 0,
+          "10": 0,
+          "11": 46
+        }
+      },
+      "CORRECTED": {
+        "C": 0.0,
+        "L": 0.0,
+        "mean_abs_D_drift_from_screen": 0.2566782023927048,
+        "post_retrieval_order_disagreements": 1,
+        "q": 0.71875,
+        "s": 0.71875,
+        "transition_table": {
+          "00": 18,
+          "01": 0,
+          "10": 0,
+          "11": 46
+        }
+      },
+      "DELETED": {
+        "C": 0.0,
+        "L": 0.0,
+        "mean_abs_D_drift_from_screen": 0.11896058717639713,
+        "post_retrieval_order_disagreements": 0,
+        "q": 0.71875,
+        "s": 0.71875,
+        "transition_table": {
+          "00": 18,
+          "01": 0,
+          "10": 0,
+          "11": 46
+        }
+      },
+      "EXPLICIT_STALE": {
+        "C": 0.03125,
+        "L": 0.03125,
+        "mean_abs_D_drift_from_screen": 0.29932411887779214,
+        "post_retrieval_order_disagreements": 4,
+        "q": 0.71875,
+        "s": 0.71875,
+        "transition_table": {
+          "00": 16,
+          "01": 2,
+          "10": 2,
+          "11": 44
+        }
+      },
+      "LIVE": {
+        "C": 0.03125,
+        "L": 0.03125,
+        "mean_abs_D_drift_from_screen": 0.29932411887779214,
+        "post_retrieval_order_disagreements": 4,
+        "q": 0.71875,
+        "s": 0.71875,
+        "transition_table": {
+          "00": 16,
+          "01": 2,
+          "10": 2,
+          "11": 44
+        }
+      },
+      "MISSING": {
+        "C": 0.0,
+        "L": 0.0,
+        "mean_abs_D_drift_from_screen": 0.11896058717639713,
+        "post_retrieval_order_disagreements": 0,
+        "q": 0.71875,
+        "s": 0.71875,
+        "transition_table": {
+          "00": 18,
+          "01": 0,
+          "10": 0,
+          "11": 46
+        }
+      },
+      "NEUTRAL": {
+        "C": 0.0,
+        "L": 0.0,
+        "mean_abs_D_drift_from_screen": 0.20323292414015287,
+        "post_retrieval_order_disagreements": 1,
+        "q": 0.71875,
+        "s": 0.71875,
+        "transition_table": {
+          "00": 18,
+          "01": 0,
+          "10": 0,
+          "11": 46
+        }
+      }
+    }
+  },
+  "model": "qwen3",
+  "n": 64,
+  "original_gpu_raw_sha256": "33280f6b99dd6355a1b8aa287ab7a9bb6bda94819d8e314aa7e55baf23cb9df8",
+  "result_ref": "d209d440ef09e75be3d2c076a0ba533f71eb3e8f",
+  "source_screen_commit": "63b8e7fd4385408e724ad81e7e8fcd51b6fc043a",
+  "store_commits": {
+    "corrected": "4f86d7feba42798c98251d1b85c2b5bbbdd03440",
+    "deleted": "ed96aaebe1886652f66090657206e9ccabb6515b",
+    "live": "de695269f0b6cebc679cb49dfcc4812328f6c6d9",
+    "neutral": "857d8ce3fe104b50f5aa5c688f5fd568faf8f07d"
+  }
+}
